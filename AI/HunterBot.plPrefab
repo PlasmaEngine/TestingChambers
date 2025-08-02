@@ -1,0 +1,2647 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{11741812182251796031,6129429671917353720}}
+	s %t{"plExposedParameters"}
+	u3 %v{3}
+	p
+	{
+		VarArray %Parameters{}
+	}
+}
+o
+{
+	Uuid %id{u4{15008073620398394378,9926366585026484314}}
+	s %t{"plAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Prefab"}
+		VarArray %Dependencies{}
+		Uuid %DocumentID{u4{15008073620398394378,9926366585026484314}}
+		u4 %Hash{12026566568936122086}
+		VarArray %MetaInfo
+		{
+			Uuid{u4{11741812182251796031,6129429671917353720}}
+		}
+		VarArray %Outputs{}
+		VarArray %PackageDeps
+		{
+			s{"{ 45ea5425-1035-422d-94ab-53bbc31c4954 }"}
+			s{"{ ec921689-2247-4957-8671-21fb0c7bc3c1 }"}
+		}
+		VarArray %References
+		{
+			s{"{ 45ea5425-1035-422d-94ab-53bbc31c4954 }"}
+			s{"{ ec921689-2247-4957-8671-21fb0c7bc3c1 }"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{9074418258826205058,4694985602628715360}}
+	s %t{"plCreatureCrawlComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		s %Body{""}
+		f %CastDown{0x0000803F}
+		f %CastUp{0x6666E63E}
+		VarArray %Legs
+		{
+			Uuid{u4{16195545345149346197,4720348260060015846}}
+			Uuid{u4{1715466282324028349,5292162477188923205}}
+			Uuid{u4{2343765999799186582,4744516380242246433}}
+			Uuid{u4{6732958506307238802,5315117734626437512}}
+		}
+		f %MinLegDistance{0xCDCCCC3E}
+		f %StepDistance{0xCDCCCC3E}
+	}
+}
+o
+{
+	Uuid %id{u4{16195545345149346197,4720348260060015846}}
+	s %t{"plCreatureLeg"}
+	u3 %v{1}
+	p
+	{
+		HashedString %LegName{s{"Back.L"}}
+		u1 %StepGroup{0}
+	}
+}
+o
+{
+	Uuid %id{u4{2343765999799186582,4744516380242246433}}
+	s %t{"plCreatureLeg"}
+	u3 %v{1}
+	p
+	{
+		HashedString %LegName{s{"Front.L"}}
+		u1 %StepGroup{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13288278658481651369,4844309105649068633}}
+	s %t{"plCameraComponent"}
+	u3 %v{11}
+	p
+	{
+		b %Active{1}
+		f %Aperture{0x0000803F}
+		s %CameraRenderPipeline{""}
+		f %Dimensions{0x00002041}
+		f %EV100{0}
+		i1 %EditorShortcut{-1}
+		VarArray %ExcludeTags{}
+		f %ExposureCompensation{0}
+		f %FOV{0x00007042}
+		f %FarPlane{0x00007A44}
+		f %FinalExposure{0}
+		f %FocusDistance{0xCDCC4C3E}
+		f %ISO{0x0000C842}
+		VarArray %IncludeTags{}
+		s %Mode{"plCameraMode::PerspectiveFixedFovY"}
+		f %NearPlane{0x0000803E}
+		s %RenderTarget{""}
+		Vec2 %RenderTargetOffset{f{0,0}}
+		Vec2 %RenderTargetSize{f{0x0000803F,0x0000803F}}
+		b %ShowStats{0}
+		Time %ShutterTime{d{0x000000000000F03F}}
+		s %UsageHint{"plCameraUsageHint::MainView"}
+	}
+}
+o
+{
+	Uuid %id{u4{11105169617636185733,4912383803329578636}}
+	s %t{"plScriptComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %HandleGlobalEvents{0}
+		VarDict %Parameters{}
+		b %PassThroughUnhandledEvents{0}
+		s %ScriptClass{"{ be3bb88d-33de-4451-a354-774923f182db }"}
+		Time %UpdateInterval{d{0}}
+	}
+}
+o
+{
+	Uuid %id{u4{12674483078233712544,5017216761970011936}}
+	s %t{"plInputComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		b %ForwardToBlackboard{0}
+		s %Granularity{"plInputMessageGranularity::PressReleaseAndDown"}
+		s %InputSet{"Player"}
+	}
+}
+o
+{
+	Uuid %id{u4{13301231674130908095,5118969914861069443}}
+	s %t{"plJoltDefaultCharacterComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		f %AirFriction{0x0000003F}
+		f %AirSpeed{0x0000003F}
+		u1 %CollisionLayer{0}
+		f %CrouchHeight{0xCDCC4C3E}
+		s %DebugFlags{""}
+		s %FallbackWalkSurface{""}
+		f %FootRadius{0x9A99993E}
+		s %HeadObject{""}
+		f %JumpImpulse{0x0000E040}
+		f %Mass{0x0000A041}
+		Angle %MaxClimbingSlope{f{0xC2B8323F}}
+		f %MaxStepDown{0x9A99993E}
+		f %MaxStepUp{0x9A99993E}
+		u1 %PresenceCollisionLayer{0}
+		Angle %RotateSpeed{f{0xDB0FC93F}}
+		f %RunInteractionDistance{0x00004040}
+		f %ShapeRadius{0x6666E63E}
+		f %StandHeight{0xCDCC4C3F}
+		f %Strength{0x0000C842}
+		f %WalkInteractionDistance{0x0000803F}
+		f %WalkSpeedCrouching{0x0000803F}
+		f %WalkSpeedRunning{0x0000A040}
+		f %WalkSpeedStanding{0x00000040}
+		s %WalkSurfaceInteraction{"Footstep"}
+	}
+}
+o
+{
+	Uuid %id{u4{1715466282324028349,5292162477188923205}}
+	s %t{"plCreatureLeg"}
+	u3 %v{1}
+	p
+	{
+		HashedString %LegName{s{"Back.R"}}
+		u1 %StepGroup{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6732958506307238802,5315117734626437512}}
+	s %t{"plCreatureLeg"}
+	u3 %v{1}
+	p
+	{
+		HashedString %LegName{s{"Front.R"}}
+		u1 %StepGroup{0}
+	}
+}
+o
+{
+	Uuid %id{u4{16189192457362129520,5438224001883310604}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{16519188372760991526,9593109347029831476}}
+			Uuid{u4{7796059430779520701,5742064123365232444}}
+		}
+		VarArray %Components
+		{
+			Uuid{u4{13301231674130908095,5118969914861069443}}
+			Uuid{u4{11105169617636185733,4912383803329578636}}
+			Uuid{u4{12674483078233712544,5017216761970011936}}
+			Uuid{u4{9074418258826205058,4694985602628715360}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"<Prefab-Root>"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+			s{"AutoColMesh"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{7796059430779520701,5742064123365232444}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{13288278658481651369,4844309105649068633}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x35922EC0,0x000000B5,0xEA351C40}}
+		Quat %LocalRotation{f{0xD9A31433,0xA6A8053E,0xF28C9CB1,0x55CF7D3F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"plSceneDocumentRoot"}
+	u3 %v{2}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{16189192457362129520,5438224001883310604}}
+		}
+		Uuid %Settings{u4{5503575256702053900,9952641258241970275}}
+	}
+}
+o
+{
+	Uuid %id{u4{16519188372760991526,9593109347029831476}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{12421062265613874746,10406853741369709539}}
+			Uuid{u4{6484615402190360266,16028490811307310285}}
+			Uuid{u4{6844191803340842205,15665989250585982688}}
+			Uuid{u4{15011972041315059141,15668645294342214090}}
+		}
+		VarArray %Components
+		{
+			Uuid{u4{8208198454998071066,10338011782643959965}}
+			Uuid{u4{1728898201513610271,9648177654056488093}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0xCDCC4CBE}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"Body"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{1728898201513610271,9648177654056488093}}
+	s %t{"plSimpleAnimationComponent"}
+	u3 %v{3}
+	p
+	{
+		b %Active{1}
+		s %AnimationClip{"{ 45ea5425-1035-422d-94ab-53bbc31c4954 }"}
+		s %AnimationMode{"plPropertyAnimMode::Loop"}
+		b %EnableIK{1}
+		s %InvisibleUpdateRate{"plAnimationInvisibleUpdateRate::Max5FPS"}
+		s %RootMotionMode{"plRootMotionMode::Ignore"}
+		f %Speed{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{12530949759639760677,9668963262769885967}}
+	s %t{"plTwoBoneIKComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		HashedString %JointEnd{s{"Foot.Back.R"}}
+		HashedString %JointMiddle{s{"LowerLeg.Back.R"}}
+		HashedString %JointStart{s{"UpperLeg.Back.R"}}
+		s %MidAxis{"plBasisAxis::PositiveX"}
+		s %PoleVector{""}
+		f %Weight{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{5503575256702053900,9952641258241970275}}
+	s %t{"plPrefabDocumentSettings"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ExposedProperties{}
+	}
+}
+o
+{
+	Uuid %id{u4{8208198454998071066,10338011782643959965}}
+	s %t{"plAnimatedMeshComponent"}
+	u3 %v{13}
+	p
+	{
+		b %Active{1}
+		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		VarArray %Materials{}
+		s %Mesh{"{ ec921689-2247-4957-8671-21fb0c7bc3c1 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12421062265613874746,10406853741369709539}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{12530949759639760677,9668963262769885967}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4CBE,0x0000003F,0xCDCCCCBD}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"Back.R"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{6954079297366728136,14928098771986159116}}
+	s %t{"plTwoBoneIKComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		HashedString %JointEnd{s{"Foot.Front.R"}}
+		HashedString %JointMiddle{s{"LowerLeg.Front.R"}}
+		HashedString %JointStart{s{"UpperLeg.Front.R"}}
+		s %MidAxis{"plBasisAxis::PositiveX"}
+		s %PoleVector{""}
+		f %Weight{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{15121859535340945072,14930754815742390518}}
+	s %t{"plTwoBoneIKComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		HashedString %JointEnd{s{"Foot.Front.L"}}
+		HashedString %JointMiddle{s{"LowerLeg.Front.L"}}
+		HashedString %JointStart{s{"UpperLeg.Front.L"}}
+		s %MidAxis{"plBasisAxis::PositiveX"}
+		s %PoleVector{""}
+		f %Weight{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{6594502896216246197,15290600332707486713}}
+	s %t{"plTwoBoneIKComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		HashedString %JointEnd{s{"Foot.Back.L"}}
+		HashedString %JointMiddle{s{"LowerLeg.Back.L"}}
+		HashedString %JointStart{s{"UpperLeg.Back.L"}}
+		s %MidAxis{"plBasisAxis::PositiveX"}
+		s %PoleVector{""}
+		f %Weight{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{6844191803340842205,15665989250585982688}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{6954079297366728136,14928098771986159116}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4C3E,0x9A99993E,0xCDCCCCBD}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"Front.R"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{15011972041315059141,15668645294342214090}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{15121859535340945072,14930754815742390518}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4C3E,0x9A9999BE,0xCDCCCCBD}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"Front.L"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{6484615402190360266,16028490811307310285}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{6594502896216246197,15290600332707486713}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4CBE,0x000000BF,0xCDCCCCBD}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"Back.L"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{11139586793425778925,38300827898113951}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSimpleAnimationComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{13786860291846092986,137924671447008186}}
+	s %t{"plCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Animation"}
+	}
+}
+o
+{
+	Uuid %id{u4{10677371878914581104,156992677150614307}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{14595502005233596721,14962799841432824589}}
+			Uuid{u4{11757807865453858210,17511012054791544513}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"Mass"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{11538464635628493600,530491051274225601}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plVisualizerAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDirectionVisualizerAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7933264396877909880,740944296008086822}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x00002040}
+	}
+}
+o
+{
+	Uuid %id{u4{144508586027926387,959854424290787177}}
+	s %t{"plScriptableFunctionAttribute"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgNames
+		{
+			s{"globalFootPosition"}
+		}
+		VarArray %ArgTypes
+		{
+			u1{0}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{15858200799249084397,1020464219854223548}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plBitflagsBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7611916830624690963,1130660574983746085}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Bitflags|plTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plBitflagsBase"}
+		s %PluginName{"plJoltPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{17638938082516982663,9670344608946021607}}
+			Uuid{u4{14684884090289154489,4076820178277573494}}
+			Uuid{u4{8946857345900077263,14336551334229216909}}
+			Uuid{u4{861039159935514837,10040586309002367051}}
+			Uuid{u4{8491223255713017854,18427673401073801848}}
+			Uuid{u4{12052898363074048466,10817699699277701781}}
+			Uuid{u4{13132103038930237604,7053298531464063108}}
+		}
+		s %TypeName{"plJoltCharacterDebugFlags"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{17401212197470617983,1204032170749021851}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x00004040}
+	}
+}
+o
+{
+	Uuid %id{u4{10389770810464561044,1344483223638712675}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x9A99193E}
+	}
+}
+o
+{
+	Uuid %id{u4{676771187637424311,1646736906804507997}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Angle %Value{f{0xDB0FC93F}}
+	}
+}
+o
+{
+	Uuid %id{u4{9008829403314639641,1819090439634021808}}
+	s %t{"plReflectedFunctionDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Arguments
+		{
+			Uuid{u4{903989849317184935,14972012000266074770}}
+		}
+		VarArray %Attributes
+		{
+			Uuid{u4{144508586027926387,959854424290787177}}
+		}
+		s %Flags{"plPropertyFlags::Phantom"}
+		s %Name{"TeleportCharacter"}
+		Uuid %ReturnValue{u4{7736717443003111054,9779431800116478690}}
+		s %Type{"plFunctionType::Member"}
+	}
+}
+o
+{
+	Uuid %id{u4{3301433307287853383,2046149668870756920}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{7431189012389982068,10161238373555961892}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"FallbackWalkSurface"}
+		s %Type{"plStringView"}
+	}
+}
+o
+{
+	Uuid %id{u4{1116931487240057759,2059798389607538946}}
+	s %t{"plReflectedFunctionDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Arguments{}
+		VarArray %Attributes
+		{
+			Uuid{u4{7574100737942887805,10323740252903945611}}
+		}
+		s %Flags{"plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"IsInAir"}
+		Uuid %ReturnValue{u4{11202045101942140882,5511606015562803712}}
+		s %Type{"plFunctionType::Member"}
+	}
+}
+o
+{
+	Uuid %id{u4{1085782254890220161,2124186173292611817}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x9A99993E}
+	}
+}
+o
+{
+	Uuid %id{u4{9834366442063976705,2549423420749164512}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000A040}
+	}
+}
+o
+{
+	Uuid %id{u4{12159378396954619710,2631473747449643154}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{5733083963758718110,2684202460982520321}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{4696242410063861801,15451893044979669473}}
+			Uuid{u4{17249686511037428451,11609731868191535135}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"MaxStepUp"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{14333117704909979646,3116477381766130660}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{12661775193020935267,16827220566298091649}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"PresenceCollisionLayer"}
+		s %Type{"plUInt8"}
+	}
+}
+o
+{
+	Uuid %id{u4{5090140418944865950,3172852594581671215}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plDocumentRoot"}
+		s %PluginName{"plEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"plSceneDocumentRoot"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{10587963841599423602,3199453717252657945}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plRootMotionMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{12223204493048157076,3316158501449178400}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Bitflags|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plBitflagsBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plVisualizerAnchor"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14373938296391783535,3348017084591840555}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{12333768855403861255,5687644580609337465}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"Body"}
+		s %Type{"plConstCharPtr"}
+	}
+}
+o
+{
+	Uuid %id{u4{6123020213138838496,3356846749741773185}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803E}
+	}
+}
+o
+{
+	Uuid %id{u4{15188717197472971583,3459494374735343838}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x0000C842}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{4166896946117797251,3528888323670374316}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCameraUsageHint"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5614963840750912449,3929958014273265656}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plInputMessageGranularity"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{10260927508552512959,3970188085532526993}}
+	s %t{"plReflectedFunctionDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Arguments{}
+		VarArray %Attributes
+		{
+			Uuid{u4{10532018789746493727,6070381773432342805}}
+		}
+		s %Flags{"plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"IsStandingOnGround"}
+		Uuid %ReturnValue{u4{16951942784001357468,10119597275063935378}}
+		s %Type{"plFunctionType::Member"}
+	}
+}
+o
+{
+	Uuid %id{u4{14684884090289154489,4076820178277573494}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{1}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::PrintState"}
+		s %Type{"plUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{14398098346125128872,4177403177311014858}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13786860291846092986,137924671447008186}}
+		}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"plGameComponentsPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{14373938296391783535,3348017084591840555}}
+			Uuid{u4{17621303986497870961,13111827371495025726}}
+			Uuid{u4{13934104090682286273,11662692388168865808}}
+			Uuid{u4{1275595984137146948,11323661053252114293}}
+			Uuid{u4{13763750639594081062,16887305807912478212}}
+			Uuid{u4{17659175618636478993,7060499040698162257}}
+		}
+		s %TypeName{"plCreatureCrawlComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5938943466470740930,4290830418883979603}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{676771187637424311,1646736906804507997}}
+			Uuid{u4{14862077142389664058,16230621274651761940}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"RotateSpeed"}
+		s %Type{"plAngle"}
+	}
+}
+o
+{
+	Uuid %id{u4{9393539958182175993,4331947862357006856}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0xCDCC4C3E}
+	}
+}
+o
+{
+	Uuid %id{u4{12710458624583888051,4389518650140596596}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00002041}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{11955855544140344054,4398899209473942728}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{6123020213138838496,3356846749741773185}}
+			Uuid{u4{5224936404718545281,17945436251810594519}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"MaxStepDown"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{9147549001318729034,4446351017467766177}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{13013212843296476462,4840594662880972722}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::Bitflags|plPropertyFlags::Phantom"}
+		s %Name{"DebugFlags"}
+		s %Type{"plJoltCharacterDebugFlags"}
+	}
+}
+o
+{
+	Uuid %id{u4{2809764402400982691,4973225637616362501}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{9393539958182175993,4331947862357006856}}
+			Uuid{u4{2115429721848780116,11516195933748998081}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"CrouchHeight"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{12463304697521106597,5305462413689248552}}
+	s %t{"plCapsuleVisualizerAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Anchor{"plVisualizerAnchor::NegZ"}
+		Color %Color{f{0xDBC0693F,0xDBC0693F,0xDBC0693F,0x0000803F}}
+		s %Property1{"StandHeight"}
+		s %Property2{"ShapeRadius"}
+		s %Property3{""}
+		s %Property4{""}
+		s %Property5{""}
+	}
+}
+o
+{
+	Uuid %id{u4{11202045101942140882,5511606015562803712}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{18338196125443986319,5646690386686538574}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{11041659579833991850,11829840712763240950}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"CollisionLayer"}
+		s %Type{"plUInt8"}
+	}
+}
+o
+{
+	Uuid %id{u4{12333768855403861255,5687644580609337465}}
+	s %t{"plGameObjectReferenceAttribute"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{10532018789746493727,6070381773432342805}}
+	s %t{"plScriptableFunctionAttribute"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgNames{}
+		VarArray %ArgTypes{}
+	}
+}
+o
+{
+	Uuid %id{u4{13625170081560341228,6169092029167412499}}
+	s %t{"plGameObjectReferenceAttribute"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{10676557161248368840,6169156779974314583}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803E}
+	}
+}
+o
+{
+	Uuid %id{u4{14187911491586291717,6357927790796962117}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plObjectMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14961811756053384967,6398302362815431000}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEventMessageHandlerComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plScriptComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{8471804598051010635,6663772200709075948}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plMeshComponentBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plAnimatedMeshComponent"}
+		u3 %TypeVersion{13}
+	}
+}
+o
+{
+	Uuid %id{u4{10411385167834517523,6666974454840060292}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plRenderComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13132103038930237604,7053298531464063108}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{32}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::VisFootCheck"}
+		s %Type{"plUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{17659175618636478993,7060499040698162257}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Array"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::Class|plPropertyFlags::Phantom"}
+		s %Name{"Legs"}
+		s %Type{"plCreatureLeg"}
+	}
+}
+o
+{
+	Uuid %id{u4{9909101048456987937,7272627443649029359}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plPropertyAnimMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{10751866217214138096,7491399663311652214}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"LegName"}
+		s %Type{"plHashedString"}
+	}
+}
+o
+{
+	Uuid %id{u4{1893839087961644626,7557687480658176767}}
+	s %t{"plScriptableFunctionAttribute"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgNames{}
+		VarArray %ArgTypes{}
+	}
+}
+o
+{
+	Uuid %id{u4{15994241846957961255,7779576153474140638}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Invalid %Max{}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{10280051876748123164,7858969906100790003}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{18068283680022092025,12716840392445619359}}
+			Uuid{u4{11535798037055168367,17213676221427903975}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"JumpImpulse"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{2869752422267471799,8049400984638765806}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x0000C842}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{13593399947534819651,8810410798093967671}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plPropertyAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plVisualizerAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{9339754741367219407,8882077495200294043}}
+	s %t{"plReflectedFunctionDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Arguments{}
+		VarArray %Attributes
+		{
+			Uuid{u4{1893839087961644626,7557687480658176767}}
+		}
+		s %Flags{"plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"IsSlidingOnGround"}
+		Uuid %ReturnValue{u4{7476948868115606375,11961073853345430183}}
+		s %Type{"plFunctionType::Member"}
+	}
+}
+o
+{
+	Uuid %id{u4{517347605464348663,9199057911383769957}}
+	s %t{"plDynamicStringEnumAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %DynamicEnum{"SurfaceInteractionTypeEnum"}
+	}
+}
+o
+{
+	Uuid %id{u4{15324685378373198820,9328431139400999984}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x0000803F}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{8736720174294610770,9640061611130642731}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{12353358835225897817,11494980645588764233}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"MaxClimbingSlope"}
+		s %Type{"plAngle"}
+	}
+}
+o
+{
+	Uuid %id{u4{7009381072334277535,9659459603664967231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{17638938082516982663,9670344608946021607}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{0}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::Default"}
+		s %Type{"plUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{17915220459848394583,9699250527427238989}}
+	s %t{"plCapsuleVisualizerAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Anchor{"plVisualizerAnchor::NegZ"}
+		Color %Color{f{0x06E73C3E,0x381C7C3E,0x9218A33E,0x0000803F}}
+		s %Property1{"CrouchHeight"}
+		s %Property2{"ShapeRadius"}
+		s %Property3{""}
+		s %Property4{""}
+		s %Property5{""}
+	}
+}
+o
+{
+	Uuid %id{u4{7736717443003111054,9779431800116478690}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{""}
+		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{8399423596297715122,9970706930732107724}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{861039159935514837,10040586309002367051}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{4}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::VisContacts"}
+		s %Type{"plUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{16951942784001357468,10119597275063935378}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{7431189012389982068,10161238373555961892}}
+	s %t{"plAssetBrowserAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %DependencyFlags{"plDependencyFlags::Package"}
+		s %Filter{";CompatibleAsset_Surface;"}
+		s %RequiredTag{""}
+	}
+}
+o
+{
+	Uuid %id{u4{7574100737942887805,10323740252903945611}}
+	s %t{"plScriptableFunctionAttribute"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgNames{}
+		VarArray %ArgTypes{}
+	}
+}
+o
+{
+	Uuid %id{u4{13475832781409691120,10367774053827141075}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{9147549001318729034,4446351017467766177}}
+			Uuid{u4{2869752422267471799,8049400984638765806}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"WalkSpeedCrouching"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{8217408807290472030,10410173615702655075}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{9834366442063976705,2549423420749164512}}
+			Uuid{u4{3740759403633595615,13850846451570133754}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"WalkSpeedRunning"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{979733937745168214,10576361380444705418}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{10906041495325220089,18389453445074689775}}
+			Uuid{u4{15941656798901022101,12696471606143634348}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"WalkSpeedStanding"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{12052898363074048466,10817699699277701781}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{16}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::VisGroundContact"}
+		s %Type{"plUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{16819636187740221814,11089501717885464587}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{16368485574736541511,11158594388186317937}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{10451782377043825413,12855865845296701819}}
+			Uuid{u4{15994241846957961255,7779576153474140638}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"Strength"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{14209585135339028478,11308263336862562356}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plPropertyAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{1275595984137146948,11323661053252114293}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{15905056064544233786,12292720972272687821}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"StepDistance"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{1511968139182076510,11434169418521830854}}
+	s %t{"plScriptableFunctionAttribute"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgNames{}
+		VarArray %ArgTypes{}
+	}
+}
+o
+{
+	Uuid %id{u4{2172537035907930635,11450890021300033520}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plInputComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{12353358835225897817,11494980645588764233}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Angle %Value{f{0xC2B8323F}}
+	}
+}
+o
+{
+	Uuid %id{u4{2115429721848780116,11516195933748998081}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00002041}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{5313892209487811142,11571651709051756989}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Value{"Footstep"}
+	}
+}
+o
+{
+	Uuid %id{u4{17249686511037428451,11609731868191535135}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00002041}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{15489946322727963982,11648324453230688660}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{13934104090682286273,11662692388168865808}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{15489946322727963982,11648324453230688660}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"CastDown"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{10799938453523757431,11702988725276979427}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"plSceneDocumentSettingsBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11041659579833991850,11829840712763240950}}
+	s %t{"plDynamicEnumAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %DynamicEnum{"PhysicsCollisionLayer"}
+	}
+}
+o
+{
+	Uuid %id{u4{12702173672668551041,11899314833995959136}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plMeshComponentBase"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{7476948868115606375,11961073853345430183}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{3256699061213146819,11971211514043209971}}
+	s %t{"plReflectedFunctionDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Arguments{}
+		VarArray %Attributes
+		{
+			Uuid{u4{1511968139182076510,11434169418521830854}}
+		}
+		s %Flags{"plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"IsCrouching"}
+		Uuid %ReturnValue{u4{10185286335003077809,17639916773565430990}}
+		s %Type{"plFunctionType::Member"}
+	}
+}
+o
+{
+	Uuid %id{u4{17344855267500754522,12198870391063964378}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plSceneDocumentSettingsBase"}
+		s %PluginName{"plEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"plPrefabDocumentSettings"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{15905056064544233786,12292720972272687821}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0xCDCCCC3E}
+	}
+}
+o
+{
+	Uuid %id{u4{3893432600622521752,12579137180062217049}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13568898273697062115,14180308562422439366}}
+		}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"plJoltPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{18338196125443986319,5646690386686538574}}
+			Uuid{u4{14333117704909979646,3116477381766130660}}
+			Uuid{u4{10677371878914581104,156992677150614307}}
+			Uuid{u4{16368485574736541511,11158594388186317937}}
+			Uuid{u4{8736720174294610770,9640061611130642731}}
+			Uuid{u4{13013212843296476462,4840594662880972722}}
+		}
+		s %TypeName{"plJoltCharacterControllerComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{15941656798901022101,12696471606143634348}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x0000C842}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{18068283680022092025,12716840392445619359}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000A040}
+	}
+}
+o
+{
+	Uuid %id{u4{5446501112162140383,12773223227455562395}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{10994292494139206649,14291263046343756052}}
+			Uuid{u4{15324685378373198820,9328431139400999984}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"AirFriction"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{10451782377043825413,12855865845296701819}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000FA43}
+	}
+}
+o
+{
+	Uuid %id{u4{17621303986497870961,13111827371495025726}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{1085782254890220161,2124186173292611817}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"CastUp"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{16248206677505575021,13293606225161987129}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{517347605464348663,9199057911383769957}}
+			Uuid{u4{5313892209487811142,11571651709051756989}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"WalkSurfaceInteraction"}
+		s %Type{"plConstCharPtr"}
+	}
+}
+o
+{
+	Uuid %id{u4{12308989171246115930,13586424100252555202}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{12159378396954619710,2631473747449643154}}
+			Uuid{u4{12710458624583888051,4389518650140596596}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"StandHeight"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{12136145561342955480,13651072833686414765}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000003F}
+	}
+}
+o
+{
+	Uuid %id{u4{13985915862957499096,13667540031100479129}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plVisualizerAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCameraVisualizerAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{3740759403633595615,13850846451570133754}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x0000C842}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{13958467449340908312,14130583787237123576}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x0000803F}
+		f %Min{0xCDCCCC3D}
+	}
+}
+o
+{
+	Uuid %id{u4{13568898273697062115,14180308562422439366}}
+	s %t{"plCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Physics/Jolt/Character"}
+	}
+}
+o
+{
+	Uuid %id{u4{10994292494139206649,14291263046343756052}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000003F}
+	}
+}
+o
+{
+	Uuid %id{u4{8946857345900077263,14336551334229216909}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{2}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::VisShape"}
+		s %Type{"plUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{17511354688337904510,14784529159805560262}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"StepGroup"}
+		s %Type{"plUInt8"}
+	}
+}
+o
+{
+	Uuid %id{u4{14595502005233596721,14962799841432824589}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x00008C42}
+	}
+}
+o
+{
+	Uuid %id{u4{903989849317184935,14972012000266074770}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Reference"}
+		s %Type{"plVec3"}
+	}
+}
+o
+{
+	Uuid %id{u4{3039576779061943607,14973711291289998338}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{10389770810464561044,1344483223638712675}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"FootRadius"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{11329410779208269671,15214768068935402424}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCameraComponent"}
+		u3 %TypeVersion{11}
+	}
+}
+o
+{
+	Uuid %id{u4{6890929376202490627,15270963260737169405}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{7933264396877909880,740944296008086822}}
+			Uuid{u4{15188717197472971583,3459494374735343838}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"AirSpeed"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{4696242410063861801,15451893044979669473}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803E}
+	}
+}
+o
+{
+	Uuid %id{u4{10412835299352727878,15508599155366886518}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEventMessageHandlerComponent"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{12621501544260860891,15719976691117957393}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginScene"}
+		VarArray %Properties{}
+		s %TypeName{"plExposedSceneProperty"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{4123808415515821066,15747792527151001842}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{10676557161248368840,6169156779974314583}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"ShapeRadius"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{4862719181471848392,16023915775579166190}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plGameObject"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13779694574326342493,16180254739080055084}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"plGameComponentsPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{10751866217214138096,7491399663311652214}}
+			Uuid{u4{17511354688337904510,14784529159805560262}}
+		}
+		s %TypeName{"plCreatureLeg"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14862077142389664058,16230621274651761940}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Angle %Max{f{0xDB0FC940}}
+		Angle %Min{f{0x35FA8E3C}}
+	}
+}
+o
+{
+	Uuid %id{u4{6853598190348858983,16453551367257532047}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plPropertyAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCategoryAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{15902986225652390530,16461629939562391074}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCameraMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11972976077471645691,16745253931469360606}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{12463304697521106597,5305462413689248552}}
+			Uuid{u4{17915220459848394583,9699250527427238989}}
+		}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Phantom"}
+		VarArray %Functions
+		{
+			Uuid{u4{9008829403314639641,1819090439634021808}}
+			Uuid{u4{10260927508552512959,3970188085532526993}}
+			Uuid{u4{9339754741367219407,8882077495200294043}}
+			Uuid{u4{1116931487240057759,2059798389607538946}}
+			Uuid{u4{3256699061213146819,11971211514043209971}}
+		}
+		s %ParentTypeName{"plJoltCharacterControllerComponent"}
+		s %PluginName{"plJoltPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{4123808415515821066,15747792527151001842}}
+			Uuid{u4{2809764402400982691,4973225637616362501}}
+			Uuid{u4{12308989171246115930,13586424100252555202}}
+			Uuid{u4{3039576779061943607,14973711291289998338}}
+			Uuid{u4{13475832781409691120,10367774053827141075}}
+			Uuid{u4{979733937745168214,10576361380444705418}}
+			Uuid{u4{8217408807290472030,10410173615702655075}}
+			Uuid{u4{6890929376202490627,15270963260737169405}}
+			Uuid{u4{5446501112162140383,12773223227455562395}}
+			Uuid{u4{5733083963758718110,2684202460982520321}}
+			Uuid{u4{11955855544140344054,4398899209473942728}}
+			Uuid{u4{10280051876748123164,7858969906100790003}}
+			Uuid{u4{5938943466470740930,4290830418883979603}}
+			Uuid{u4{16248206677505575021,13293606225161987129}}
+			Uuid{u4{16402152682135995807,18250644187908606481}}
+			Uuid{u4{1533444066723071287,18049208987942578997}}
+			Uuid{u4{3301433307287853383,2046149668870756920}}
+			Uuid{u4{17891041965597145891,17693265116839505267}}
+		}
+		s %TypeName{"plJoltDefaultCharacterComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{12661775193020935267,16827220566298091649}}
+	s %t{"plDynamicEnumAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %DynamicEnum{"PhysicsCollisionLayer"}
+	}
+}
+o
+{
+	Uuid %id{u4{13763750639594081062,16887305807912478212}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{12136145561342955480,13651072833686414765}}
+			Uuid{u4{13958467449340908312,14130583787237123576}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"MinLegDistance"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{9034201950270609983,16948441514505216795}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plAnimationInvisibleUpdateRate"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2396020895937527054,17189275590588014591}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plVisualizerAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCapsuleVisualizerAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11535798037055168367,17213676221427903975}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00007A44}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{13033624727069548121,17368468367984449402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11757807865453858210,17511012054791544513}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00401C46}
+		f %Min{0xCDCCCC3D}
+	}
+}
+o
+{
+	Uuid %id{u4{10185286335003077809,17639916773565430990}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{17891041965597145891,17693265116839505267}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13625170081560341228,6169092029167412499}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Phantom"}
+		s %Name{"HeadObject"}
+		s %Type{"plConstCharPtr"}
+	}
+}
+o
+{
+	Uuid %id{u4{698364993276436088,17804542439804637414}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plBasisAxis"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5224936404718545281,17945436251810594519}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00002041}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{10465458854296939264,17946045403219831108}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plTwoBoneIKComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{1533444066723071287,18049208987942578997}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{17401212197470617983,1204032170749021851}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"RunInteractionDistance"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{16402152682135995807,18250644187908606481}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13809163699384378583,18295874270863735387}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"WalkInteractionDistance"}
+		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{13809163699384378583,18295874270863735387}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{10906041495325220089,18389453445074689775}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x00002040}
+	}
+}
+o
+{
+	Uuid %id{u4{8491223255713017854,18427673401073801848}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		u3 %ConstantValue{8}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"plJoltCharacterDebugFlags::VisCasts"}
+		s %Type{"plUInt32"}
+	}
+}
+}
