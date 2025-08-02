@@ -1,0 +1,209 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{3105801934447399518,2774812282201720874}}
+	s %t{"plExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		f %DefaultValue{0x00002041}
+		s %Name{"Health"}
+		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{3973868820901997292,3537099733347966717}}
+	s %t{"plExposedParameters"}
+	u3 %v{3}
+	p
+	{
+		VarArray %Parameters
+		{
+			Uuid{u4{3105801934447399518,2774812282201720874}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{618666248987353019,4711465689612152433}}
+	s %t{"plAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"AngelScript"}
+		VarArray %Dependencies
+		{
+			s{"Scripts/Gameplay/BreakOnDamage.as"}
+		}
+		Uuid %DocumentID{u4{618666248987353019,4711465689612152433}}
+		u4 %Hash{8966104891470215005}
+		VarArray %MetaInfo
+		{
+			Uuid{u4{3973868820901997292,3537099733347966717}}
+		}
+		VarArray %Outputs{}
+		VarArray %PackageDeps{}
+		VarArray %References
+		{
+			s{"Scripts/Gameplay/BreakOnDamage.as"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{1212652974338289798,4790973425736956063}}
+	s %t{"plAngelScriptAssetProperties"}
+	u3 %v{1}
+	p
+	{
+		s %ClassName{"ScriptObject"}
+		s %Code{"class ScriptObject : plAngelScriptClass\n{\n\t// int PublicIntVar = 0;\n\n\tvoid OnSimulationStarted()\n\t{\n\t\t// plLog::Info(\"Simulation Started\");\n\t}\n\n\t// void Update() { }\n\n\t// void OnMsgTriggerTriggered(plMsgTriggerTriggered@ msg) { }\n}"}
+		VarArray %Dependencies{}
+		VarArray %Parameters
+		{
+			Uuid{u4{2757870313499929276,5336808522880873330}}
+		}
+		s %Source{"plAngelScriptCodeMode::FromFile"}
+		s %SourceFile{"Scripts/Gameplay/BreakOnDamage.as"}
+	}
+}
+o
+{
+	Uuid %id{u4{2757870313499929276,5336808522880873330}}
+	s %t{"plAngelScriptParameter"}
+	u3 %v{1}
+	p
+	{
+		s %Declaration{"float Health = 10"}
+		f %DefaultValue{0x00002041}
+		b %Expose{1}
+		s %Name{"Health"}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"plDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{1212652974338289798,4790973425736956063}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{17296955365090514657,175989706882942261}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginAngelScript"}
+		VarArray %Properties{}
+		s %TypeName{"plAngelScriptParameter"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7009381072334277535,9659459603664967231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{16819636187740221814,11089501717885464587}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{760375714984502126,14357891903497540822}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginAngelScript"}
+		VarArray %Properties{}
+		s %TypeName{"plAngelScriptAssetProperties"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13033624727069548121,17368468367984449402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{4575469196715251310,17710094185434946599}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginAngelScript"}
+		VarArray %Properties{}
+		s %TypeName{"plAngelScriptCodeMode"}
+		u3 %TypeVersion{1}
+	}
+}
+}
