@@ -9,6 +9,11 @@ bool plAiComponent::get_DebugInfo() const
 bool plAiNavMeshPathTestComponent::get_VisualizePathCorridor() const
 bool plAiNavMeshPathTestComponent::get_VisualizePathLine() const
 bool plAiNavMeshPathTestComponent::get_VisualizePathState() const
+bool plAiNavigationComponent::EnsureNavMeshSectorAvailable(plVec3 vCenter, float fRadius)
+bool plAiNavigationComponent::FindRandomPointAroundCircle(plVec3 vCenter, float fRadius, plVec3&out out_vPoint)
+bool plAiNavigationComponent::RaycastNavMesh(plVec3 vStart, plVec3 vDirection, float fDistance, plVec3&out out_vPoint, float&out out_fDistance)
+bool plAiNavigationComponent::get_ApplySteering() const
+bool plAimIKComponent::get_InversePoleVector() const
 bool plAngle::IsEqualNormalized(plAngle rhs, plAngle epsilon) const
 bool plAngle::IsEqualSimple(plAngle rhs, plAngle epsilon) const
 bool plAngle::opEquals(const plAngle&in) const
@@ -52,12 +57,13 @@ bool plEventMessageHandlerComponent::get_PassThroughUnhandledEvents() const
 bool plFakeRopeComponent::get_AttachToAnchor1() const
 bool plFakeRopeComponent::get_AttachToAnchor2() const
 bool plFillLightComponent::get_UseColorTemperature() const
+bool plFmodEventComponent::get_NoGlobalPitch() const
 bool plFmodEventComponent::get_Paused() const
 bool plFmodEventComponent::get_ShowDebugInfo() const
 bool plFmodEventComponent::get_UseOcclusion() const
 bool plFogComponent::get_ModulateWithSkyColor() const
-bool plFollowPathComponent::IsDirectionForwards() const
-bool plFollowPathComponent::get_Running() const
+bool plFollowSplineComponent::IsDirectionForwards() const
+bool plFollowSplineComponent::get_Running() const
 bool plGameObject::CreateComponent(?&out pTypedComponent)
 bool plGameObject::GetActiveFlag() const
 bool plGameObject::HasName(const plTempHashedString&in sName) const
@@ -137,12 +143,11 @@ bool plParticleComponent::IsEffectActive() const
 bool plParticleComponent::StartEffect()
 bool plParticleComponent::get_IgnoreOwnerRotation() const
 bool plParticleComponent::get_SpawnAtStart() const
-bool plPathComponent::get_Closed() const
 bool plPhysics::OverlapTestCapsule(float Radius, float Height, plTransform Transform, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3))
-bool plPhysics::OverlapTestLine(plVec3 Start, plVec3 End, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 4294967295)
+bool plPhysics::OverlapTestLine(plVec3 Start, plVec3 End, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 18446744073709551615)
 bool plPhysics::OverlapTestSphere(float Radius, plVec3 Position, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3))
-bool plPhysics::Raycast(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, plVec3 Start, plVec3 Direction, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 4294967295)
-bool plPhysics::RaycastSurfaceInteraction(plVec3 RayStart, plVec3 RayDirection, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes, plStringView FallbackSurface, plTempHashedString Interaction, float Impulse = 0, uint IgnoreObjectID = 4294967295)
+bool plPhysics::Raycast(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, plVec3 Start, plVec3 Direction, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 18446744073709551615)
+bool plPhysics::RaycastSurfaceInteraction(plVec3 RayStart, plVec3 RayDirection, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes, plStringView FallbackSurface, plTempHashedString Interaction, float Impulse = 0, uint IgnoreObjectID = 18446744073709551615)
 bool plPhysics::SweepTestCapsule(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, float Radius, float Height, plTransform Start, plVec3 Direction, float Distance, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3))
 bool plPhysics::SweepTestSphere(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, float Radius, plVec3 Start, plVec3 Direction, float Distance, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3))
 bool plPowerConnectorComponent::IsAttached() const
@@ -165,6 +170,7 @@ bool plResetTransformComponent::get_ResetPositionZ() const
 bool plResetTransformComponent::get_ResetRotation() const
 bool plResetTransformComponent::get_ResetScaling() const
 bool plRmlUiCanvas2DComponent::get_AutobindBlackboards() const
+bool plRmlUiCanvas2DComponent::get_OnDemandUpdate() const
 bool plRmlUiCanvas2DComponent::get_PassInput() const
 bool plRopeRenderComponent::get_Subdivide() const
 bool plSceneTransitionComponent::get_RelativeSpawnPosition() const
@@ -189,6 +195,8 @@ bool plSpawnComponent::get_AttachAsChild() const
 bool plSpawnComponent::get_SpawnAtStart() const
 bool plSpawnComponent::get_SpawnContinuously() const
 bool plSphereReflectionProbeComponent::get_SphereProjection() const
+bool plSplineComponent::get_Closed() const
+bool plSplineNodeComponent::get_LinkCustomTangents() const
 bool plStateMachineComponent::SetState(plStringView Name)
 bool plString::EndsWith(plStringView) const
 bool plString::EndsWith_NoCase(plStringView) const
@@ -321,6 +329,7 @@ float plAiNavigationComponent::get_FallHeight() const
 float plAiNavigationComponent::get_FootRadius() const
 float plAiNavigationComponent::get_ReachedDistance() const
 float plAiNavigationComponent::get_Speed() const
+float plAimIKComponent::get_DebugVisScale() const
 float plAimIKComponent::get_Weight() const
 float plAmbientLightComponent::get_Intensity() const
 float plAngle::DegToRad(float fDegree)
@@ -392,11 +401,12 @@ float plFogComponent::get_Density() const
 float plFogComponent::get_HeightFalloff() const
 float plFogComponent::get_SkyDistance() const
 float plFogComponent::get_VolumetricDensity() const
-float plFollowPathComponent::get_LookAhead() const
-float plFollowPathComponent::get_Smoothing() const
-float plFollowPathComponent::get_Speed() const
-float plFollowPathComponent::get_StartDistance() const
-float plFollowPathComponent::get_TiltAmount() const
+float plFollowSplineComponent::GetCurrentDistance() const
+float plFollowSplineComponent::get_LookAhead() const
+float plFollowSplineComponent::get_Smoothing() const
+float plFollowSplineComponent::get_Speed() const
+float plFollowSplineComponent::get_StartDistance() const
+float plFollowSplineComponent::get_TiltAmount() const
 float plGameObject::GetLocalUniformScaling() const
 float plGreyBoxComponent::get_SizeNegX() const
 float plGreyBoxComponent::get_SizeNegY() const
@@ -453,6 +463,7 @@ float plJoltGrabObjectComponent::get_SpringDamping() const
 float plJoltGrabObjectComponent::get_SpringStiffness() const
 float plJoltHingeConstraintComponent::get_DriveStrength() const
 float plJoltHingeConstraintComponent::get_Friction() const
+float plJoltRagdollComponent::GetJointMotorStrength() const
 float plJoltRagdollComponent::get_CenterAngularVelocity() const
 float plJoltRagdollComponent::get_CenterVelocity() const
 float plJoltRagdollComponent::get_GravityFactor() const
@@ -530,7 +541,6 @@ float plMsgSetCustomData::get_Data1() const
 float plMsgSetCustomData::get_Data2() const
 float plMsgSetCustomData::get_Data3() const
 float plMsgSetFloatParameter::get_Value() const
-float plPathComponent::get_Detail() const
 float plPointLightComponent::get_Falloff() const
 float plPointLightComponent::get_Range() const
 float plPointLightComponent::get_ShadowFadeOutRange() const
@@ -581,6 +591,8 @@ float plSnowComponent::get_SnowWrapping() const
 float plSnowComponent::get_SnowWrappingNoise() const
 float plSphereReflectionProbeComponent::get_Falloff() const
 float plSphereReflectionProbeComponent::get_Radius() const
+float plSplineComponent::GetKeyAtDistance(float Distance) const
+float plSplineComponent::GetTotalLength() const
 float plSpotLightComponent::get_Falloff() const
 float plSpotLightComponent::get_Range() const
 float plSpotLightComponent::get_ShadowFadeOutRange() const
@@ -597,15 +609,20 @@ float plThirdPersonViewComponent::get_ZoomOutSpeed() const
 float plTime::AsFloatInSeconds() const
 float plTransform::GetMaxScale() const
 float plTransformComponent::get_Speed() const
+float plTwoBoneIKComponent::get_DebugVisScale() const
 float plTwoBoneIKComponent::get_Weight() const
 float plVec2::Dot(const plVec2&in) const
+float plVec2::GetDistanceTo(const plVec2&in rhs) const
 float plVec2::GetLength() const
 float plVec2::GetLengthAndNormalize()
 float plVec2::GetLengthSquared() const
+float plVec2::GetSquaredDistanceTo(const plVec2&in rhs) const
 float plVec3::Dot(const plVec3&in) const
+float plVec3::GetDistanceTo(const plVec3&in rhs) const
 float plVec3::GetLength() const
 float plVec3::GetLengthAndNormalize()
 float plVec3::GetLengthSquared() const
+float plVec3::GetSquaredDistanceTo(const plVec3&in rhs) const
 float plVec4::Dot(const plVec4&in) const
 float plVec4::GetLength() const
 float plVec4::GetLengthAndNormalize()
@@ -673,6 +690,7 @@ plAiNavigationComponentState::Fallen
 plAiNavigationComponentState::Falling
 plAiNavigationComponentState::Idle
 plAiNavigationComponentState::Moving
+plAiNavigationComponentState::Turning
 plAiNavigationDebugFlags plAiNavigationComponent::get_DebugFlags() const
 plAiNavigationDebugFlags::PrintState
 plAiNavigationDebugFlags::VisPathCorridor
@@ -683,6 +701,7 @@ plAlwaysVisibleComponent@ plComponent::opCast()
 plAlwaysVisibleComponent@ plRenderComponent::opCast()
 plAmbientLightComponent@ plComponent::opCast()
 plAmbientLightComponent@ plSettingsComponent::opCast()
+plAngle plAiNavigationComponent::GetTurnAngleTowards(plVec2 TargetPosition) const
 plAngle plAngle::AngleBetween(plAngle a1, plAngle a2)
 plAngle plAngle::GetNormalizedRange() const
 plAngle plAngle::MakeFromDegree(float fDegree)
@@ -700,7 +719,7 @@ plAngle plCameraShakeComponent::get_MaxShake() const
 plAngle plCameraShakeComponent::get_MinShake() const
 plAngle plDecalComponent::get_InnerFadeAngle() const
 plAngle plDecalComponent::get_OuterFadeAngle() const
-plAngle plFollowPathComponent::get_MaxTilt() const
+plAngle plFollowSplineComponent::get_MaxTilt() const
 plAngle plGreyBoxComponent::get_Curvature() const
 plAngle plHeadBoneComponent::get_VerticalRotation() const
 plAngle plJoltCharacterControllerComponent::get_MaxClimbingSlope() const
@@ -722,7 +741,6 @@ plAngle plMath::ATan2(float x, float y)
 plAngle plMsgApplyRootMotion::get_RotationX() const
 plAngle plMsgApplyRootMotion::get_RotationY() const
 plAngle plMsgApplyRootMotion::get_RotationZ() const
-plAngle plPathNodeComponent::get_Roll() const
 plAngle plRotorComponent::get_AxisDeviation() const
 plAngle plScriptComponent::GetScriptVariable_asAngle(plHashedString Name) const
 plAngle plSensorConeComponent::get_Angle() const
@@ -730,6 +748,7 @@ plAngle plSimpleWindComponent::get_MaxDeviation() const
 plAngle plSpawnBoxComponent::get_MaxRotationZ() const
 plAngle plSpawnBoxComponent::get_MaxTiltZ() const
 plAngle plSpawnComponent::get_Deviation() const
+plAngle plSplineNodeComponent::get_Roll() const
 plAngle plSpotLightComponent::get_InnerSpotAngle() const
 plAngle plSpotLightComponent::get_OuterSpotAngle() const
 plAngle plThirdPersonViewComponent::get_MaxUpRotation() const
@@ -1044,7 +1063,7 @@ plComponent@ plFmodComponent::opImplCast()
 plComponent@ plFmodEventComponent::opImplCast()
 plComponent@ plFmodListenerComponent::opImplCast()
 plComponent@ plFogComponent::opImplCast()
-plComponent@ plFollowPathComponent::opImplCast()
+plComponent@ plFollowSplineComponent::opImplCast()
 plComponent@ plForwardEventsToGameStateComponent::opImplCast()
 plComponent@ plGizmoComponent::opImplCast()
 plComponent@ plGlobalBlackboardComponent::opImplCast()
@@ -1102,8 +1121,6 @@ plComponent@ plNavMeshObstacleComponent::opImplCast()
 plComponent@ plOccluderComponent::opImplCast()
 plComponent@ plParticleComponent::opImplCast()
 plComponent@ plParticleFinisherComponent::opImplCast()
-plComponent@ plPathComponent::opImplCast()
-plComponent@ plPathNodeComponent::opImplCast()
 plComponent@ plPlayerStartPointComponent::opImplCast()
 plComponent@ plPointLightComponent::opImplCast()
 plComponent@ plPostProcessingComponent::opImplCast()
@@ -1145,6 +1162,8 @@ plComponent@ plSpatialAnchorComponent::opImplCast()
 plComponent@ plSpawnBoxComponent::opImplCast()
 plComponent@ plSpawnComponent::opImplCast()
 plComponent@ plSphereReflectionProbeComponent::opImplCast()
+plComponent@ plSplineComponent::opImplCast()
+plComponent@ plSplineNodeComponent::opImplCast()
 plComponent@ plSpotLightComponent::opImplCast()
 plComponent@ plSpriteComponent::opImplCast()
 plComponent@ plStageSpaceComponent::opImplCast()
@@ -1195,9 +1214,9 @@ plEventMessage@ plMsgDamage::opImplCast()
 plEventMessage@ plMsgFmodSoundFinished::opImplCast()
 plEventMessage@ plMsgGenericEvent::opImplCast()
 plEventMessage@ plMsgInputActionTriggered::opImplCast()
-plEventMessage@ plMsgPathChanged::opImplCast()
 plEventMessage@ plMsgPhysicsJointBroke::opImplCast()
 plEventMessage@ plMsgSensorDetectedObjectsChanged::opImplCast()
+plEventMessage@ plMsgSplineChanged::opImplCast()
 plEventMessage@ plMsgStateMachineStateChanged::opImplCast()
 plEventMessage@ plMsgTriggerTriggered::opImplCast()
 plEventMessageHandlerComponent@ plComponent::opCast()
@@ -1221,11 +1240,11 @@ plFmodListenerComponent@ plComponent::opCast()
 plFmodListenerComponent@ plFmodComponent::opCast()
 plFogComponent@ plComponent::opCast()
 plFogComponent@ plSettingsComponent::opCast()
-plFollowPathComponent@ plComponent::opCast()
-plFollowPathMode plFollowPathComponent::get_FollowMode() const
-plFollowPathMode::AlignUpZ
-plFollowPathMode::FullRotation
-plFollowPathMode::OnlyPosition
+plFollowSplineComponent@ plComponent::opCast()
+plFollowSplineMode plFollowSplineComponent::get_FollowMode() const
+plFollowSplineMode::AlignUpZ
+plFollowSplineMode::FullRotation
+plFollowSplineMode::OnlyPosition
 plForwardEventsToGameStateComponent@ plComponent::opCast()
 plForwardEventsToGameStateComponent@ plEventMessageHandlerComponent::opCast()
 plGameObject@ GetScriptOwnerObject(plIAngelScriptClass@ self)
@@ -1244,6 +1263,7 @@ plGameObjectHandle plMsgPhysicsJointBroke::get_JointObject() const
 plGameObjectHandle plMsgReleaseObjectGrab::get_GrabbedObjectToRelease() const
 plGameObjectHandle plMsgTriggerTriggered::get_GameObject() const
 plGameObjectHandle plScriptComponent::GetScriptVariable_asGameObjectHandle(plHashedString Name) const
+plGameObjectHandle plSensorComponent::GetDetectedObject(uint uiIndex) const
 plGameObjectHandle plVolumeComponent::GetValue_asGameObjectHandle(plTempHashedString Name) const
 plGameObjectHandle plWorld::CreateObject(const plGameObjectDesc&in desc)
 plGameObjectHandle plWorld::CreateObject(const plGameObjectDesc&in desc, plGameObject@&out object)
@@ -1369,6 +1389,11 @@ plJoltPointConstraintComponent@ plComponent::opCast()
 plJoltPointConstraintComponent@ plJoltConstraintComponent::opCast()
 plJoltQueryShapeActorComponent@ plComponent::opCast()
 plJoltQueryShapeActorComponent@ plJoltActorComponent::opCast()
+plJoltRagdollAnimMode plJoltRagdollComponent::get_AnimMode() const
+plJoltRagdollAnimMode::Controlled
+plJoltRagdollAnimMode::Limp
+plJoltRagdollAnimMode::Off
+plJoltRagdollAnimMode::Powered
 plJoltRagdollComponent@ plComponent::opCast()
 plJoltRagdollStartMode plJoltRagdollComponent::get_StartMode() const
 plJoltRagdollStartMode::WithBindPose
@@ -1473,11 +1498,11 @@ plMessage@ plMsgExtractVolumes::opImplCast()
 plMessage@ plMsgFmodSoundFinished::opImplCast()
 plMessage@ plMsgGenericEvent::opImplCast()
 plMessage@ plMsgInputActionTriggered::opImplCast()
+plMessage@ plMsgInterruptPlaying::opImplCast()
 plMessage@ plMsgMoveCharacterController::opImplCast()
 plMessage@ plMsgObjectGrabbed::opImplCast()
 plMessage@ plMsgOnlyApplyToObject::opImplCast()
 plMessage@ plMsgParentChanged::opImplCast()
-plMessage@ plMsgPathChanged::opImplCast()
 plMessage@ plMsgPhysicCharacterContact::opImplCast()
 plMessage@ plMsgPhysicContact::opImplCast()
 plMessage@ plMsgPhysicsAddImpulse::opImplCast()
@@ -1493,6 +1518,7 @@ plMessage@ plMsgSetCustomData::opImplCast()
 plMessage@ plMsgSetFloatParameter::opImplCast()
 plMessage@ plMsgSetMeshMaterial::opImplCast()
 plMessage@ plMsgSetPlaying::opImplCast()
+plMessage@ plMsgSplineChanged::opImplCast()
 plMessage@ plMsgStateMachineStateChanged::opImplCast()
 plMessage@ plMsgTransformChanged::opImplCast()
 plMessage@ plMsgTriggerTriggered::opImplCast()
@@ -1526,12 +1552,11 @@ plMsgGenericEvent@ plEventMessage::opCast()
 plMsgGenericEvent@ plMessage::opCast()
 plMsgInputActionTriggered@ plEventMessage::opCast()
 plMsgInputActionTriggered@ plMessage::opCast()
+plMsgInterruptPlaying@ plMessage::opCast()
 plMsgMoveCharacterController@ plMessage::opCast()
 plMsgObjectGrabbed@ plMessage::opCast()
 plMsgOnlyApplyToObject@ plMessage::opCast()
 plMsgParentChanged@ plMessage::opCast()
-plMsgPathChanged@ plEventMessage::opCast()
-plMsgPathChanged@ plMessage::opCast()
 plMsgPhysicCharacterContact@ plMessage::opCast()
 plMsgPhysicContact@ plMessage::opCast()
 plMsgPhysicsAddImpulse@ plMessage::opCast()
@@ -1549,6 +1574,8 @@ plMsgSetCustomData@ plMessage::opCast()
 plMsgSetFloatParameter@ plMessage::opCast()
 plMsgSetMeshMaterial@ plMessage::opCast()
 plMsgSetPlaying@ plMessage::opCast()
+plMsgSplineChanged@ plEventMessage::opCast()
+plMsgSplineChanged@ plMessage::opCast()
 plMsgStateMachineStateChanged@ plEventMessage::opCast()
 plMsgStateMachineStateChanged@ plMessage::opCast()
 plMsgTransformChanged@ plMessage::opCast()
@@ -1586,15 +1613,6 @@ plParticleComponent@ plComponent::opCast()
 plParticleComponent@ plRenderComponent::opCast()
 plParticleFinisherComponent@ plComponent::opCast()
 plParticleFinisherComponent@ plRenderComponent::opCast()
-plPathComponent@ plComponent::opCast()
-plPathComponentFlags plPathComponent::get_Flags() const
-plPathComponentFlags::VisualizePath
-plPathComponentFlags::VisualizeUpDir
-plPathNodeComponent@ plComponent::opCast()
-plPathNodeTangentMode plPathNodeComponent::get_Tangent1() const
-plPathNodeTangentMode plPathNodeComponent::get_Tangent2() const
-plPathNodeTangentMode::Auto
-plPathNodeTangentMode::Linear
 plPhysicsShapeType plProjectileComponent::get_ShapeTypesToHit() const
 plPhysicsShapeType plRaycastComponent::get_ShapeTypesToHit() const
 plPhysicsShapeType::Character
@@ -1641,12 +1659,13 @@ plProcVolumeSphereComponent@ plProcVolumeComponent::opCast()
 plProjectileComponent@ plComponent::opCast()
 plPropertyAnimComponent@ plComponent::opCast()
 plPropertyAnimMode plColorAnimationComponent::get_AnimationMode() const
-plPropertyAnimMode plFollowPathComponent::get_Mode() const
+plPropertyAnimMode plFollowSplineComponent::get_Mode() const
 plPropertyAnimMode plPropertyAnimComponent::get_Mode() const
 plPropertyAnimMode plSimpleAnimationComponent::get_AnimationMode() const
 plPropertyAnimMode::BackAndForth
 plPropertyAnimMode::Loop
 plPropertyAnimMode::Once
+plQuat plAiNavigationComponent::GetSteeringRotation() const
 plQuat plBlackboardComponent::GetEntryValue_asQuat(plString Name) const
 plQuat plCVar::GetValue_asQuat(plStringView Name)
 plQuat plGameObject::GetGlobalRotation() const
@@ -1784,6 +1803,17 @@ plSpawnBoxComponent@ plComponent::opCast()
 plSpawnComponent@ plComponent::opCast()
 plSphereReflectionProbeComponent@ plComponent::opCast()
 plSphereReflectionProbeComponent@ plReflectionProbeComponentBase::opCast()
+plSplineComponent@ plComponent::opCast()
+plSplineComponentFlags plSplineComponent::get_Flags() const
+plSplineComponentFlags::VisualizeSpline
+plSplineComponentFlags::VisualizeTangents
+plSplineComponentFlags::VisualizeUpDir
+plSplineNodeComponent@ plComponent::opCast()
+plSplineTangentMode plSplineNodeComponent::get_TangentModeIn() const
+plSplineTangentMode plSplineNodeComponent::get_TangentModeOut() const
+plSplineTangentMode::Auto
+plSplineTangentMode::Custom
+plSplineTangentMode::Linear
 plSpotLightComponent@ plComponent::opCast()
 plSpotLightComponent@ plLightComponent::opCast()
 plSpotLightComponent@ plRenderComponent::opCast()
@@ -1816,8 +1846,7 @@ plString plDebugTextComponent::get_Text() const
 plString plDecalComponent::get_ApplyToDynamic() const
 plString plFakeRopeComponent::get_Anchor1() const
 plString plFakeRopeComponent::get_Anchor2() const
-plString plFmodEventComponent::get_SoundEvent() const
-plString plFollowPathComponent::get_Path() const
+plString plFollowSplineComponent::get_Spline() const
 plString plGlobalBlackboardComponent::get_BlackboardName() const
 plString plGreyBoxComponent::get_Material() const
 plString plHeightfieldComponent::get_HeightfieldImage() const
@@ -1848,7 +1877,6 @@ plString plMsgInputActionTriggered::get_InputAction() const
 plString plMsgSetFloatParameter::get_Name() const
 plString plMsgStateMachineStateChanged::get_NewStateName() const
 plString plMsgStateMachineStateChanged::get_OldStateName() const
-plString plParticleComponent::get_Effect() const
 plString plParticleComponent::get_SharedInstanceName() const
 plString plPlayerStartPointComponent::get_PlayerPrefab() const
 plString plPostProcessingComponent::get_VolumeType() const
@@ -1862,7 +1890,6 @@ plString plProjectileComponent::get_FallbackSurface() const
 plString plProjectileComponent::get_OnDeathPrefab() const
 plString plPropertyAnimComponent::get_Animation() const
 plString plRaycastComponent::get_RaycastEndObject() const
-plString plRmlUiCanvas2DComponent::get_RmlFile() const
 plString plScriptComponent::GetScriptVariable_asString(plHashedString Name) const
 plString plSensorComponent::get_SpatialCategory() const
 plString plSimpleAnimationComponent::get_AnimationClip() const
@@ -1882,6 +1909,7 @@ plString plVolumeComponent::GetValue_asString(plTempHashedString Name) const
 plString plVolumeComponent::get_Template() const
 plString plVolumeComponent::get_Type() const
 plStringView plAnimationControllerComponent::get_AnimGraph() const
+plStringView plFmodEventComponent::get_SoundEvent() const
 plStringView plGameObject::GetGlobalKey() const
 plStringView plGameObject::GetName() const
 plStringView plHashedString::GetView() const
@@ -1896,7 +1924,9 @@ plStringView plJoltStaticActorComponent::get_CollisionMesh() const
 plStringView plJoltStaticActorComponent::get_Surface() const
 plStringView plJoltVisColMeshComponent::get_CollisionMesh() const
 plStringView plMsgSetMeshMaterial::get_Material() const
+plStringView plParticleComponent::get_Effect() const
 plStringView plRenderTargetActivatorComponent::get_RenderTarget() const
+plStringView plRmlUiCanvas2DComponent::get_RmlFile() const
 plStringView plRopeRenderComponent::get_Material() const
 plStringView plScriptComponent::get_ScriptClass() const
 plStringView plSkeletonComponent::get_Skeleton() const
@@ -1982,6 +2012,8 @@ plTimedDeathComponent@ plComponent::opCast()
 plTransform plGameObject::GetGlobalTransform() const
 plTransform plGameObject::GetLastGlobalTransform() const
 plTransform plGameObject::GetLocalTransform() const
+plTransform plSplineComponent::GetTransformAtDistance(float Distance) const
+plTransform plSplineComponent::GetTransformAtKey(float Key) const
 plTransform plTransform::GetInverse() const
 plTransform plTransform::Make(const plVec3&in vPosition, const plQuat&in qRotation = plQuat::MakeIdentity(), const plVec3&in vScale = plVec3(1))
 plTransform plTransform::MakeFromMat4(const plMat4&in)
@@ -2050,6 +2082,7 @@ plVec2 plVec2::opSub(const plVec2&in) const
 plVec2 plVec3::GetAsVec2() const
 plVec2 plVec4::GetAsVec2() const
 plVec2 plVolumeComponent::GetValue_asVec2(plTempHashedString Name) const
+plVec3 plAiNavigationComponent::GetSteeringPosition() const
 plVec3 plBakedProbesComponent::get_TestPosition() const
 plVec3 plBakedProbesVolumeComponent::get_Extents() const
 plVec3 plBlackboardComponent::GetEntryValue_asVec3(plString Name) const
@@ -2102,6 +2135,16 @@ plVec3 plResetTransformComponent::get_LocalPosition() const
 plVec3 plResetTransformComponent::get_LocalScaling() const
 plVec3 plScriptComponent::GetScriptVariable_asVec3(plHashedString Name) const
 plVec3 plSpawnBoxComponent::get_HalfExtents() const
+plVec3 plSplineComponent::GetForwardDirAtDistance(float Distance) const
+plVec3 plSplineComponent::GetForwardDirAtKey(float Key) const
+plVec3 plSplineComponent::GetPositionAtDistance(float Distance) const
+plVec3 plSplineComponent::GetPositionAtKey(float Key) const
+plVec3 plSplineComponent::GetScaleAtDistance(float Distance) const
+plVec3 plSplineComponent::GetScaleAtKey(float Key) const
+plVec3 plSplineComponent::GetUpDirAtDistance(float Distance) const
+plVec3 plSplineComponent::GetUpDirAtKey(float Key) const
+plVec3 plSplineNodeComponent::get_CustomTangentIn() const
+plVec3 plSplineNodeComponent::get_CustomTangentOut() const
 plVec3 plThirdPersonViewComponent::get_TargetOffsetHigh() const
 plVec3 plThirdPersonViewComponent::get_TargetOffsetLow() const
 plVec3 plTransform::TransformDirection(const plVec3&in vDirection) const
@@ -2258,6 +2301,8 @@ uint plMsgSetMeshMaterial::get_MaterialSlot() const
 uint plRandom::UInt()
 uint plRandom::UIntInRange(uint uiRange)
 uint plRopeRenderComponent::get_Detail() const
+uint plSensorComponent::GetDetectedObjectsCount() const
+uint plSplineComponent::GetChangeCounter() const
 uint plSpotLightComponent::get_MaterialResolution() const
 uint plString::GetElementCount() const
 uint plStringBuilder::GetCharacterCount() const
@@ -2265,6 +2310,7 @@ uint plStringBuilder::GetElementCount() const
 uint plStringBuilder::ReplaceAll(plStringView sSearchFor, plStringView sReplacement)
 uint plStringBuilder::ReplaceAll_NoCase(plStringView sSearchFor, plStringView sReplacement)
 uint plStringView::GetElementCount() const
+uint16 plAimIKComponent::get_Order() const
 uint16 plEventMsgSetPowerInput::get_NewValue() const
 uint16 plEventMsgSetPowerInput::get_PrevValue() const
 uint16 plFakeRopeComponent::get_Pieces() const
@@ -2275,6 +2321,7 @@ uint16 plKrautTreeComponent::get_VariationIndex() const
 uint16 plPowerConnectorComponent::get_Output() const
 uint16 plSpawnBoxComponent::get_MinSpawnCount() const
 uint16 plSpawnBoxComponent::get_SpawnCountRange() const
+uint16 plTwoBoneIKComponent::get_Order() const
 uint64 plParticleComponent::get_RandomSeed() const
 uint8 plAreaDamageComponent::get_CollisionLayer() const
 uint8 plFmodEventComponent::get_OcclusionCollisionLayer() const
@@ -2297,6 +2344,7 @@ uint8 plPhysics::GetWeightCategoryByName(plStringView Name)
 uint8 plProjectileComponent::get_CollisionLayer() const
 uint8 plRaycastComponent::get_CollisionLayerEndPoint() const
 uint8 plSensorComponent::get_CollisionLayer() const
+uint8 plSplineComponent::get_EditNodes() const
 uint8 plThirdPersonViewComponent::get_CollisionLayer() const
 void T[]::Clear()
 void T[]::InsertAt(uint index, const T&in value)
@@ -2318,7 +2366,10 @@ void plAiNavMeshPathTestComponent::set_VisualizePathLine(bool)
 void plAiNavMeshPathTestComponent::set_VisualizePathState(bool)
 void plAiNavigationComponent::CancelNavigation()
 void plAiNavigationComponent::SetDestination(plVec3 Destination, bool AllowPartialPaths)
+void plAiNavigationComponent::StopWalking(float WithinDistance)
+void plAiNavigationComponent::TurnTowards(plVec2 TargetPosition)
 void plAiNavigationComponent::set_Acceleration(float)
+void plAiNavigationComponent::set_ApplySteering(bool)
 void plAiNavigationComponent::set_CollisionLayer(uint)
 void plAiNavigationComponent::set_DebugFlags(plAiNavigationDebugFlags)
 void plAiNavigationComponent::set_Deceleration(float)
@@ -2328,7 +2379,10 @@ void plAiNavigationComponent::set_NavmeshConfig(plHashedString)
 void plAiNavigationComponent::set_PathSearchConfig(plHashedString)
 void plAiNavigationComponent::set_ReachedDistance(float)
 void plAiNavigationComponent::set_Speed(float)
+void plAimIKComponent::set_DebugVisScale(float)
 void plAimIKComponent::set_ForwardVector(plBasisAxis)
+void plAimIKComponent::set_InversePoleVector(bool)
+void plAimIKComponent::set_Order(uint16)
 void plAimIKComponent::set_UpVector(plBasisAxis)
 void plAimIKComponent::set_Weight(float)
 void plAmbientLightComponent::set_BottomColor(plColorGammaUB)
@@ -2515,12 +2569,14 @@ void plFmodEventComponent::SetEventParameter(plString ParamName, float Value)
 void plFmodEventComponent::SoundCue()
 void plFmodEventComponent::StartOneShot()
 void plFmodEventComponent::Stop()
+void plFmodEventComponent::set_NoGlobalPitch(bool)
 void plFmodEventComponent::set_OcclusionCollisionLayer(uint8)
 void plFmodEventComponent::set_OcclusionThreshold(float)
 void plFmodEventComponent::set_OnFinishedAction(plOnComponentFinishedAction)
 void plFmodEventComponent::set_Paused(bool)
 void plFmodEventComponent::set_Pitch(float)
 void plFmodEventComponent::set_ShowDebugInfo(bool)
+void plFmodEventComponent::set_SoundEvent(plStringView)
 void plFmodEventComponent::set_UseOcclusion(bool)
 void plFmodEventComponent::set_Volume(float)
 void plFmodListenerComponent::set_ListenerIndex(uint8)
@@ -2530,17 +2586,18 @@ void plFogComponent::set_HeightFalloff(float)
 void plFogComponent::set_ModulateWithSkyColor(bool)
 void plFogComponent::set_SkyDistance(float)
 void plFogComponent::set_VolumetricDensity(float)
-void plFollowPathComponent::SetDirectionForwards(bool Forwards)
-void plFollowPathComponent::ToggleDirection()
-void plFollowPathComponent::set_FollowMode(plFollowPathMode)
-void plFollowPathComponent::set_LookAhead(float)
-void plFollowPathComponent::set_MaxTilt(plAngle)
-void plFollowPathComponent::set_Mode(plPropertyAnimMode)
-void plFollowPathComponent::set_Running(bool)
-void plFollowPathComponent::set_Smoothing(float)
-void plFollowPathComponent::set_Speed(float)
-void plFollowPathComponent::set_StartDistance(float)
-void plFollowPathComponent::set_TiltAmount(float)
+void plFollowSplineComponent::SetCurrentDistance(float Distance)
+void plFollowSplineComponent::SetDirectionForwards(bool Forwards)
+void plFollowSplineComponent::ToggleDirection()
+void plFollowSplineComponent::set_FollowMode(plFollowSplineMode)
+void plFollowSplineComponent::set_LookAhead(float)
+void plFollowSplineComponent::set_MaxTilt(plAngle)
+void plFollowSplineComponent::set_Mode(plPropertyAnimMode)
+void plFollowSplineComponent::set_Running(bool)
+void plFollowSplineComponent::set_Smoothing(float)
+void plFollowSplineComponent::set_Speed(float)
+void plFollowSplineComponent::set_StartDistance(float)
+void plFollowSplineComponent::set_TiltAmount(float)
 void plGameObject::AddChild(const plGameObjectHandle&in hChild, plTransformPreservation preserve = plTransformPreservation::PreserveGlobal)
 void plGameObject::DetachChild(const plGameObjectHandle&in hChild, plTransformPreservation preserve = plTransformPreservation::PreserveGlobal)
 void plGameObject::MakeDynamic()
@@ -2721,8 +2778,11 @@ void plJoltHitboxComponent::set_QueryShapeOnly(bool)
 void plJoltHitboxComponent::set_UpdateThreshold(plTime)
 void plJoltQueryShapeActorComponent::set_Surface(plStringView)
 void plJoltRagdollComponent::AddInitialImpulse(plVec3 vWorldPosition, plVec3 vWorldDirectionAndStrength)
+void plJoltRagdollComponent::FadeJointMotorStrength(float fTargetStrength, plTime tDuration)
 void plJoltRagdollComponent::SetInitialImpulse(plVec3 vWorldPosition, plVec3 vWorldDirectionAndStrength)
-void plJoltRagdollComponent::SetJointTypeOverride(plStringView JointName, plSkeletonJointType OverrideType)
+void plJoltRagdollComponent::SetJointMotorStrength(float fStrength)
+void plJoltRagdollComponent::SetJointTypeOverride(plStringView sJointName, plSkeletonJointType overrideType)
+void plJoltRagdollComponent::set_AnimMode(plJoltRagdollAnimMode)
 void plJoltRagdollComponent::set_CenterAngularVelocity(float)
 void plJoltRagdollComponent::set_CenterPosition(plVec3)
 void plJoltRagdollComponent::set_CenterVelocity(float)
@@ -2820,33 +2880,33 @@ void plLodMeshComponent::set_CustomData(plVec4)
 void plLodMeshComponent::set_OverlapRanges(bool)
 void plLodMeshComponent::set_ShowDebugInfo(bool)
 void plLodMeshComponent::set_SortingDepthOffset(float)
-void plLog::Error(plStringView Text)
-void plLog::Error(plStringView Text, ?&in VarArg1)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7)
-void plLog::Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8)
-void plLog::Info(plStringView Text)
-void plLog::Info(plStringView Text, ?&in VarArg1)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7)
-void plLog::Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8)
-void plLog::Warning(plStringView Text)
-void plLog::Warning(plStringView Text, ?&in VarArg1)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7)
-void plLog::Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8)
+void plLog::Error(plStringView)
+void plLog::Error(plStringView, ?&in VarArg1)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7)
+void plLog::Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8)
+void plLog::Info(plStringView)
+void plLog::Info(plStringView, ?&in VarArg1)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7)
+void plLog::Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8)
+void plLog::Warning(plStringView)
+void plLog::Warning(plStringView, ?&in VarArg1)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7)
+void plLog::Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8)
 void plMarkerComponent::set_Radius(float)
 void plMeshComponent::set_Color(plColor)
 void plMeshComponent::set_CustomData(plVec4)
@@ -2916,6 +2976,7 @@ void plOccluderComponent::set_Extents(plVec3)
 void plOccluderComponent::set_Type(plOccluderType)
 void plParticleComponent::InterruptEffect()
 void plParticleComponent::StopEffect()
+void plParticleComponent::set_Effect(plStringView)
 void plParticleComponent::set_IgnoreOwnerRotation(bool)
 void plParticleComponent::set_MinRestartDelay(plTime)
 void plParticleComponent::set_OnFinishedAction(plOnComponentFinishedAction2)
@@ -2924,19 +2985,13 @@ void plParticleComponent::set_RestartDelayRange(plTime)
 void plParticleComponent::set_SharedInstanceName(plString)
 void plParticleComponent::set_SpawnAtStart(bool)
 void plParticleComponent::set_SpawnDirection(plBasisAxis)
-void plPathComponent::set_Closed(bool)
-void plPathComponent::set_Detail(float)
-void plPathComponent::set_Flags(plPathComponentFlags)
-void plPathNodeComponent::set_Roll(plAngle)
-void plPathNodeComponent::set_Tangent1(plPathNodeTangentMode)
-void plPathNodeComponent::set_Tangent2(plPathNodeTangentMode)
 void plPointLightComponent::set_Falloff(float)
 void plPointLightComponent::set_Range(float)
 void plPointLightComponent::set_ShadowFadeOutRange(float)
 void plPowerConnectorComponent::Detach()
 void plPowerConnectorComponent::set_Output(uint16)
-void plPrefabs::SpawnPrefab(plStringView Prefab, plTransform GlobalTransform, plVec3 RelativePos, plQuat RelativeRotation)
-void plPrefabs::SpawnPrefabAsChild(plStringView Prefab, plGameObject@ Parent, plVec3 RelativePos, plQuat RelativeRotation)
+void plPrefabs::SpawnPrefab(plStringView Prefab, plTransform GlobalTransform, uint UniqueID = 4294967295, bool SetCreatedByPrefab = true, bool SetHideShapeIcon = true)
+void plPrefabs::SpawnPrefabAsChild(plStringView Prefab, plGameObject@ Parent, plTransform LocalTransform, uint UniqueID = 4294967295, bool SetCreatedByPrefab = true, bool SetHideShapeIcon = true)
 void plProcVolumeBoxComponent::set_Extents(plVec3)
 void plProcVolumeBoxComponent::set_Falloff(plVec3)
 void plProcVolumeComponent::set_BlendMode(plProcGenBlendMode)
@@ -2988,7 +3043,9 @@ void plResetTransformComponent::set_ResetRotation(bool)
 void plResetTransformComponent::set_ResetScaling(bool)
 void plRmlUiCanvas2DComponent::set_AnchorPoint(plVec2)
 void plRmlUiCanvas2DComponent::set_AutobindBlackboards(bool)
+void plRmlUiCanvas2DComponent::set_OnDemandUpdate(bool)
 void plRmlUiCanvas2DComponent::set_PassInput(bool)
+void plRmlUiCanvas2DComponent::set_RmlFile(plStringView)
 void plRopeRenderComponent::set_Color(plColor)
 void plRopeRenderComponent::set_Detail(uint)
 void plRopeRenderComponent::set_Material(plStringView)
@@ -3068,7 +3125,7 @@ void plSnowComponent::set_SnowStrength(float)
 void plSnowComponent::set_SnowTiling(float)
 void plSnowComponent::set_SnowWrapping(float)
 void plSnowComponent::set_SnowWrappingNoise(float)
-void plSound::PlaySound(plStringView Resource, plVec3 GlobalPosition, plQuat GlobalRotation = 1, float Pitch = 1, float Volume = 1, bool BlockToLoad = false)
+void plSound::PlaySound(plStringView Resource, plVec3 GlobalPosition, plQuat GlobalRotation = plQuat::MakeIdentity(), float Pitch = 1, float Volume = 1, bool BlockToLoad = false)
 void plSpatial::FindObjectsInSphere(plStringView sCategory, const plVec3&in vCenter, float fRadius, ReportObjectCB@ callback)
 void plSpawnBoxComponent::StartSpawning()
 void plSpawnBoxComponent::set_Duration(plTime)
@@ -3089,6 +3146,15 @@ void plSpawnComponent::set_SpawnContinuously(bool)
 void plSphereReflectionProbeComponent::set_Falloff(float)
 void plSphereReflectionProbeComponent::set_Radius(float)
 void plSphereReflectionProbeComponent::set_SphereProjection(bool)
+void plSplineComponent::set_Closed(bool)
+void plSplineComponent::set_EditNodes(uint8)
+void plSplineComponent::set_Flags(plSplineComponentFlags)
+void plSplineNodeComponent::set_CustomTangentIn(plVec3)
+void plSplineNodeComponent::set_CustomTangentOut(plVec3)
+void plSplineNodeComponent::set_LinkCustomTangents(bool)
+void plSplineNodeComponent::set_Roll(plAngle)
+void plSplineNodeComponent::set_TangentModeIn(plSplineTangentMode)
+void plSplineNodeComponent::set_TangentModeOut(plSplineTangentMode)
 void plSpotLightComponent::set_Cookie(plStringView)
 void plSpotLightComponent::set_Falloff(float)
 void plSpotLightComponent::set_InnerSpotAngle(plAngle)
@@ -3202,10 +3268,12 @@ void plTransformComponent::set_Running(bool)
 void plTransformComponent::set_Speed(float)
 void plTriggerDelayModifierComponent::set_ActivationDelay(plTime)
 void plTriggerDelayModifierComponent::set_DeactivationDelay(plTime)
+void plTwoBoneIKComponent::set_DebugVisScale(float)
 void plTwoBoneIKComponent::set_JointEnd(plHashedString)
 void plTwoBoneIKComponent::set_JointMiddle(plHashedString)
 void plTwoBoneIKComponent::set_JointStart(plHashedString)
 void plTwoBoneIKComponent::set_MidAxis(plBasisAxis)
+void plTwoBoneIKComponent::set_Order(uint16)
 void plTwoBoneIKComponent::set_Weight(float)
 void plVec2::MakeOrthogonalTo(const plVec2&in)
 void plVec2::Normalize()

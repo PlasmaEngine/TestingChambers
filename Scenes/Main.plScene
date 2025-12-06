@@ -11,20 +11,19 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{7297922959506964864,5177324930371449723}}
-		u4 %Hash{9821210770601112012}
+		u4 %Hash{15979608543967171744}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
 			s{"{ 0c8dd872-9e75-4ea9-955e-442f9e2c2323 }"}
+			s{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 			s{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
-			s{"{ 2aab509f-d165-4cab-8d56-68d19856c77c }"}
 			s{"{ 2d50dee8-5549-4755-bbce-4cc39624919c }"}
 			s{"{ 2fe9db45-6e52-4e17-8e27-5744f9e8ada6 }"}
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
 			s{"{ 3410e50f-3950-4659-a789-ca8ade120699 }"}
 			s{"{ 36ba6a8f-2b12-4556-9e42-632db5c5b2ca }"}
-			s{"{ 3bf60313-2bce-45cf-8836-68e3b9ef5323 }"}
 			s{"{ 3c960df4-4000-4d25-a9e4-e9c1c5c40080 }"}
 			s{"{ 40197e82-5fa5-4045-99d5-f24a2475497a }"}
 			s{"{ 41a909e4-0dbd-48ef-b6f3-a445bed9f62c }"}
@@ -33,34 +32,32 @@ o
 			s{"{ 580aefec-1a70-4442-9c88-d213519f8b8f }"}
 			s{"{ 5f7e8998-fe23-4a33-aa84-d10d4dfcf2a6 }"}
 			s{"{ 6082de35-c174-4c40-a5a5-17fd67b11ce5 }"}
-			s{"{ 61cf41fb-176e-41e1-bcd6-fcbe5f853339 }"}
-			s{"{ 659ea078-3c40-49c3-8c61-7caf0431f820 }"}
-			s{"{ 6647c90c-1552-4217-8ba8-f010b656d931 }"}
-			s{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
 			s{"{ 673e8ea0-b70e-4e47-a72b-037d67024a71 }"}
 			s{"{ 6a1fd60d-19ed-4701-b4a1-29d99ee6af1b }"}
 			s{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
 			s{"{ 6c56721b-d71a-4795-88ac-39cae26c39f1 }"}
 			s{"{ 6d2f2203-1c29-417b-bb1b-b434080e8fed }"}
 			s{"{ 6d4f03a0-38d7-4d2d-bc2c-6344d359545d }"}
+			s{"{ 6f5e0357-df08-4b0b-b414-40cfd2453ae4 }"}
 			s{"{ 7596f3db-f87e-4aa7-bf8d-66c9a10aae5b }"}
+			s{"{ 7891e584-6857-44e8-b982-73801a7df21c }"}
 			s{"{ 7e7175b2-750f-43c2-9958-c53abc18661e }"}
 			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
 			s{"{ 852fa58a-7bea-4486-832b-3a2b2792fea3 }"}
 			s{"{ 935e1236-35a1-4670-a87c-657e77cd7029 }"}
 			s{"{ 9aa28393-3f8b-490b-b7eb-49749997b143 }"}
+			s{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
 			s{"{ aa1c5601-bc43-fbf8-4e07-6a3df3af51e7 }"}
 			s{"{ aa3be7d1-d9e2-4ddc-b6fc-6deaa22696eb }"}
 			s{"{ afb2a2a5-e863-4c47-a2f7-002d7dea6162 }"}
 			s{"{ b93a6e80-5bf7-48f0-b7b3-2097d0133159 }"}
-			s{"{ baf34fd7-9f42-4d8d-a95e-e94afd972d1d }"}
 			s{"{ c36c4d88-1fd7-4049-8b57-698b8fb7e753 }"}
 			s{"{ c3b42246-a98b-439d-82e4-9bf3ec6efb59 }"}
 			s{"{ c957b7d8-fb52-449e-abe6-c6c15e3f4316 }"}
 			s{"{ cb3fcb70-258b-4b4e-a79e-0537ace7d7e3 }"}
 			s{"{ cb429221-40ae-4e6d-842b-b37b3709cd58 }"}
+			s{"{ cc51be30-5b78-445c-a9b5-779066b074f2 }"}
 			s{"{ cdcc5813-2f08-4542-b310-fdcc84dc134e }"}
-			s{"{ d037502d-21e1-4123-a7e4-3bfd5877c2e8 }"}
 			s{"{ d2a92ebd-fd90-4214-9455-ca14b38571f5 }"}
 			s{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 			s{"{ d63193e0-3e77-4960-a51a-9c8a45393450 }"}
@@ -70,18 +67,16 @@ o
 			s{"{ eb842e16-7314-4f8a-8479-0f92e43ca708 }"}
 			s{"{ efddf9bc-e3e5-4540-88b7-ec3041393355 }"}
 			s{"{ f1366dce-665b-4ecb-bd2e-325040a52426 }"}
-			s{"{ ffd8b44e-e8e1-4d5b-8437-e84de0974f06 }"}
 		}
 		VarArray %References
 		{
 			s{"{ 0c8dd872-9e75-4ea9-955e-442f9e2c2323 }"}
+			s{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 			s{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
-			s{"{ 2aab509f-d165-4cab-8d56-68d19856c77c }"}
 			s{"{ 2d50dee8-5549-4755-bbce-4cc39624919c }"}
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
 			s{"{ 3410e50f-3950-4659-a789-ca8ade120699 }"}
 			s{"{ 36ba6a8f-2b12-4556-9e42-632db5c5b2ca }"}
-			s{"{ 3bf60313-2bce-45cf-8836-68e3b9ef5323 }"}
 			s{"{ 3c960df4-4000-4d25-a9e4-e9c1c5c40080 }"}
 			s{"{ 40197e82-5fa5-4045-99d5-f24a2475497a }"}
 			s{"{ 41a909e4-0dbd-48ef-b6f3-a445bed9f62c }"}
@@ -90,16 +85,18 @@ o
 			s{"{ 580aefec-1a70-4442-9c88-d213519f8b8f }"}
 			s{"{ 5f7e8998-fe23-4a33-aa84-d10d4dfcf2a6 }"}
 			s{"{ 6082de35-c174-4c40-a5a5-17fd67b11ce5 }"}
-			s{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
 			s{"{ 6a1fd60d-19ed-4701-b4a1-29d99ee6af1b }"}
 			s{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
 			s{"{ 6c56721b-d71a-4795-88ac-39cae26c39f1 }"}
 			s{"{ 6d2f2203-1c29-417b-bb1b-b434080e8fed }"}
 			s{"{ 6d4f03a0-38d7-4d2d-bc2c-6344d359545d }"}
+			s{"{ 6f5e0357-df08-4b0b-b414-40cfd2453ae4 }"}
 			s{"{ 7596f3db-f87e-4aa7-bf8d-66c9a10aae5b }"}
+			s{"{ 7891e584-6857-44e8-b982-73801a7df21c }"}
 			s{"{ 7e7175b2-750f-43c2-9958-c53abc18661e }"}
 			s{"{ 935e1236-35a1-4670-a87c-657e77cd7029 }"}
 			s{"{ 9aa28393-3f8b-490b-b7eb-49749997b143 }"}
+			s{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
 			s{"{ aa1c5601-bc43-fbf8-4e07-6a3df3af51e7 }"}
 			s{"{ aa3be7d1-d9e2-4ddc-b6fc-6deaa22696eb }"}
 			s{"{ afb2a2a5-e863-4c47-a2f7-002d7dea6162 }"}
@@ -109,6 +106,7 @@ o
 			s{"{ c957b7d8-fb52-449e-abe6-c6c15e3f4316 }"}
 			s{"{ cb3fcb70-258b-4b4e-a79e-0537ace7d7e3 }"}
 			s{"{ cb429221-40ae-4e6d-842b-b37b3709cd58 }"}
+			s{"{ cc51be30-5b78-445c-a9b5-779066b074f2 }"}
 			s{"{ cdcc5813-2f08-4542-b310-fdcc84dc134e }"}
 			s{"{ d2a92ebd-fd90-4214-9455-ca14b38571f5 }"}
 			s{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
@@ -963,14 +961,17 @@ o
 o
 {
 	Uuid %id{u4{7972763977410148950,1446618701788342432}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -995,19 +996,19 @@ o
 o
 {
 	Uuid %id{u4{14781880864390956388,1536418772903099364}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x00002042}
 		f %TiltAmount{0x0000A040}
 	}
@@ -1318,19 +1319,19 @@ o
 o
 {
 	Uuid %id{u4{17207039092176859777,1911166911762923139}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x0000A041}
 		f %TiltAmount{0x0000A040}
 	}
@@ -1701,7 +1702,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
 	}
 }
 o
@@ -1809,19 +1810,19 @@ o
 o
 {
 	Uuid %id{u4{11168608607476014678,2082219995469491042}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x00007041}
 		f %TiltAmount{0x0000A040}
 	}
@@ -2406,7 +2407,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -3136,7 +3137,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -4365,19 +4366,19 @@ o
 o
 {
 	Uuid %id{u4{9011857689836019076,4662569943523825105}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0}
 		f %TiltAmount{0x0000A040}
 	}
@@ -5257,7 +5258,7 @@ o
 	p
 	{
 		b %Active{1}
-		s %CollisionMesh{"{ 526ebdd3-265d-4bbb-93a3-6389cec9d729 }"}
+		s %CollisionMesh{"{ 7e42491b-1a9b-4300-9827-a7332e256f70 }"}
 	}
 }
 o
@@ -5658,14 +5659,17 @@ o
 o
 {
 	Uuid %id{u4{7973011216215824265,4844100113059804023}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -6501,13 +6505,15 @@ o
 	p
 	{
 		b %Active{1}
-		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Color %Color{f{0xEBBA093F,0x5B8E883E,0x0F13353E,0x0000803F}}
 		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
-			s{"{ 2aab509f-d165-4cab-8d56-68d19856c77c }"}
+			s{"{ 6f5e0357-df08-4b0b-b414-40cfd2453ae4 }"}
+			s{"{ 7891e584-6857-44e8-b982-73801a7df21c }"}
+			s{"{ 7891e584-6857-44e8-b982-73801a7df21c }"}
 		}
-		s %Mesh{"{ 3bf60313-2bce-45cf-8836-68e3b9ef5323 }"}
+		s %Mesh{"{ cc51be30-5b78-445c-a9b5-779066b074f2 }"}
 		f %SortingDepthOffset{0}
 	}
 }
@@ -6683,7 +6689,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
 	}
 }
 o
@@ -7093,8 +7099,8 @@ o
 		f %NearPlane{0}
 		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
 		f %Saturation{0x0000803F}
-		b %ShowDebugInfo{1}
-		b %ShowMipMaps{1}
+		b %ShowDebugInfo{0}
+		b %ShowMipMaps{0}
 	}
 }
 o
@@ -8394,7 +8400,7 @@ o
 {
 	Uuid %id{u4{18071063215955627701,5141673975987575368}}
 	s %t{"plJoltClothSheetComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -8554,7 +8560,7 @@ o
 {
 	Uuid %id{u4{4419099002648726716,5164655309980221281}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{6}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9170,16 +9176,16 @@ o
 		s %Cookie{""}
 		ColorGamma %EffectiveColor{u1{255,255,255,255}}
 		f %Falloff{0x0000803F}
-		Angle %InnerSpotAngle{f{0}}
+		Angle %InnerSpotAngle{f{0xC2B8B23F}}
 		f %Intensity{0x00007A44}
 		f %Length{0}
-		ColorGamma %LightColor{u1{170,255,147,255}}
+		ColorGamma %LightColor{u1{105,82,255,255}}
 		s %Material{""}
 		u3 %MaterialResolution{512}
 		Time %MaterialUpdateInterval{d{0}}
-		Angle %OuterSpotAngle{f{0x0672933F}}
+		Angle %OuterSpotAngle{f{0xDB0FC93F}}
 		f %PenumbraSize{0xCDCCCC3D}
-		f %Range{0x00002041}
+		f %Range{0x0000A041}
 		f %ShadowFadeOutRange{0}
 		f %SlopeBias{0x0000803E}
 		f %SpecularMultiplier{0x0000803F}
@@ -10133,23 +10139,23 @@ o
 o
 {
 	Uuid %id{u4{4897137664113183663,5369994818561619325}}
-	s %t{"plPathComponent"}
+	s %t{"plSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
 		b %Closed{1}
-		f %Detail{0x0AD7233C}
-		s %Flags{"plPathComponentFlags::VisualizePath"}
+		u1 %EditNodes{0}
+		s %Flags{"plSplineComponentFlags::VisualizeSpline"}
 		VarArray %Nodes
 		{
-			s{"1"}
-			s{"2"}
-			s{"3"}
-			s{"4"}
-			s{"5"}
-			s{"6"}
-			s{"7"}
+			HashedString{s{"1"}}
+			HashedString{s{"2"}}
+			HashedString{s{"3"}}
+			HashedString{s{"4"}}
+			HashedString{s{"5"}}
+			HashedString{s{"6"}}
+			HashedString{s{"7"}}
 		}
 	}
 }
@@ -10850,7 +10856,7 @@ o
 {
 	Uuid %id{u4{4552023024081365672,5446432919526559743}}
 	s %t{"plJoltClothSheetComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -11074,9 +11080,9 @@ o
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0x0000803E,0}}
-		Quat %LocalRotation{f{0xC8935D3F,0xB65F823D,0x985EE93D,0x6E92F73E}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000A040}
+		f %LocalUniformScaling{0x00002040}
 		s %Mode{"plObjectMode::Automatic"}
 		s %Name{""}
 		VarArray %Tags
@@ -12951,7 +12957,7 @@ o
 {
 	Uuid %id{u4{7302054564858891172,5675878667142954405}}
 	s %t{"plJoltRopeComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -13731,14 +13737,17 @@ o
 o
 {
 	Uuid %id{u4{3203223816732553725,6427949728132575995}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -14499,19 +14508,19 @@ o
 o
 {
 	Uuid %id{u4{11903088772137298959,6899632116005385277}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x0000C841}
 		f %TiltAmount{0x0000A040}
 	}
@@ -14547,19 +14556,19 @@ o
 o
 {
 	Uuid %id{u4{13077548855041980942,7049035923794724031}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x00003442}
 		f %TiltAmount{0x0000A040}
 	}
@@ -15066,7 +15075,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -15237,7 +15246,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -16634,19 +16643,19 @@ o
 o
 {
 	Uuid %id{u4{9746337854497303357,9479982064059719340}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x0000F041}
 		f %TiltAmount{0x0000A040}
 	}
@@ -17381,14 +17390,17 @@ o
 o
 {
 	Uuid %id{u4{10147467223364304428,9832565915540027262}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -18569,19 +18581,19 @@ o
 o
 {
 	Uuid %id{u4{17431376155343999785,10149876012476028183}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x0000A040}
 		f %TiltAmount{0x0000A040}
 	}
@@ -20643,7 +20655,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -21489,7 +21501,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
 	}
 }
 o
@@ -23608,14 +23620,17 @@ o
 o
 {
 	Uuid %id{u4{2876639655926820991,11674558684295028940}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -23803,19 +23818,19 @@ o
 o
 {
 	Uuid %id{u4{17418332976707759780,12094391245758364096}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x00004842}
 		f %TiltAmount{0x0000A040}
 	}
@@ -24343,7 +24358,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -26310,14 +26325,17 @@ o
 o
 {
 	Uuid %id{u4{18069194450151603143,14516107008708905324}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -27030,19 +27048,19 @@ o
 o
 {
 	Uuid %id{u4{18165856320005284066,14967288133011922418}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x00000C42}
 		f %TiltAmount{0x0000A040}
 	}
@@ -27919,7 +27937,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
 	}
 }
 o
@@ -28743,19 +28761,19 @@ o
 o
 {
 	Uuid %id{u4{16472558927515575496,15540498864936580520}}
-	s %t{"plFollowPathComponent"}
+	s %t{"plFollowSplineComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %FollowMode{"plFollowPathMode::OnlyPosition"}
+		s %FollowMode{"plFollowSplineMode::OnlyPosition"}
 		f %LookAhead{0x0000803F}
 		Angle %MaxTilt{f{0x920A063F}}
 		s %Mode{"plPropertyAnimMode::Loop"}
-		s %Path{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		b %Running{1}
 		f %Smoothing{0x0000003F}
 		f %Speed{0x0000A040}
+		s %Spline{"{ db886e00-1fef-40e2-b507-92504af40a93 }"}
 		f %StartDistance{0x00002041}
 		f %TiltAmount{0x0000A040}
 	}
@@ -28823,7 +28841,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -31276,7 +31294,7 @@ o
 	{
 		b %Active{1}
 		VarDict %Parameters{}
-		s %Prefab{"{ 6670a1ca-a18d-4d10-b782-99097912c7a8 }"}
+		s %Prefab{"{ 19831a55-f20c-4a04-b3d1-bbd45602b51b }"}
 	}
 }
 o
@@ -32047,14 +32065,17 @@ o
 o
 {
 	Uuid %id{u4{16777095017829868308,17136097522586930175}}
-	s %t{"plPathNodeComponent"}
+	s %t{"plSplineNodeComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
 		Angle %Roll{f{0}}
-		s %Tangent1{"plPathNodeTangentMode::Auto"}
-		s %Tangent2{"plPathNodeTangentMode::Auto"}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -33174,6 +33195,17 @@ o
 }
 o
 {
+	Uuid %id{u4{13755754209630819584,323814067548856777}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt8"}
+	}
+}
+o
+{
 	Uuid %id{u4{3856503949687190731,391960415262619293}}
 	s %t{"plDefaultValueAttribute"}
 	u3 %v{1}
@@ -33295,19 +33327,16 @@ o
 }
 o
 {
-	Uuid %id{u4{8392575565835220363,1071433941513180001}}
-	s %t{"plReflectedTypeDescriptor"}
+	Uuid %id{u4{5872859824018709531,1065040950509158607}}
+	s %t{"plFunctionArgumentAttributes"}
 	u3 %v{1}
 	p
 	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plPathNodeTangentMode"}
-		u3 %TypeVersion{1}
+		VarArray %ArgAttributes
+		{
+			Uuid{u4{5441285124006407133,3616224266939731863}}
+		}
+		u3 %ArgIndex{1}
 	}
 }
 o
@@ -33320,10 +33349,12 @@ o
 		VarArray %Arguments
 		{
 			Uuid{u4{9506520764747966480,6313113098983946276}}
+			Uuid{u4{18210309946279867067,17341112809615885481}}
 		}
 		VarArray %Attributes
 		{
 			Uuid{u4{7451308248938934944,1546964158675832097}}
+			Uuid{u4{5872859824018709531,1065040950509158607}}
 		}
 		s %Flags{"plPropertyFlags::Phantom"}
 		s %Name{"AddAngularImpulse"}
@@ -33451,9 +33482,11 @@ o
 		VarArray %ArgNames
 		{
 			s{"vImpulse"}
+			s{"uiImpulseType"}
 		}
 		VarArray %ArgTypes
 		{
+			u1{0}
 			u1{0}
 		}
 	}
@@ -33525,7 +33558,7 @@ o
 			Uuid{u4{51172704524408416,4108755137431574894}}
 		}
 		s %TypeName{"plJoltClothSheetComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -33802,6 +33835,20 @@ o
 }
 o
 {
+	Uuid %id{u4{116640782678306972,3178212205108616435}}
+	s %t{"plFunctionArgumentAttributes"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgAttributes
+		{
+			Uuid{u4{5077352054420334143,10551706660635084877}}
+		}
+		u3 %ArgIndex{1}
+	}
+}
+o
+{
 	Uuid %id{u4{9680210618447736123,3227469822885205214}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -33928,6 +33975,16 @@ o
 }
 o
 {
+	Uuid %id{u4{5441285124006407133,3616224266939731863}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		i3 %Value{0}
+	}
+}
+o
+{
 	Uuid %id{u4{15715819117725113133,3642468685681967546}}
 	s %t{"plDefaultValueAttribute"}
 	u3 %v{1}
@@ -34004,23 +34061,6 @@ o
 	p
 	{
 		Vec2 %Value{f{0x00004842,0x00004842}}
-	}
-}
-o
-{
-	Uuid %id{u4{1349325909359187876,3972996588842823845}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plFollowPathComponent"}
-		u3 %TypeVersion{1}
 	}
 }
 o
@@ -34178,7 +34218,24 @@ o
 			Uuid{u4{15014006221069273076,3305008808405894770}}
 		}
 		s %TypeName{"plJoltRopeComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
+	}
+}
+o
+{
+	Uuid %id{u4{10929177122555665936,4493324200696598217}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -34274,9 +34331,11 @@ o
 		VarArray %ArgNames
 		{
 			s{"vImpulse"}
+			s{"uiImpulseType"}
 		}
 		VarArray %ArgTypes
 		{
+			u1{0}
 			u1{0}
 		}
 	}
@@ -34590,23 +34649,6 @@ o
 }
 o
 {
-	Uuid %id{u4{1216541193566160601,6270047883266838165}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plPathComponent"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{9506520764747966480,6313113098983946276}}
 	s %t{"plFunctionArgumentDescriptor"}
 	u3 %v{1}
@@ -34680,10 +34722,12 @@ o
 		VarArray %Arguments
 		{
 			Uuid{u4{8309053508001281841,5011272984324183554}}
+			Uuid{u4{13755754209630819584,323814067548856777}}
 		}
 		VarArray %Attributes
 		{
 			Uuid{u4{16187058620066783129,4887264029330063826}}
+			Uuid{u4{116640782678306972,3178212205108616435}}
 		}
 		s %Flags{"plPropertyFlags::Phantom"}
 		s %Name{"AddLinearImpulse"}
@@ -34802,23 +34846,6 @@ o
 		}
 		s %TypeName{"plHeightfieldComponent"}
 		u3 %TypeVersion{2}
-	}
-}
-o
-{
-	Uuid %id{u4{17609870434761343704,6923431034861270251}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plPathNodeComponent"}
-		u3 %TypeVersion{1}
 	}
 }
 o
@@ -35385,6 +35412,23 @@ o
 }
 o
 {
+	Uuid %id{u4{16773898428444115076,9792765203499613145}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plFollowSplineComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{16977912186341749908,9801246300428200576}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -35436,6 +35480,23 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
 		s %Name{"BendStiffness"}
 		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{6396997072725442381,9911481781116379737}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plManipulatorAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineManipulatorAttribute"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -35598,6 +35659,16 @@ o
 }
 o
 {
+	Uuid %id{u4{5077352054420334143,10551706660635084877}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		i3 %Value{0}
+	}
+}
+o
+{
 	Uuid %id{u4{12905501165090070975,10716077728285934873}}
 	s %t{"plDefaultValueAttribute"}
 	u3 %v{1}
@@ -35732,7 +35803,7 @@ o
 			Uuid{u4{12924623249228286807,16683691453772111091}}
 		}
 		s %TypeName{"plJoltDynamicActorComponent"}
-		u3 %TypeVersion{6}
+		u3 %TypeVersion{7}
 	}
 }
 o
@@ -36431,6 +36502,23 @@ o
 }
 o
 {
+	Uuid %id{u4{15299730745731462014,14224138695866110521}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plFollowSplineMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{2356160558615170064,14248744862832169398}}
 	s %t{"plCategoryAttribute"}
 	u3 %v{1}
@@ -36642,6 +36730,23 @@ o
 }
 o
 {
+	Uuid %id{u4{2153056743378147414,14932874185922113801}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineTangentMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{75818149554409732,14956819024421792612}}
 	s %t{"plClampValueAttribute"}
 	u3 %v{1}
@@ -36756,6 +36861,23 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
 		s %Name{"plJoltClothSheetFlags::FixedCornerBottomRight"}
 		s %Type{"plUInt16"}
+	}
+}
+o
+{
+	Uuid %id{u4{12092291338547476562,15683865706386004010}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineNodeComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -36906,9 +37028,9 @@ o
 	{
 		VarArray %ArgNames
 		{
-			s{"forceID"}
+			s{"uiForceID"}
 			s{"duration"}
-			s{"force"}
+			s{"vForce"}
 		}
 		VarArray %ArgTypes
 		{
@@ -36916,23 +37038,6 @@ o
 			u1{0}
 			u1{0}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{6221855987942251503,16565451392240734239}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Bitflags|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plBitflagsBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plPathComponentFlags"}
-		u3 %TypeVersion{1}
 	}
 }
 o
@@ -36986,23 +37091,6 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
 		s %Name{"CenterOfMass"}
 		s %Type{"plVec3"}
-	}
-}
-o
-{
-	Uuid %id{u4{10611813512119074627,16712677201147451801}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plFollowPathMode"}
-		u3 %TypeVersion{1}
 	}
 }
 o
@@ -37145,6 +37233,17 @@ o
 }
 o
 {
+	Uuid %id{u4{18210309946279867067,17341112809615885481}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt8"}
+	}
+}
+o
+{
 	Uuid %id{u4{13033624727069548121,17368468367984449402}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -37157,6 +37256,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2966118138345011883,17395428602964259808}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Bitflags|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plBitflagsBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineComponentFlags"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -37243,6 +37359,23 @@ o
 }
 o
 {
+	Uuid %id{u4{4301418499636294648,17806124850863848294}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plManipulatorAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineTangentManipulatorAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{11910227158322680972,18051972571465049273}}
 	s %t{"plDefaultValueAttribute"}
 	u3 %v{1}
@@ -37288,7 +37421,7 @@ o
 	{
 		VarArray %ArgNames
 		{
-			s{"forceID"}
+			s{"uiForceID"}
 		}
 		VarArray %ArgTypes
 		{

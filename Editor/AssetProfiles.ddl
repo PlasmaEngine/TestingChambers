@@ -49,7 +49,7 @@ AssetProfiles
 				p
 				{
 					bool %EnableXR{false}
-					string %XRRenderPipeline{"{ 2fe25ded-776c-7f9e-354f-e4c52a33d125 }"}
+					string %XRRenderPipeline{"{ c533e113-2a4c-4f42-a546-653c78f5e8a7 }"}
 				}
 			}
 			o

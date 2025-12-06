@@ -11,17 +11,17 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{3872236734607355539,5264883800516172798}}
-		u4 %Hash{3069041675942641726}
+		u4 %Hash{12669245804190671245}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
+			s{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
 			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
-			s{"{ eef5f629-981a-443f-8821-02a1fed16569 }"}
 		}
 		VarArray %References
 		{
-			s{"{ eef5f629-981a-443f-8821-02a1fed16569 }"}
+			s{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
 		}
 	}
 }
@@ -30,22 +30,45 @@ Objects
 {
 o
 {
+	Uuid %id{u4{6040093500008065956,4868055461473165763}}
+	s %t{"plAtmosphericScatteringComponent"}
+	u3 %v{2}
+	p
+	{
+		Color %Absorption{f{0x0AD7233C,0x0AD7233C,0x0AD7233C,0x0000803F}}
+		f %AbsorptionFalloff{0x00007A45}
+		f %AbsorptionHeight{0x0060EA46}
+		b %Active{1}
+		Color %AmbientScattering{f{0x800D343C,0xCE017E3C,0x507AA83C,0x0000803F}}
+		f %AtmosphereRadius{0xC052E74A}
+		f %LightSteps{0x00000041}
+		f %MieHeight{0x0080A245}
+		f %MieScatterDirection{0x3333333F}
+		Color %MieScattering{f{0x0AD7233F,0x0AD7233F,0x0AD7233F,0x0000803F}}
+		f %PlanetRadius{0xC0B3C24A}
+		f %RaySteps{0x00000042}
+		f %RayleighHeight{0x00A08C46}
+		Color %RayleighScattering{f{0x0AD7233D,0xAE47613E,0x0000403F,0x0000803F}}
+	}
+}
+o
+{
 	Uuid %id{u4{4235845408222663298,4878450712620508915}}
 	s %t{"plSkyLightComponent"}
 	u3 %v{3}
 	p
 	{
 		b %Active{1}
-		s %CubeMap{"{ eef5f629-981a-443f-8821-02a1fed16569 }"}
+		s %CubeMap{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
 		VarArray %ExcludeTags{}
 		f %FarPlane{0x0000C842}
 		VarArray %IncludeTags
 		{
 			s{"SkyLight"}
 		}
-		f %Intensity{0x0AD7A33C}
+		f %Intensity{0x8FC2F53E}
 		f %NearPlane{0}
-		s %ReflectionProbeMode{"plReflectionProbeMode::Static"}
+		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
 		f %Saturation{0x0000803F}
 		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
@@ -67,10 +90,7 @@ o
 	{
 		b %Active{1}
 		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{10148576305858068113,5287581079536013741}}
-		}
+		VarArray %Components{}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
@@ -82,21 +102,6 @@ o
 		{
 			s{"SkyLight"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{10148576305858068113,5287581079536013741}}
-	s %t{"plSkyBoxComponent"}
-	u3 %v{4}
-	p
-	{
-		b %Active{0}
-		s %CubeMap{"{ eef5f629-981a-443f-8821-02a1fed16569 }"}
-		f %ExposureBias{0}
-		b %InverseTonemap{0}
-		b %UseFog{1}
-		f %VirtualDistance{0x00007A44}
 	}
 }
 o
@@ -157,6 +162,7 @@ o
 		VarArray %Components
 		{
 			Uuid{u4{10963790428826206023,10378209123300386031}}
+			Uuid{u4{6040093500008065956,4868055461473165763}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0xB071423F,0x00000040}}
@@ -168,6 +174,7 @@ o
 		VarArray %Tags
 		{
 			s{"CastShadow"}
+			s{"SkyLight"}
 		}
 	}
 }
@@ -293,7 +300,7 @@ o
 		f %SlopeBias{0x0000803E}
 		f %SpecularMultiplier{0x0000803F}
 		f %SplitModeWeight{0x3333333F}
-		u3 %Temperature{5258}
+		u3 %Temperature{6924}
 		b %TransparentShadows{1}
 		b %UseColorTemperature{1}
 		f %VolumetricIntensity{0}
@@ -492,23 +499,6 @@ o
 }
 o
 {
-	Uuid %id{u4{4407333650372156328,8017407265912346190}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plRenderComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plSkyBoxComponent"}
-		u3 %TypeVersion{4}
-	}
-}
-o
-{
 	Uuid %id{u4{13593399947534819651,8810410798093967671}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -624,6 +614,23 @@ o
 		VarArray %Properties{}
 		s %TypeName{"plSceneDocumentSettingsBase"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7086073240667037909,12361487904129500231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plAtmosphericScatteringComponent"}
+		u3 %TypeVersion{2}
 	}
 }
 o

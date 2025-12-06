@@ -56,6 +56,20 @@ enum plOccluderType
   QuadPosX = 1,
 }
 
+enum plSplineComponentFlags
+{
+  VisualizeSpline = 1,
+  VisualizeUpDir = 2,
+  VisualizeTangents = 4,
+}
+
+enum plSplineTangentMode
+{
+  Auto = 0,
+  Custom = 1,
+  Linear = 2,
+}
+
 enum plSpriteBlendMode
 {
   Masked = 0,
@@ -122,23 +136,11 @@ enum plPropertyAnimMode
   BackAndForth = 2,
 }
 
-enum plFollowPathMode
+enum plFollowSplineMode
 {
   OnlyPosition = 0,
   AlignUpZ = 1,
   FullRotation = 2,
-}
-
-enum plPathComponentFlags
-{
-  VisualizePath = 1,
-  VisualizeUpDir = 2,
-}
-
-enum plPathNodeTangentMode
-{
-  Auto = 0,
-  Linear = 1,
 }
 
 enum plRootMotionMode
@@ -259,9 +261,10 @@ enum plAiNavigationComponentState
 {
   Idle = 0,
   Moving = 1,
-  Falling = 2,
-  Fallen = 3,
-  Failed = 4,
+  Turning = 2,
+  Falling = 3,
+  Fallen = 4,
+  Failed = 5,
 }
 
 enum plAiNavigationDebugFlags
@@ -355,6 +358,14 @@ enum plJoltRagdollStartMode
   WithBindPose = 0,
   WithNextAnimPose = 1,
   WithCurrentMeshPose = 2,
+}
+
+enum plJoltRagdollAnimMode
+{
+  Off = 0,
+  Limp = 1,
+  Powered = 2,
+  Controlled = 3,
 }
 
 enum plJoltRopeAnchorConstraintMode
@@ -489,6 +500,8 @@ class plVec2
   void Set(float x, float y);
   void SetZero();
   float GetLength() const;
+  float GetDistanceTo(const plVec2&in rhs) const;
+  float GetSquaredDistanceTo(const plVec2&in rhs) const;
   float GetLengthSquared() const;
   float GetLengthAndNormalize();
   plVec2 GetNormalized() const;
@@ -541,6 +554,8 @@ class plVec3
   void Set(float x, float y, float z);
   void SetZero();
   float GetLength() const;
+  float GetDistanceTo(const plVec3&in rhs) const;
+  float GetSquaredDistanceTo(const plVec3&in rhs) const;
   float GetLengthSquared() const;
   float GetLengthAndNormalize();
   plVec3 GetNormalized() const;
@@ -1166,6 +1181,8 @@ class plComponent
   plRopeRenderComponent@ opCast();
   plSkyBoxComponent@ opCast();
   plSnowComponent@ opCast();
+  plSplineComponent@ opCast();
+  plSplineNodeComponent@ opCast();
   plSpriteComponent@ opCast();
   plDebugTextComponent@ opCast();
   plDecalComponent@ opCast();
@@ -1189,9 +1206,7 @@ class plComponent
   plSensorCylinderComponent@ opCast();
   plSensorConeComponent@ opCast();
   plColorAnimationComponent@ opCast();
-  plFollowPathComponent@ opCast();
-  plPathComponent@ opCast();
-  plPathNodeComponent@ opCast();
+  plFollowSplineComponent@ opCast();
   plPropertyAnimComponent@ opCast();
   plResetTransformComponent@ opCast();
   plRotorComponent@ opCast();
@@ -1348,6 +1363,7 @@ class plMessage
   plMsgComponentInternalTrigger@ opCast();
   plMsgUpdateLocalBounds@ opCast();
   plMsgSetPlaying@ opCast();
+  plMsgInterruptPlaying@ opCast();
   plMsgParentChanged@ opCast();
   plMsgChildrenChanged@ opCast();
   plMsgComponentsChanged@ opCast();
@@ -1365,12 +1381,12 @@ class plMessage
   plMsgQueryAnimationSkeleton@ opCast();
   plMsgApplyRootMotion@ opCast();
   plMsgRetrieveBoneState@ opCast();
+  plMsgSplineChanged@ opCast();
   plMsgSetMeshMaterial@ opCast();
   plMsgExtractRenderData@ opCast();
   plMsgExtractOccluderData@ opCast();
   plMsgExtractGeometry@ opCast();
   plMsgSensorDetectedObjectsChanged@ opCast();
-  plMsgPathChanged@ opCast();
   plMsgBlackboardEntryChanged@ opCast();
   plMsgInputActionTriggered@ opCast();
   plMsgDamage@ opCast();
@@ -1680,6 +1696,36 @@ class plSnowComponent : plSettingsComponent
   plStringView Displacement;
 }
 
+class plSplineComponent : plComponent
+{
+  plVec3 GetPositionAtKey(float Key) const;
+  plVec3 GetForwardDirAtKey(float Key) const;
+  plVec3 GetUpDirAtKey(float Key) const;
+  plVec3 GetScaleAtKey(float Key) const;
+  plTransform GetTransformAtKey(float Key) const;
+  float GetTotalLength() const;
+  float GetKeyAtDistance(float Distance) const;
+  plVec3 GetPositionAtDistance(float Distance) const;
+  plVec3 GetForwardDirAtDistance(float Distance) const;
+  plVec3 GetUpDirAtDistance(float Distance) const;
+  plVec3 GetScaleAtDistance(float Distance) const;
+  plTransform GetTransformAtDistance(float Distance) const;
+  uint GetChangeCounter() const;
+  plSplineComponentFlags Flags;
+  bool Closed;
+  uint8 EditNodes;
+}
+
+class plSplineNodeComponent : plComponent
+{
+  plAngle Roll;
+  plSplineTangentMode TangentModeIn;
+  plVec3 CustomTangentIn;
+  plSplineTangentMode TangentModeOut;
+  plVec3 CustomTangentOut;
+  bool LinkCustomTangents;
+}
+
 class plSpriteComponent : plRenderComponent
 {
   plString Texture;
@@ -1873,6 +1919,8 @@ class plMeshComponent : plMeshComponentBase
 
 class plSensorComponent : plComponent
 {
+  uint GetDetectedObjectsCount() const;
+  plGameObjectHandle GetDetectedObject(uint uiIndex) const;
   plUpdateRate UpdateRate;
   plString SpatialCategory;
   bool TestVisibility;
@@ -1912,35 +1960,23 @@ class plColorAnimationComponent : plComponent
   bool ApplyToChildren;
 }
 
-class plFollowPathComponent : plComponent
+class plFollowSplineComponent : plComponent
 {
+  void SetCurrentDistance(float Distance);
+  float GetCurrentDistance() const;
   void SetDirectionForwards(bool Forwards);
   bool IsDirectionForwards() const;
   void ToggleDirection();
-  plString Path;
+  plString Spline;
   float StartDistance;
   bool Running;
   plPropertyAnimMode Mode;
   float Speed;
   float LookAhead;
   float Smoothing;
-  plFollowPathMode FollowMode;
+  plFollowSplineMode FollowMode;
   float TiltAmount;
   plAngle MaxTilt;
-}
-
-class plPathComponent : plComponent
-{
-  plPathComponentFlags Flags;
-  bool Closed;
-  float Detail;
-}
-
-class plPathNodeComponent : plComponent
-{
-  plAngle Roll;
-  plPathNodeTangentMode Tangent1;
-  plPathNodeTangentMode Tangent2;
 }
 
 class plPropertyAnimComponent : plComponent
@@ -2001,10 +2037,13 @@ class plSliderComponent : plTransformComponent
 
 class plAimIKComponent : plComponent
 {
+  float DebugVisScale;
   plBasisAxis ForwardVector;
   plBasisAxis UpVector;
   plString PoleVector;
+  bool InversePoleVector;
   float Weight;
+  uint16 Order;
 }
 
 class plAnimatedMeshComponent : plMeshComponentBase
@@ -2060,12 +2099,14 @@ class plSimpleAnimationComponent : plComponent
 
 class plTwoBoneIKComponent : plComponent
 {
+  float DebugVisScale;
   plHashedString JointStart;
   plHashedString JointMiddle;
   plHashedString JointEnd;
   plBasisAxis MidAxis;
   plString PoleVector;
   float Weight;
+  uint16 Order;
 }
 
 class plPostProcessingComponent : plComponent
@@ -2337,6 +2378,14 @@ class plAiNavigationComponent : plComponent
   void SetDestination(plVec3 Destination, bool AllowPartialPaths);
   void CancelNavigation();
   plAiNavigationComponentState GetState() const;
+  void StopWalking(float WithinDistance);
+  void TurnTowards(plVec2 TargetPosition);
+  plAngle GetTurnAngleTowards(plVec2 TargetPosition) const;
+  bool EnsureNavMeshSectorAvailable(plVec3 vCenter, float fRadius);
+  bool FindRandomPointAroundCircle(plVec3 vCenter, float fRadius, plVec3&out out_vPoint);
+  bool RaycastNavMesh(plVec3 vStart, plVec3 vDirection, float fDistance, plVec3&out out_vPoint, float&out out_fDistance);
+  plVec3 GetSteeringPosition() const;
+  plQuat GetSteeringRotation() const;
   plHashedString NavmeshConfig;
   plHashedString PathSearchConfig;
   float Speed;
@@ -2347,6 +2396,7 @@ class plAiNavigationComponent : plComponent
   uint32 CollisionLayer;
   float FallHeight;
   plAiNavigationDebugFlags DebugFlags;
+  bool ApplySteering;
 }
 
 class plAiComponent : plComponent
@@ -2372,7 +2422,8 @@ class plFmodEventComponent : plFmodComponent
   bool Paused;
   float Volume;
   float Pitch;
-  plString SoundEvent;
+  bool NoGlobalPitch;
+  plStringView SoundEvent;
   bool UseOcclusion;
   float OcclusionThreshold;
   uint8 OcclusionCollisionLayer;
@@ -2679,9 +2730,13 @@ class plJoltRagdollComponent : plComponent
   uint GetObjectFilterID() const;
   void SetInitialImpulse(plVec3 vWorldPosition, plVec3 vWorldDirectionAndStrength);
   void AddInitialImpulse(plVec3 vWorldPosition, plVec3 vWorldDirectionAndStrength);
-  void SetJointTypeOverride(plStringView JointName, plSkeletonJointType OverrideType);
+  void SetJointTypeOverride(plStringView sJointName, plSkeletonJointType overrideType);
+  void SetJointMotorStrength(float fStrength);
+  float GetJointMotorStrength() const;
+  void FadeJointMotorStrength(float fTargetStrength, plTime tDuration);
   bool SelfCollision;
   plJoltRagdollStartMode StartMode;
+  plJoltRagdollAnimMode AnimMode;
   float GravityFactor;
   uint8 WeightCategory;
   float WeightScale;
@@ -2865,7 +2920,7 @@ class plParticleComponent : plRenderComponent
   void StopEffect();
   void InterruptEffect();
   bool IsEffectActive() const;
-  plString Effect;
+  plStringView Effect;
   bool SpawnAtStart;
   plOnComponentFinishedAction2 OnFinishedAction;
   plTime MinRestartDelay;
@@ -2920,10 +2975,11 @@ class plProcVolumeImageComponent : plProcVolumeBoxComponent
 
 class plRmlUiCanvas2DComponent : plRenderComponent
 {
-  plString RmlFile;
+  plStringView RmlFile;
   plVec2 AnchorPoint;
   bool PassInput;
   bool AutobindBlackboards;
+  bool OnDemandUpdate;
 }
 
 class plCommentComponent : plComponent
@@ -2964,8 +3020,8 @@ class plEventMessage : plMessage
   plMsgGenericEvent@ opCast();
   plMsgAnimationReachedEnd@ opCast();
   plMsgTriggerTriggered@ opCast();
+  plMsgSplineChanged@ opCast();
   plMsgSensorDetectedObjectsChanged@ opCast();
-  plMsgPathChanged@ opCast();
   plMsgBlackboardEntryChanged@ opCast();
   plMsgInputActionTriggered@ opCast();
   plMsgDamage@ opCast();
@@ -3020,6 +3076,10 @@ class plMsgUpdateLocalBounds : plMessage
 class plMsgSetPlaying : plMessage
 {
   bool Play;
+}
+
+class plMsgInterruptPlaying : plMessage
+{
 }
 
 class plMsgParentChanged : plMessage
@@ -3106,6 +3166,10 @@ class plMsgRetrieveBoneState : plMessage
 {
 }
 
+class plMsgSplineChanged : plEventMessage
+{
+}
+
 class plMsgSetMeshMaterial : plMessage
 {
   plStringView Material;
@@ -3125,10 +3189,6 @@ class plMsgExtractGeometry : plMessage
 }
 
 class plMsgSensorDetectedObjectsChanged : plEventMessage
-{
-}
-
-class plMsgPathChanged : plEventMessage
 {
 }
 
@@ -3382,7 +3442,7 @@ namespace plClock
 
 namespace plSound
 {
-  void PlaySound(plStringView Resource, plVec3 GlobalPosition, plQuat GlobalRotation = 1, float Pitch = 1, float Volume = 1, bool BlockToLoad = false);
+  void PlaySound(plStringView Resource, plVec3 GlobalPosition, plQuat GlobalRotation = plQuat::MakeIdentity(), float Pitch = 1, float Volume = 1, bool BlockToLoad = false);
 }
 
 namespace plCVar
@@ -3413,33 +3473,33 @@ namespace plCVar
 
 namespace plLog
 {
-  void Info(plStringView Text);
-  void Info(plStringView Text, ?&in VarArg1);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7);
-  void Info(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8);
-  void Warning(plStringView Text);
-  void Warning(plStringView Text, ?&in VarArg1);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7);
-  void Warning(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8);
-  void Error(plStringView Text);
-  void Error(plStringView Text, ?&in VarArg1);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7);
-  void Error(plStringView Text, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8);
+  void Info(plStringView);
+  void Info(plStringView, ?&in VarArg1);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7);
+  void Info(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8);
+  void Warning(plStringView);
+  void Warning(plStringView, ?&in VarArg1);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7);
+  void Warning(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8);
+  void Error(plStringView);
+  void Error(plStringView, ?&in VarArg1);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7);
+  void Error(plStringView, ?&in VarArg1, ?&in VarArg2, ?&in VarArg3, ?&in VarArg4, ?&in VarArg5, ?&in VarArg6, ?&in VarArg7, ?&in VarArg8);
 }
 
 namespace plPhysics
@@ -3448,19 +3508,19 @@ namespace plPhysics
   uint8 GetCollisionLayerByName(plStringView Name);
   uint8 GetWeightCategoryByName(plStringView Name);
   uint8 GetImpulseTypeByName(plStringView Name);
-  bool Raycast(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, plVec3 Start, plVec3 Direction, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 4294967295);
-  bool OverlapTestLine(plVec3 Start, plVec3 End, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 4294967295);
+  bool Raycast(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, plVec3 Start, plVec3 Direction, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 18446744073709551615);
+  bool OverlapTestLine(plVec3 Start, plVec3 End, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3), uint IgnoreObjectID = 18446744073709551615);
   bool OverlapTestSphere(float Radius, plVec3 Position, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3));
   bool OverlapTestCapsule(float Radius, float Height, plTransform Transform, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3));
   bool SweepTestSphere(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, float Radius, plVec3 Start, plVec3 Direction, float Distance, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3));
   bool SweepTestCapsule(plVec3&out HitPosition, plVec3&out HitNormal, plGameObjectHandle&out HitObject, float Radius, float Height, plTransform Start, plVec3 Direction, float Distance, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes = plPhysicsShapeType(3));
-  bool RaycastSurfaceInteraction(plVec3 RayStart, plVec3 RayDirection, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes, plStringView FallbackSurface, plTempHashedString Interaction, float Impulse = 0, uint IgnoreObjectID = 4294967295);
+  bool RaycastSurfaceInteraction(plVec3 RayStart, plVec3 RayDirection, uint8 CollisionLayer, plPhysicsShapeType ShapeTypes, plStringView FallbackSurface, plTempHashedString Interaction, float Impulse = 0, uint IgnoreObjectID = 18446744073709551615);
 }
 
 namespace plPrefabs
 {
-  void SpawnPrefab(plStringView Prefab, plTransform GlobalTransform, plVec3 RelativePos, plQuat RelativeRotation);
-  void SpawnPrefabAsChild(plStringView Prefab, plGameObject@ Parent, plVec3 RelativePos, plQuat RelativeRotation);
+  void SpawnPrefab(plStringView Prefab, plTransform GlobalTransform, uint UniqueID = 4294967295, bool SetCreatedByPrefab = true, bool SetHideShapeIcon = true);
+  void SpawnPrefabAsChild(plStringView Prefab, plGameObject@ Parent, plTransform LocalTransform, uint UniqueID = 4294967295, bool SetCreatedByPrefab = true, bool SetHideShapeIcon = true);
 }
 
 namespace plDebug

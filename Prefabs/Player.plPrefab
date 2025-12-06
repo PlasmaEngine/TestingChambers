@@ -4,10 +4,11 @@ o
 {
 	Uuid %id{u4{6590470116425382476,2685973930379754625}}
 	s %t{"plExposedParameter"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
 		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
 		b %DefaultValue{0}
 		s %Name{"GiveAllWeapons"}
 		s %Type{""}
@@ -37,7 +38,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8325318639183543703,4757176779305952111}}
-		u4 %Hash{469318396333399189}
+		u4 %Hash{4321504582600706197}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14146522745554303380,2902865256510917925}}
@@ -106,17 +107,6 @@ o
 }
 o
 {
-	Uuid %id{u4{9037051775693227418,1142056909135927101}}
-	s %t{"plFmodListenerComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		u1 %ListenerIndex{0}
-	}
-}
-o
-{
 	Uuid %id{u4{5622439316203724425,1720748372109465727}}
 	s %t{"plInputComponent"}
 	u3 %v{3}
@@ -145,7 +135,6 @@ o
 		{
 			Uuid{u4{8358543274016561322,5148621752135757114}}
 			Uuid{u4{5622439316203724425,1720748372109465727}}
-			Uuid{u4{9037051775693227418,1142056909135927101}}
 			Uuid{u4{14277641826211699617,5139911631931333399}}
 			Uuid{u4{13621459419324545419,4737766206129305611}}
 		}
@@ -179,6 +168,7 @@ o
 		{
 			Uuid{u4{17183932176149474540,14437762879067406406}}
 			Uuid{u4{6640024761792138632,1016865748585375154}}
+			Uuid{u4{780144963582383256,5461982072139398037}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0xCDCCCC3F}}
@@ -618,6 +608,17 @@ o
 		s %Name{"Invincible"}
 		Uuid %Object{u4{1632982377772426898,5345566257393890410}}
 		s %PropertyPath{"Parameters[Invincible]"}
+	}
+}
+o
+{
+	Uuid %id{u4{780144963582383256,5461982072139398037}}
+	s %t{"plFmodListenerComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		u1 %ListenerIndex{0}
 	}
 }
 o

@@ -11,7 +11,7 @@ o
 		s %AssetType{"VisualScriptClass"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13928984727940137406,5753242881404018067}}
-		u4 %Hash{9272884353421551193}
+		u4 %Hash{7849658408518301135}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14205567467645429721,16684919270608415640}}
@@ -116,7 +116,7 @@ o
 	p
 	{
 		b %DeleteEmptyParents{1}
-		Vec2 %Node::Pos{f{0x0DA4FE44,0xC0891E44}}
+		Vec2 %Node::Pos{f{0x0B24F844,0x44B72144}}
 	}
 }
 o
@@ -530,6 +530,23 @@ o
 }
 o
 {
+	Uuid %id{u4{6751686725043364905,1299638293817200870}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"plEditorPluginVisualScript"}
+		VarArray %Properties{}
+		s %TypeName{"plVisualScriptVariableTypeDeclaration"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{14819998237460879109,1646904713580085551}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -575,7 +592,7 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Title{"Get {TypeName}"}
+		s %Title{"GameObject::TryGet {TypeName}"}
 	}
 }
 o
@@ -860,6 +877,23 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
 		s %Name{"Type"}
 		s %Type{"plString"}
+	}
+}
+o
+{
+	Uuid %id{u4{12905035848053735036,7482291054119441163}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginVisualScript"}
+		VarArray %Properties{}
+		s %TypeName{"plVisualScriptVariableType"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -1183,6 +1217,23 @@ o
 		s %PluginName{"plEditorPluginVisualScript"}
 		VarArray %Properties{}
 		s %TypeName{"plVisualScriptVariable"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{2862395745410453067,12670181539206346402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginVisualScript"}
+		VarArray %Properties{}
+		s %TypeName{"plVisualScriptVariableCategory"}
 		u3 %TypeVersion{1}
 	}
 }

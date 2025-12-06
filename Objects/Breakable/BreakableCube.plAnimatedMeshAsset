@@ -14,7 +14,7 @@ o
 			s{"Assets/BreakableCube.glb"}
 		}
 		Uuid %DocumentID{u4{11467864308164704397,5180657745186677858}}
-		u4 %Hash{11739043801147919204}
+		u4 %Hash{1243855267645991764}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -48,22 +48,27 @@ o
 {
 	Uuid %id{u4{2385388957570205885,5481582947301762361}}
 	s %t{"plAnimatedMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		s %BoneWeightPrecision{"plMeshBoneWeigthPrecision::_8Bit"}
+		b %AggressiveSimplification{0}
 		s %DefaultSkeleton{"{ 8a494b19-157a-438e-874d-1fe2c3641a96 }"}
+		b %HighPrecision{0}
 		b %ImportMaterials{1}
 		VarArray %Materials
 		{
 			Uuid{u4{6414642945147856786,4904025972577524420}}
 		}
+		u1 %MaxSimplificationError{5}
+		s %MeshExcludeTags{""}
 		s %MeshFile{"Assets/BreakableCube.glb"}
-		s %NormalPrecision{"plMeshNormalPrecision::_10Bit"}
+		s %MeshIncludeTags{""}
+		u1 %MeshSimplification{50}
 		b %NormalizeWeights{1}
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
-		s %TexCoordPrecision{"plMeshTexCoordPrecision::_16Bit"}
+		b %SimplifyMesh{0}
+		s %VertexColorConversion{"plMeshVertexColorConversion::None"}
 	}
 }
 o
@@ -136,7 +141,7 @@ o
 }
 o
 {
-	Uuid %id{u4{4643690287530692169,11712829831668807985}}
+	Uuid %id{u4{7247182849452030899,11149460721636790200}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
@@ -147,41 +152,7 @@ o
 		s %ParentTypeName{"plEnumBase"}
 		s %PluginName{"Static"}
 		VarArray %Properties{}
-		s %TypeName{"plMeshBoneWeigthPrecision"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{4101022314413477917,13769697156274436726}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plMeshNormalPrecision"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{4664618235186762955,16317954485104532494}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plMeshTexCoordPrecision"}
+		s %TypeName{"plMeshVertexColorConversion"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -216,7 +187,7 @@ o
 		s %PluginName{"plEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"plAnimatedMeshAssetProperties"}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 }

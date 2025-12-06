@@ -11,11 +11,11 @@ o
 		s %AssetType{"Material"}
 		VarArray %Dependencies
 		{
-			s{":app/VisualShader/DefaultMaterialSkinned.ddl"}
+			s{":app/VisualShader/DefaultMaterial.ddl"}
 			s{":app/VisualShader/Textures.ddl"}
 		}
 		Uuid %DocumentID{u4{17382043958124326024,5158265456709497371}}
-		u4 %Hash{17928041816076964474}
+		u4 %Hash{4424304718177358915}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -61,7 +61,7 @@ o
 		Vec3 %Emissive{f{0,0,0}}
 		f %MaskThreshold{0x0000803E}
 		f %Metallic{0}
-		Vec2 %Node::Pos{f{0xCB502F44,0x44816F42}}
+		Vec2 %Node::Pos{f{0x7FA23644,0xB066BC42}}
 		f %Occlusion{0x0000803F}
 		f %Opacity{0x0000803F}
 		f %Reflectance{0x0000003F}
@@ -86,15 +86,15 @@ o
 }
 o
 {
-	Uuid %id{u4{8957450591840588449,4825688715347148555}}
-	s %t{"DocumentNodeManager_DefaultConnection"}
+	Uuid %id{u4{15712642265798926752,4943959010808698089}}
+	s %t{"plDocumentObject_ConnectionBase"}
 	u3 %v{1}
 	p
 	{
-		Uuid %Connection::Source{u4{6459206307361955508,5325624753748905821}}
-		s %Connection::SourcePin{"RGBA"}
-		Uuid %Connection::Target{u4{1472925947280966046,4689080094941531782}}
-		s %Connection::TargetPin{"BaseColor"}
+		Uuid %Source{u4{6459206307361955508,5325624753748905821}}
+		s %SourcePin{"RGBA"}
+		Uuid %Target{u4{1472925947280966046,4689080094941531782}}
+		s %TargetPin{"BaseColor"}
 	}
 }
 o
@@ -121,7 +121,7 @@ o
 			Uuid{u4{12825864250698177724,4718996857234948425}}
 			Uuid{u4{1472925947280966046,4689080094941531782}}
 			Uuid{u4{6459206307361955508,5325624753748905821}}
-			Uuid{u4{8957450591840588449,4825688715347148555}}
+			Uuid{u4{15712642265798926752,4943959010808698089}}
 		}
 	}
 }
@@ -195,6 +195,7 @@ o
 			Uuid{u4{16393153594407016602,3744118329769567614}}
 			Uuid{u4{7757084663128585029,8011669779036733373}}
 			Uuid{u4{5650026407490086663,5768478847879086899}}
+			Uuid{u4{3687164412847300807,16605290275319987562}}
 		}
 		s %TypeName{"BLEND_MODE"}
 		u3 %TypeVersion{1}
@@ -297,6 +298,7 @@ o
 	{
 		s %DependencyFlags{"plDependencyFlags::Package|plDependencyFlags::Thumbnail"}
 		s %Filter{";CompatibleAsset_Texture_2D;"}
+		s %RequiredTag{""}
 	}
 }
 o
@@ -320,7 +322,7 @@ o
 		s %Category{"plPropertyCategory::Constant"}
 		i3 %ConstantValue{2}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
-		s %Name{"BLEND_MODE::BLEND_MODE_TRANSPARENT"}
+		s %Name{"BLEND_MODE::BLEND_MODE_DITHERED"}
 		s %Type{"plInt32"}
 	}
 }
@@ -476,6 +478,7 @@ o
 	{
 		s %DependencyFlags{""}
 		s %Filter{";CompatibleAsset_Texture_2D;"}
+		s %RequiredTag{""}
 	}
 }
 o
@@ -531,7 +534,7 @@ o
 		s %Category{"plPropertyCategory::Constant"}
 		i3 %ConstantValue{4}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
-		s %Name{"BLEND_MODE::BLEND_MODE_MODULATE"}
+		s %Name{"BLEND_MODE::BLEND_MODE_ADDITIVE"}
 		s %Type{"plInt32"}
 	}
 }
@@ -641,7 +644,7 @@ o
 		s %Category{"plPropertyCategory::Constant"}
 		i3 %ConstantValue{3}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
-		s %Name{"BLEND_MODE::BLEND_MODE_ADDITIVE"}
+		s %Name{"BLEND_MODE::BLEND_MODE_TRANSPARENT"}
 		s %Type{"plInt32"}
 	}
 }
@@ -781,23 +784,6 @@ o
 }
 o
 {
-	Uuid %id{u4{1988646526571382668,10729334715299371304}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plReflectedClass"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"DocumentNodeManager_DefaultConnection"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{16819636187740221814,11089501717885464587}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -931,6 +917,23 @@ o
 }
 o
 {
+	Uuid %id{u4{2476700059554447605,15334435499439497874}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentObject_ConnectionBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{8648126710299805379,15926322808980556731}}
 	s %t{"plDefaultValueAttribute"}
 	u3 %v{1}
@@ -1023,6 +1026,21 @@ o
 	p
 	{
 		Vec4 %Value{f{0,0,0,0x0000803F}}
+	}
+}
+o
+{
+	Uuid %id{u4{3687164412847300807,16605290275319987562}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Constant"}
+		i3 %ConstantValue{5}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
+		s %Name{"BLEND_MODE::BLEND_MODE_MODULATE"}
+		s %Type{"plInt32"}
 	}
 }
 o

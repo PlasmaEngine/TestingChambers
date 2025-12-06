@@ -9,7 +9,12 @@ o
 	p
 	{
 		s %AssetType{"Scene"}
-		VarArray %Dependencies{}
+		VarArray %Dependencies
+		{
+			s{"{ 09799bfe-9fec-4910-936e-7d4ccbf2bc35 }"}
+			s{"{ 1b6970cc-390d-420d-9481-48f5e22cacd0 }"}
+			s{"{ f71a04cf-f055-4b80-88a1-8826f73e5b78 }"}
+		}
 		Uuid %DocumentID{u4{332678910050156717,5413383538482065259}}
 		u4 %Hash{2618860729770108231}
 		VarArray %MetaInfo{}

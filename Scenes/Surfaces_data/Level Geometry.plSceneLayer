@@ -11,17 +11,17 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{15036442609172644244,4759523109657735372}}
-		u4 %Hash{4207438814832590253}
+		u4 %Hash{15934727558889040838}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
+			s{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
 			s{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 		}
 		VarArray %References
 		{
-			s{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
+			s{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
 			s{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 		}
 	}
@@ -33,16 +33,17 @@ o
 {
 	Uuid %id{u4{10220194735494829153,2042824348291187869}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
-		s %Material{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
+		s %Material{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 		s %Shape{"plGreyBoxShape::Box"}
 		f %SizeNegX{0x00000040}
 		f %SizeNegY{0x00004842}
@@ -112,16 +113,17 @@ o
 {
 	Uuid %id{u4{7350438919417333534,6911812687705414432}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
-		s %Material{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
+		s %Material{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 		s %Shape{"plGreyBoxShape::Box"}
 		f %SizeNegX{0x00000040}
 		f %SizeNegY{0x00004842}
@@ -165,16 +167,17 @@ o
 {
 	Uuid %id{u4{311783400415284770,10466486793012832499}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
-		s %Material{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
+		s %Material{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 		s %Shape{"plGreyBoxShape::Box"}
 		f %SizeNegX{0x00004842}
 		f %SizeNegY{0x00000040}
@@ -245,16 +248,17 @@ o
 {
 	Uuid %id{u4{7260559836171555902,11234697727437730498}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0xF0115F3F,0x707B333F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
-		s %Material{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
+		s %Material{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
 		s %Shape{"plGreyBoxShape::Box"}
 		f %SizeNegX{0x00004842}
 		f %SizeNegY{0x00004842}
@@ -272,16 +276,17 @@ o
 {
 	Uuid %id{u4{12476367245459171517,15775563863025457862}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
-		s %Material{"{ 1dd7dbfb-f712-0acc-d78b-cd7f36eddea1 }"}
+		s %Material{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
 		s %Shape{"plGreyBoxShape::Box"}
 		f %SizeNegX{0x00004842}
 		f %SizeNegY{0x00000040}
@@ -440,7 +445,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plGreyBoxComponent"}
-		u3 %TypeVersion{5}
+		u3 %TypeVersion{6}
 	}
 }
 o

@@ -167,11 +167,6 @@ InputAction
 		string %Key{"controller0_right_trigger"}
 		float %Scale{1}
 	}
-	Slot
-	{
-		string %Key{"keyboard_right_ctrl"}
-		float %Scale{1}
-	}
 }
 InputAction
 {

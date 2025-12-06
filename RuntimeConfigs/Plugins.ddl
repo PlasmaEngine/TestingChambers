@@ -10,11 +10,6 @@ Plugin
 }
 Plugin
 {
-	string %Path{"plDirectedCameraFramework"}
-	bool %LoadCopy{false}
-}
-Plugin
-{
 	string %Path{"plFmodPlugin"}
 	bool %LoadCopy{false}
 }
@@ -31,6 +26,11 @@ Plugin
 Plugin
 {
 	string %Path{"plKrautPlugin"}
+	bool %LoadCopy{false}
+}
+Plugin
+{
+	string %Path{"plOpenXRPlugin"}
 	bool %LoadCopy{false}
 }
 Plugin

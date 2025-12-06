@@ -24,7 +24,9 @@ Cloth
 Column
 Cone
 Continuing
+Controlled
 Culling
+Custom
 CustomPose
 Deactivated
 Debris
@@ -81,6 +83,7 @@ ImpactReactions
 Left
 LeftController
 LightBreple
+Limp
 Linear
 LoadAndSwitch
 Local
@@ -114,6 +117,7 @@ NextFrame
 NoDrive
 NoLimit
 None
+Off
 Once
 OnlyPosition
 OrthoFixedHeight
@@ -127,6 +131,7 @@ PositiveY
 PositiveZ
 PostAsync
 PostTransform
+Powered
 Preload
 PreserveGlobal
 PreserveLocal
@@ -176,6 +181,7 @@ TopRight
 Transparent
 Triangle
 Trigger
+Turning
 Variable
 VisCasts
 VisContacts
@@ -185,7 +191,8 @@ VisPathCorridor
 VisPathLine
 VisShape
 VisTarget
-VisualizePath
+VisualizeSpline
+VisualizeTangents
 VisualizeUpDir
 Vortex
 WeakShockwave

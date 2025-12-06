@@ -55,8 +55,8 @@ plFmodComponent
 plFmodEventComponent
 plFmodListenerComponent
 plFogComponent
-plFollowPathComponent
-plFollowPathMode
+plFollowSplineComponent
+plFollowSplineMode
 plForwardEventsToGameStateComponent
 plGameObject
 plGameObjectDesc
@@ -98,6 +98,7 @@ plJoltHitboxComponent
 plJoltMsgDisconnectConstraints
 plJoltPointConstraintComponent
 plJoltQueryShapeActorComponent
+plJoltRagdollAnimMode
 plJoltRagdollComponent
 plJoltRagdollStartMode
 plJoltRopeAnchorConstraintMode
@@ -153,11 +154,11 @@ plMsgExtractVolumes
 plMsgFmodSoundFinished
 plMsgGenericEvent
 plMsgInputActionTriggered
+plMsgInterruptPlaying
 plMsgMoveCharacterController
 plMsgObjectGrabbed
 plMsgOnlyApplyToObject
 plMsgParentChanged
-plMsgPathChanged
 plMsgPhysicCharacterContact
 plMsgPhysicContact
 plMsgPhysicsAddImpulse
@@ -173,6 +174,7 @@ plMsgSetCustomData
 plMsgSetFloatParameter
 plMsgSetMeshMaterial
 plMsgSetPlaying
+plMsgSplineChanged
 plMsgStateMachineStateChanged
 plMsgTransformChanged
 plMsgTriggerTriggered
@@ -186,10 +188,6 @@ plOnComponentFinishedAction2
 plOnJoltContact
 plParticleComponent
 plParticleFinisherComponent
-plPathComponent
-plPathComponentFlags
-plPathNodeComponent
-plPathNodeTangentMode
 plPhysicsShapeType
 plPlayerStartPointComponent
 plPointLightComponent
@@ -243,6 +241,10 @@ plSpatialAnchorComponent
 plSpawnBoxComponent
 plSpawnComponent
 plSphereReflectionProbeComponent
+plSplineComponent
+plSplineComponentFlags
+plSplineNodeComponent
+plSplineTangentMode
 plSpotLightComponent
 plSpriteBlendMode
 plSpriteComponent

@@ -11,14 +11,12 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{16033299415433335720,5748835052109362040}}
-		u4 %Hash{15037500722821072102}
+		u4 %Hash{737139770221152413}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
 			s{"{ 0af8fc54-92ce-464e-b825-661c83f34a3a }"}
-			s{"{ 0de9da9e-70a6-4471-b887-2dcde70302dd }"}
-			s{"{ 1036c0f2-0008-448f-8b9a-c5aa1069a394 }"}
 			s{"{ 2a5d16b1-6867-4b5b-89b2-8436f11381cb }"}
 			s{"{ 317e4b00-3e99-4f42-a175-2f7cdfc3fd7f }"}
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -826,6 +824,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -1036,6 +1035,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -1148,6 +1148,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -1165,6 +1166,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -1699,6 +1701,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -1816,6 +1819,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -1982,6 +1986,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 6ae73fcf-e09c-1c3f-54a8-8a80498519fb }"}
@@ -2045,12 +2050,13 @@ o
 {
 	Uuid %id{u4{8544046490056249550,2368745015725063422}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -2072,7 +2078,7 @@ o
 {
 	Uuid %id{u4{6911316822843827559,2390714394058165656}}
 	s %t{"plJoltClothSheetComponent"}
-	u3 %v{2}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -2194,12 +2200,13 @@ o
 {
 	Uuid %id{u4{8934191910348986764,2510824718234150554}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -2307,6 +2314,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -2548,12 +2556,13 @@ o
 {
 	Uuid %id{u4{10362584086104424557,2830608465593250453}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -2575,12 +2584,13 @@ o
 {
 	Uuid %id{u4{6757780805893965465,2849218433247532590}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -2673,6 +2683,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -2717,6 +2728,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -2829,6 +2841,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 9fc82cb4-e800-cc3d-feed-61a7c88e2a20 }"}
@@ -2994,6 +3007,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -3023,6 +3037,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -3315,6 +3330,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -3327,12 +3343,13 @@ o
 {
 	Uuid %id{u4{17952456231626479743,3630751861228559779}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -3359,6 +3376,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -3376,6 +3394,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -3405,6 +3424,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -3446,12 +3466,13 @@ o
 {
 	Uuid %id{u4{4620677274494284680,3724209296307828921}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -3682,6 +3703,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -3906,6 +3928,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -4047,6 +4070,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -4225,6 +4249,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 6ae73fcf-e09c-1c3f-54a8-8a80498519fb }"}
@@ -4412,7 +4437,7 @@ o
 {
 	Uuid %id{u4{7561527291760208787,4623761464356894118}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -4430,13 +4455,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{9604360060652291774,4626353524496667384}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -4454,6 +4481,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -4480,7 +4509,7 @@ o
 {
 	Uuid %id{u4{13806184686691462034,4635164311968908840}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -4498,6 +4527,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -4607,7 +4638,7 @@ o
 {
 	Uuid %id{u4{9158683619322587804,4656982118109765185}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -4625,6 +4656,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -4636,6 +4669,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -4710,7 +4744,7 @@ o
 {
 	Uuid %id{u4{13298004032296145325,4664467251936584560}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -4728,6 +4762,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -4763,7 +4799,7 @@ o
 {
 	Uuid %id{u4{1859371569152968340,4666038115280124014}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -4781,6 +4817,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -5114,7 +5152,7 @@ o
 {
 	Uuid %id{u4{1522513833820443567,4683222004842607685}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5132,6 +5170,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -5183,7 +5223,7 @@ o
 {
 	Uuid %id{u4{12285935448007778184,4689067613148327466}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5201,6 +5241,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -5212,6 +5254,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials{}
 		s %Mesh{"{ 618ee743-ed04-4fac-bf5f-572939db2f1d }"}
 		f %SortingDepthOffset{0}
@@ -5221,12 +5264,13 @@ o
 {
 	Uuid %id{u4{11341755196785872283,4693057467671460465}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -5264,6 +5308,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
@@ -5276,12 +5321,13 @@ o
 {
 	Uuid %id{u4{341800527934774943,4699491802594435435}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -5335,6 +5381,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -5386,7 +5433,7 @@ o
 {
 	Uuid %id{u4{1184818126725847219,4704021681415511787}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5404,6 +5451,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -5498,12 +5547,13 @@ o
 {
 	Uuid %id{u4{4220081091075350691,4713340861984725651}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -5575,7 +5625,7 @@ o
 {
 	Uuid %id{u4{15236455564294536577,4722236414428951558}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5593,6 +5643,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -5710,7 +5762,7 @@ o
 {
 	Uuid %id{u4{12507432622744571059,4734121005150364245}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5728,18 +5780,21 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{6402229251682090373,4740937601337528484}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -5761,7 +5816,7 @@ o
 {
 	Uuid %id{u4{7237866694866273439,4752752330948673678}}
 	s %t{"plScriptComponent"}
-	u3 %v{1}
+	u3 %v{2}
 	p
 	{
 		b %Active{1}
@@ -5776,12 +5831,13 @@ o
 {
 	Uuid %id{u4{6625653281180356286,4754566588831389429}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -5803,7 +5859,7 @@ o
 {
 	Uuid %id{u4{11416517723945188236,4764612337519580873}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5821,13 +5877,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{15504820146773286289,4766454641308165929}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5845,6 +5903,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -5971,7 +6031,7 @@ o
 {
 	Uuid %id{u4{1772962949061378980,4783045279245925244}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -5989,6 +6049,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -6263,7 +6325,7 @@ o
 {
 	Uuid %id{u4{7814062508579111815,4824981565370790480}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6281,6 +6343,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -6342,7 +6406,7 @@ o
 {
 	Uuid %id{u4{17187965505917187717,4831026981845211580}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6360,6 +6424,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -6398,6 +6464,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
@@ -6410,12 +6477,13 @@ o
 {
 	Uuid %id{u4{2451368656994253718,4843975618776232767}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -6589,7 +6657,7 @@ o
 {
 	Uuid %id{u4{827174287847170215,4864280384402779778}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6607,6 +6675,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -6618,6 +6688,32 @@ o
 	{
 		b %Active{1}
 		Vec3 %HalfExtents{f{0x0000003F,0x0000003F,0x0000003F}}
+	}
+}
+o
+{
+	Uuid %id{u4{10045280617125280394,4864836273437036166}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{13185354486689300903,5049201981704075958}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x0000003F,0x00001040,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"1"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
 	}
 }
 o
@@ -6767,7 +6863,7 @@ o
 {
 	Uuid %id{u4{8318033365265497517,4902135969723467543}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6785,13 +6881,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{6730679040343285386,4904157281791941109}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6809,6 +6907,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -6876,26 +6976,9 @@ o
 }
 o
 {
-	Uuid %id{u4{3369617150843492785,4907628841073797887}}
-	s %t{"plTypeScriptComponent"}
-	u3 %v{4}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		VarDict %Parameters
-		{
-			s %OnBreakMsg{"Swinging door joint broke !"}
-		}
-		b %PassThroughUnhandledEvents{0}
-		s %Script{"{ 1036c0f2-0008-448f-8b9a-c5aa1069a394 }"}
-	}
-}
-o
-{
 	Uuid %id{u4{17410144178842397322,4910901210769235953}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6913,6 +6996,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -6931,7 +7016,7 @@ o
 {
 	Uuid %id{u4{11426200200472656531,4915877726126594015}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -6949,23 +7034,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
-	}
-}
-o
-{
-	Uuid %id{u4{1097878022231609242,4917661210775098456}}
-	s %t{"plTypeScriptComponent"}
-	u3 %v{4}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		VarDict %Parameters
-		{
-			s %OnBreakMsg{"Joint in wall broke !"}
-		}
-		b %PassThroughUnhandledEvents{0}
-		s %Script{"{ 1036c0f2-0008-448f-8b9a-c5aa1069a394 }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7065,7 +7135,7 @@ o
 {
 	Uuid %id{u4{6526978194801141137,4928421731217413740}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7083,6 +7153,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7199,7 +7271,7 @@ o
 {
 	Uuid %id{u4{15103213708161687970,4940291706564221128}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7217,13 +7289,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{15549508699653618560,4940420552450643173}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7241,6 +7315,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7315,7 +7391,7 @@ o
 {
 	Uuid %id{u4{4935601582776801154,4951953148497509665}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7333,6 +7409,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7433,7 +7511,7 @@ o
 {
 	Uuid %id{u4{5537313175999450266,4960795947292588756}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7451,6 +7529,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7515,7 +7595,7 @@ o
 {
 	Uuid %id{u4{15482718609710182332,4968355164073513029}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7533,6 +7613,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7604,7 +7686,7 @@ o
 {
 	Uuid %id{u4{11035122027846720143,4981973663735375238}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7622,6 +7704,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7672,6 +7756,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ aa1c5601-bc43-fbf8-4e07-6a3df3af51e7 }"}
@@ -7726,12 +7811,13 @@ o
 {
 	Uuid %id{u4{5915166190318237103,4989587203334373981}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{12}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -7753,7 +7839,7 @@ o
 {
 	Uuid %id{u4{12874897459142644158,4990189689260855881}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7771,13 +7857,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{11085309694332272061,4990649926911855076}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -7795,6 +7883,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -7982,6 +8072,22 @@ o
 }
 o
 {
+	Uuid %id{u4{4448430036270456450,5018708136368080789}}
+	s %t{"plSplineNodeComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		Vec3 %CustomTangentIn{f{0xABAA90BF,0xADAA3ABE,0}}
+		Vec3 %CustomTangentOut{f{0x0100783F,0x0200203E,0}}
+		b %LinkCustomTangents{1}
+		Angle %Roll{f{0}}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Custom"}
+	}
+}
+o
+{
 	Uuid %id{u4{18309541831808063642,5023470502176022128}}
 	s %t{"plJoltShapeBoxComponent"}
 	u3 %v{1}
@@ -8027,7 +8133,7 @@ o
 {
 	Uuid %id{u4{16479224784382119615,5028873788512315679}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8045,6 +8151,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -8193,6 +8301,22 @@ o
 }
 o
 {
+	Uuid %id{u4{13185354486689300903,5049201981704075958}}
+	s %t{"plSplineNodeComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
+		Angle %Roll{f{0}}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
+	}
+}
+o
+{
 	Uuid %id{u4{3083463705075294128,5061223254976747751}}
 	s %t{"plSliderComponent"}
 	u3 %v{3}
@@ -8255,6 +8379,38 @@ o
 }
 o
 {
+	Uuid %id{u4{13681288517098601093,5063246926586649581}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{10045280617125280394,4864836273437036166}}
+			Uuid{u4{13486924534233052552,5691596660397591554}}
+			Uuid{u4{11429171766865692807,5367558145919981601}}
+			Uuid{u4{967741584562343322,5701306078274553108}}
+		}
+		VarArray %Components
+		{
+			Uuid{u4{9980147867561390763,5733441408069012601}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x000080C1,0x0000F0C0,0x00003841}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{3880510379962619797,5064477635500461752}}
 	s %t{"plJoltPointConstraintComponent"}
 	u3 %v{1}
@@ -8300,7 +8456,7 @@ o
 {
 	Uuid %id{u4{3037366625564403328,5070570061327241893}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8318,6 +8474,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -8363,7 +8521,7 @@ o
 {
 	Uuid %id{u4{6017518799273594508,5083216283283813668}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8381,6 +8539,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -8532,7 +8692,7 @@ o
 {
 	Uuid %id{u4{11950649452029252998,5111964199886229072}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8550,6 +8710,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -8580,12 +8742,13 @@ o
 {
 	Uuid %id{u4{2128865152013403838,5115005639416411092}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -8607,7 +8770,7 @@ o
 {
 	Uuid %id{u4{2298195822107971730,5115304255426863841}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8625,6 +8788,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -8647,12 +8812,13 @@ o
 {
 	Uuid %id{u4{1376916972355259048,5120154506341732871}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{4}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -8674,7 +8840,7 @@ o
 {
 	Uuid %id{u4{4302218128063136658,5127175584602789788}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8692,6 +8858,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -8725,7 +8893,7 @@ o
 {
 	Uuid %id{u4{1930337669508930460,5134074937016166315}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8743,18 +8911,21 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{9040772765683065763,5134909709615955496}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -8842,7 +9013,7 @@ o
 {
 	Uuid %id{u4{8271696098851736748,5145051053912958433}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -8860,6 +9031,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9027,7 +9200,7 @@ o
 {
 	Uuid %id{u4{15244381584177741444,5168070859082406683}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9045,13 +9218,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{9480487569276997256,5174632042080607085}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9069,6 +9244,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9164,7 +9341,7 @@ o
 {
 	Uuid %id{u4{11945985655521863309,5191034577344523475}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9182,6 +9359,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9235,23 +9414,6 @@ o
 		b %Active{1}
 		VarDict %Parameters{}
 		s %Prefab{"{ 4f850b7b-e53d-4f0c-9efd-15b35ffa6962 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{9402449884103659435,5202960372486020930}}
-	s %t{"plTypeScriptComponent"}
-	u3 %v{4}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		VarDict %Parameters
-		{
-			d %Seconds{0x0000000000001440}
-		}
-		b %PassThroughUnhandledEvents{0}
-		s %Script{"{ 0de9da9e-70a6-4471-b887-2dcde70302dd }"}
 	}
 }
 o
@@ -9398,7 +9560,7 @@ o
 {
 	Uuid %id{u4{11176957131828079492,5228331898435639448}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9416,13 +9578,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{18065383074117129621,5228404962469371640}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9440,6 +9604,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9564,7 +9730,7 @@ o
 {
 	Uuid %id{u4{10786881951917239943,5245540034673484854}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9582,6 +9748,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9600,7 +9768,7 @@ o
 {
 	Uuid %id{u4{6914438561047781821,5253368627841668977}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9618,6 +9786,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9760,12 +9930,13 @@ o
 {
 	Uuid %id{u4{16996444949911002540,5274580211478089382}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -9799,7 +9970,7 @@ o
 {
 	Uuid %id{u4{12357565345980177026,5282640074795325977}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9817,6 +9988,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9853,12 +10026,13 @@ o
 {
 	Uuid %id{u4{15223958793089175207,5285482701883028580}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{8}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -9918,7 +10092,7 @@ o
 {
 	Uuid %id{u4{8915741004717592720,5291180959237385320}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -9936,6 +10110,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -9997,6 +10173,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -10036,7 +10213,7 @@ o
 {
 	Uuid %id{u4{4525313892251271335,5303305676292279850}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10054,6 +10231,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10082,7 +10261,7 @@ o
 {
 	Uuid %id{u4{4804943640909921983,5305799406632223398}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10100,6 +10279,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10162,7 +10343,7 @@ o
 {
 	Uuid %id{u4{15877490586670215813,5316380344701046506}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10180,6 +10361,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10210,6 +10393,22 @@ o
 			s{"CastShadow"}
 			s{"AutoColMesh"}
 		}
+	}
+}
+o
+{
+	Uuid %id{u4{16110492727469334953,5320768891681663263}}
+	s %t{"plSplineNodeComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
+		Angle %Roll{f{0}}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
 	}
 }
 o
@@ -10271,7 +10470,7 @@ o
 {
 	Uuid %id{u4{11892339777328944526,5330403830215833993}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10289,6 +10488,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10377,6 +10578,22 @@ o
 }
 o
 {
+	Uuid %id{u4{7480099763873155997,5341155559047996080}}
+	s %t{"plSplineNodeComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		Vec3 %CustomTangentIn{f{0,0,0}}
+		Vec3 %CustomTangentOut{f{0,0,0}}
+		b %LinkCustomTangents{0}
+		Angle %Roll{f{0}}
+		s %TangentModeIn{"plSplineTangentMode::Auto"}
+		s %TangentModeOut{"plSplineTangentMode::Auto"}
+	}
+}
+o
+{
 	Uuid %id{u4{8742200108053986470,5342158193154317377}}
 	s %t{"plMeshComponent"}
 	u3 %v{3}
@@ -10384,6 +10601,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 9fc82cb4-e800-cc3d-feed-61a7c88e2a20 }"}
@@ -10396,7 +10614,7 @@ o
 {
 	Uuid %id{u4{4636409673753321379,5345489579204758622}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10414,18 +10632,21 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{17461462470739730310,5350919150175572764}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -10488,7 +10709,7 @@ o
 {
 	Uuid %id{u4{11280051119949694617,5358774389598397835}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10506,6 +10727,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10532,9 +10755,35 @@ o
 }
 o
 {
+	Uuid %id{u4{11429171766865692807,5367558145919981601}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{7480099763873155997,5341155559047996080}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x00000441,0x00006040,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"2"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{10785291576200092579,5370184685518816135}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10552,13 +10801,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{7834122034727675069,5375286905993536111}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10576,6 +10827,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10587,6 +10840,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -10642,12 +10896,13 @@ o
 {
 	Uuid %id{u4{12893969309980742031,5386532169348789379}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -10707,7 +10962,7 @@ o
 {
 	Uuid %id{u4{15400389984650023591,5393295887752474911}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10725,6 +10980,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10792,7 +11049,7 @@ o
 {
 	Uuid %id{u4{13840356589812651691,5403447780648539523}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10810,6 +11067,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10839,7 +11098,7 @@ o
 {
 	Uuid %id{u4{7175954519783370161,5408677013842939735}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10857,6 +11116,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -10885,7 +11146,7 @@ o
 {
 	Uuid %id{u4{12958741627662056327,5411406017037189897}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -10903,6 +11164,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11016,7 +11279,7 @@ o
 {
 	Uuid %id{u4{8869758424791164806,5417673652794728940}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11034,13 +11297,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{8081759971604013492,5422060755358300292}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11058,6 +11323,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11084,7 +11351,7 @@ o
 {
 	Uuid %id{u4{190251289345985198,5427081901599540410}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11102,6 +11369,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11173,7 +11442,7 @@ o
 {
 	Uuid %id{u4{447890847915202966,5442777249968509756}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11191,6 +11460,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11202,6 +11473,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials{}
 		s %Mesh{"{ 618ee743-ed04-4fac-bf5f-572939db2f1d }"}
 		f %SortingDepthOffset{0}
@@ -11211,7 +11483,7 @@ o
 {
 	Uuid %id{u4{1235812344007442068,5446528489331215908}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11229,6 +11501,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11240,6 +11514,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -11252,12 +11527,13 @@ o
 {
 	Uuid %id{u4{16497603065911933343,5450779575715237299}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -11306,7 +11582,7 @@ o
 {
 	Uuid %id{u4{12729862399863557007,5469361417947148451}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11324,6 +11600,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11341,7 +11619,7 @@ o
 {
 	Uuid %id{u4{3220504027446112421,5481642062182501585}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11359,6 +11637,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11392,7 +11672,7 @@ o
 {
 	Uuid %id{u4{6161610092015637437,5486081727690849749}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11410,6 +11690,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11472,7 +11754,7 @@ o
 {
 	Uuid %id{u4{6549721921297735607,5494408030167407103}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11490,6 +11772,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11534,6 +11818,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 69ce5162-8938-4fcf-af58-4b590317f807 }"}
@@ -11580,12 +11865,13 @@ o
 {
 	Uuid %id{u4{2271629012020095901,5501828757579223128}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -11646,7 +11932,7 @@ o
 {
 	Uuid %id{u4{10850988486953187003,5513006152302297310}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11664,6 +11950,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11675,6 +11963,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials{}
 		s %Mesh{"{ 317e4b00-3e99-4f42-a175-2f7cdfc3fd7f }"}
 		f %SortingDepthOffset{0}
@@ -11716,7 +12005,7 @@ o
 {
 	Uuid %id{u4{6756253625547428484,5523219146274973792}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11734,6 +12023,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -11896,7 +12187,6 @@ o
 		VarArray %Components
 		{
 			Uuid{u4{10248944803886373270,5207768599901272215}}
-			Uuid{u4{9402449884103659435,5202960372486020930}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0x0000803E,0,0}}
@@ -11915,12 +12205,13 @@ o
 {
 	Uuid %id{u4{17092161220155211939,5536905134491953836}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -11952,7 +12243,7 @@ o
 {
 	Uuid %id{u4{12887961520182726074,5549459035293902289}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -11970,6 +12261,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12024,7 +12317,7 @@ o
 {
 	Uuid %id{u4{11101520022745500321,5554720684218232654}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12042,13 +12335,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{5391518895330787237,5556285724015583121}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12066,6 +12361,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12095,7 +12392,7 @@ o
 {
 	Uuid %id{u4{7041580398422491050,5561454791844489067}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12113,6 +12410,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12171,12 +12470,13 @@ o
 {
 	Uuid %id{u4{17815034734211412366,5566732202788399846}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -12214,7 +12514,7 @@ o
 {
 	Uuid %id{u4{5358694275303101585,5567092506009738534}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12232,6 +12532,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12430,12 +12732,13 @@ o
 {
 	Uuid %id{u4{17286638419770729360,5595161201011231395}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -12557,7 +12860,7 @@ o
 {
 	Uuid %id{u4{2019142004571242670,5611966038566613708}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12575,6 +12878,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12643,12 +12948,13 @@ o
 {
 	Uuid %id{u4{13999472997786286235,5625479843572063396}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -12813,7 +13119,7 @@ o
 {
 	Uuid %id{u4{10838780356225694343,5648903429110693479}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12831,6 +13137,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12872,7 +13180,7 @@ o
 {
 	Uuid %id{u4{13205353420851902354,5660337644632991390}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12890,6 +13198,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -12908,10 +13218,7 @@ o
 			Uuid{u4{13436532992705771412,5486959972216054487}}
 			Uuid{u4{8794606791761081247,5565363492897389184}}
 		}
-		VarArray %Components
-		{
-			Uuid{u4{1097878022231609242,4917661210775098456}}
-		}
+		VarArray %Components{}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0x018029C2,0x565529C1,0x0000D03F}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
@@ -12957,7 +13264,7 @@ o
 {
 	Uuid %id{u4{15314018847943885706,5668486900661715276}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12975,13 +13282,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{13326773798946702987,5677614143851656279}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -12999,6 +13308,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -13083,12 +13394,13 @@ o
 {
 	Uuid %id{u4{2641312814765962151,5689027963668687802}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -13124,6 +13436,32 @@ o
 }
 o
 {
+	Uuid %id{u4{13486924534233052552,5691596660397591554}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{4448430036270456450,5018708136368080789}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x0000A840,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"1.1"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{11018146696460562334,5701076364661002262}}
 	s %t{"plMeshComponent"}
 	u3 %v{3}
@@ -13131,6 +13469,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials{}
 		s %Mesh{"{ 317e4b00-3e99-4f42-a175-2f7cdfc3fd7f }"}
 		f %SortingDepthOffset{0}
@@ -13140,12 +13479,13 @@ o
 {
 	Uuid %id{u4{11229079107651232136,5701248675764333451}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -13161,6 +13501,32 @@ o
 		b %SlopedTop{0}
 		f %Thickness{0x0000003F}
 		b %UseAsOccluder{1}
+	}
+}
+o
+{
+	Uuid %id{u4{967741584562343322,5701306078274553108}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{16110492727469334953,5320768891681663263}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x00004041,0x0000A840,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{"3"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
 	}
 }
 o
@@ -13294,12 +13660,13 @@ o
 {
 	Uuid %id{u4{7242337380764176770,5732274011729194127}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -13319,9 +13686,29 @@ o
 }
 o
 {
+	Uuid %id{u4{9980147867561390763,5733441408069012601}}
+	s %t{"plSplineComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %Closed{0}
+		u1 %EditNodes{0}
+		s %Flags{""}
+		VarArray %Nodes
+		{
+			HashedString{s{"1"}}
+			HashedString{s{"1.1"}}
+			HashedString{s{"2"}}
+			HashedString{s{"3"}}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{6663082294649467776,5735754821907633192}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -13339,13 +13726,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{6859436546426647741,5735957701353411047}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -13363,6 +13752,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -13381,7 +13772,7 @@ o
 {
 	Uuid %id{u4{11389247965194904971,5740351847464499525}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -13399,13 +13790,15 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
 {
 	Uuid %id{u4{14862310220199146149,5741246635367389845}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -13423,6 +13816,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{"{ 72748b9e-00b2-4899-ac1f-57d64866228b }"}
+		u1 %WeightCategory{2}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -13522,7 +13917,7 @@ o
 {
 	Uuid %id{u4{9066493710058774167,5752186732259804054}}
 	s %t{"plJoltDynamicActorComponent"}
-	u3 %v{4}
+	u3 %v{7}
 	p
 	{
 		b %Active{1}
@@ -13540,6 +13935,8 @@ o
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
+		u1 %WeightCategory{1}
+		f %WeightScale{0x0000803F}
 	}
 }
 o
@@ -13552,7 +13949,6 @@ o
 		b %Active{1}
 		u1 %CollisionLayer{0}
 		s %CollisionMesh{""}
-		b %IncludeInNavmesh{1}
 		b %PullSurfacesFromGraphicsMesh{0}
 		s %Surface{""}
 	}
@@ -14276,6 +14672,7 @@ o
 			Uuid{u4{10576720244930297211,2665903565745907028}}
 			Uuid{u4{12362985929092581296,2185430148223437860}}
 			Uuid{u4{10607337670232843571,7624401889646398409}}
+			Uuid{u4{13681288517098601093,5063246926586649581}}
 		}
 		Uuid %Settings{u4{17165472681167466672,5590908592681332920}}
 	}
@@ -14688,6 +15085,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -14815,7 +15213,7 @@ o
 {
 	Uuid %id{u4{12206127436411266847,7053418198699295655}}
 	s %t{"plJoltClothSheetComponent"}
-	u3 %v{2}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -14879,6 +15277,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -15175,6 +15574,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -15314,6 +15714,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 9fc82cb4-e800-cc3d-feed-61a7c88e2a20 }"}
@@ -15326,12 +15727,13 @@ o
 {
 	Uuid %id{u4{6788398231196511825,7807716757148023971}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -15452,12 +15854,13 @@ o
 {
 	Uuid %id{u4{14536357159775573275,8091276680196604573}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -15743,6 +16146,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -15799,6 +16203,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -15886,12 +16291,13 @@ o
 {
 	Uuid %id{u4{9015924281856116745,8563757505443362688}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -16015,6 +16421,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -16044,6 +16451,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -16061,6 +16469,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -16078,6 +16487,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ f7ffeb89-fb78-4fe3-b7a5-bbacb4e4095e }"}
@@ -16312,6 +16722,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -16329,6 +16740,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -16346,6 +16758,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -16390,6 +16803,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -16407,6 +16821,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -16424,6 +16839,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -16856,6 +17272,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -16873,6 +17290,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -16941,12 +17359,13 @@ o
 {
 	Uuid %id{u4{624394206911056468,9430290590223449572}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -16992,12 +17411,13 @@ o
 {
 	Uuid %id{u4{57262042788652831,9445408662223407479}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -17107,6 +17527,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ aa1c5601-bc43-fbf8-4e07-6a3df3af51e7 }"}
@@ -17470,12 +17891,13 @@ o
 {
 	Uuid %id{u4{8082555463817751335,9818166820791642975}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -17626,12 +18048,13 @@ o
 {
 	Uuid %id{u4{9179198194245012284,9882308078459974895}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -17680,12 +18103,13 @@ o
 {
 	Uuid %id{u4{10634810001157449543,9898889294427435174}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -17835,6 +18259,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -17994,6 +18419,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
@@ -18186,12 +18612,13 @@ o
 {
 	Uuid %id{u4{11985233226141606191,10196725939891087606}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -18284,6 +18711,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 9fc82cb4-e800-cc3d-feed-61a7c88e2a20 }"}
@@ -18372,12 +18800,13 @@ o
 {
 	Uuid %id{u4{17696379496858538318,10247218563564023694}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -18416,6 +18845,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -18498,12 +18928,13 @@ o
 {
 	Uuid %id{u4{18149898972937019439,10267029614022377323}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{12}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -18932,12 +19363,13 @@ o
 {
 	Uuid %id{u4{1659409170102682645,10361878546517734235}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -19297,12 +19729,13 @@ o
 {
 	Uuid %id{u4{10910434986757646672,10405054030730973622}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -19394,12 +19827,13 @@ o
 {
 	Uuid %id{u4{8762811443711482944,10448726710745124824}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -19421,12 +19855,13 @@ o
 {
 	Uuid %id{u4{7369486124475346486,10451273435707448228}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -19519,6 +19954,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -19726,12 +20162,13 @@ o
 {
 	Uuid %id{u4{17126098321568610407,10567516004938624249}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -19753,12 +20190,13 @@ o
 {
 	Uuid %id{u4{9897464967785797678,10573567904427110042}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -19900,12 +20338,13 @@ o
 {
 	Uuid %id{u4{18266114878220654879,10602975008205464036}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -20092,12 +20531,13 @@ o
 {
 	Uuid %id{u4{6681958018889972751,10663974580036792721}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -20163,6 +20603,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -20633,6 +21074,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -20711,12 +21153,13 @@ o
 {
 	Uuid %id{u4{7787461706695516955,10902922254260066738}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -20858,12 +21301,13 @@ o
 {
 	Uuid %id{u4{5578290816199012906,10958192192986225144}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{8}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -20885,12 +21329,13 @@ o
 {
 	Uuid %id{u4{10897358268143943228,10960594377386900920}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -21032,12 +21477,13 @@ o
 {
 	Uuid %id{u4{9556310360662146906,11019036538039077863}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -21417,12 +21863,13 @@ o
 {
 	Uuid %id{u4{989624216473285155,11134408863421665552}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -21886,12 +22333,13 @@ o
 {
 	Uuid %id{u4{8348037040413987883,11307145273721135165}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -22364,6 +22812,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -22381,6 +22830,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -22663,7 +23113,7 @@ o
 {
 	Uuid %id{u4{10694604022372291703,12001071366380503754}}
 	s %t{"plJoltClothSheetComponent"}
-	u3 %v{2}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -22727,6 +23177,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -23215,6 +23666,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -23429,6 +23881,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -23655,6 +24108,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -23672,6 +24126,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -23689,6 +24144,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -24054,6 +24510,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -24071,6 +24528,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -24139,6 +24597,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -24406,12 +24865,13 @@ o
 {
 	Uuid %id{u4{1814090142977665993,14325977573492163180}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -24438,6 +24898,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -24983,6 +25444,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -25174,6 +25636,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -25235,10 +25698,7 @@ o
 			Uuid{u4{6512355559082965960,14856491370713631600}}
 			Uuid{u4{3343871529672494857,10674407190380870177}}
 		}
-		VarArray %Components
-		{
-			Uuid{u4{3369617150843492785,4907628841073797887}}
-		}
+		VarArray %Components{}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0x0000F2C1,0x000000BF,0x00000040}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
@@ -25274,6 +25734,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -26335,6 +26796,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -27120,12 +27582,13 @@ o
 {
 	Uuid %id{u4{14589846766941299410,15292384486581106530}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -27297,12 +27760,13 @@ o
 {
 	Uuid %id{u4{10035890396347744199,15320966273271129441}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -27363,12 +27827,13 @@ o
 {
 	Uuid %id{u4{10166572254670696670,15328447101919524592}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -27587,6 +28052,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -27623,12 +28089,13 @@ o
 {
 	Uuid %id{u4{3830184687833300177,15389168308301000261}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0xB9A0AC3E,0x0000803F,0x962A633F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -28997,6 +29464,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -30095,12 +30563,13 @@ o
 {
 	Uuid %id{u4{15904261094266854418,15842322667831481674}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -30208,6 +30677,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ aa1c5601-bc43-fbf8-4e07-6a3df3af51e7 }"}
@@ -30247,12 +30717,13 @@ o
 {
 	Uuid %id{u4{8513429064753703190,15856990765534123657}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -31252,6 +31723,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -31455,6 +31927,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 6ae73fcf-e09c-1c3f-54a8-8a80498519fb }"}
@@ -33913,6 +34386,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -34606,12 +35080,13 @@ o
 {
 	Uuid %id{u4{1081064585947731415,16503134748918116996}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -35400,12 +35875,13 @@ o
 {
 	Uuid %id{u4{12121626437778571738,16665291928530294519}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -35427,12 +35903,13 @@ o
 {
 	Uuid %id{u4{13863987342176414423,16676286583777631725}}
 	s %t{"plGreyBoxComponent"}
-	u3 %v{5}
+	u3 %v{6}
 	p
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %Curvature{f{0}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		u3 %Detail{16}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
@@ -35513,6 +35990,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 3283e65f-79e2-ec9d-3f50-f14c56bac25f }"}
@@ -35704,6 +36182,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -36295,6 +36774,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -36539,6 +37019,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
@@ -36624,6 +37105,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -37237,6 +37719,7 @@ o
 	{
 		b %Active{1}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials
 		{
 			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
@@ -37390,6 +37873,17 @@ o
 		s %DependencyFlags{"plDependencyFlags::Package|plDependencyFlags::Thumbnail"}
 		s %Filter{";CompatibleAsset_Material;"}
 		s %RequiredTag{""}
+	}
+}
+o
+{
+	Uuid %id{u4{13755754209630819584,323814067548856777}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt8"}
 	}
 }
 o
@@ -37556,6 +38050,20 @@ o
 }
 o
 {
+	Uuid %id{u4{5872859824018709531,1065040950509158607}}
+	s %t{"plFunctionArgumentAttributes"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgAttributes
+		{
+			Uuid{u4{5441285124006407133,3616224266939731863}}
+		}
+		u3 %ArgIndex{1}
+	}
+}
+o
+{
 	Uuid %id{u4{8750604827534053072,1092306873719952389}}
 	s %t{"plDefaultValueAttribute"}
 	u3 %v{1}
@@ -37574,13 +38082,15 @@ o
 		VarArray %Arguments
 		{
 			Uuid{u4{9506520764747966480,6313113098983946276}}
+			Uuid{u4{18210309946279867067,17341112809615885481}}
 		}
 		VarArray %Attributes
 		{
 			Uuid{u4{7451308248938934944,1546964158675832097}}
+			Uuid{u4{5872859824018709531,1065040950509158607}}
 		}
 		s %Flags{"plPropertyFlags::Phantom"}
-		s %Name{"AddLinearImpulse"}
+		s %Name{"AddAngularImpulse"}
 		Uuid %ReturnValue{u4{11935888121938656514,12364086458996565145}}
 		s %Type{"plFunctionType::Member"}
 	}
@@ -37592,7 +38102,7 @@ o
 	u3 %v{1}
 	p
 	{
-		f %Value{0xCDCC4C3E}
+		f %Value{0x0000803F}
 	}
 }
 o
@@ -37636,9 +38146,11 @@ o
 		VarArray %ArgNames
 		{
 			s{"vImpulse"}
+			s{"uiImpulseType"}
 		}
 		VarArray %ArgTypes
 		{
+			u1{0}
 			u1{0}
 		}
 	}
@@ -37738,7 +38250,7 @@ o
 			Uuid{u4{51172704524408416,4108755137431574894}}
 		}
 		s %TypeName{"plJoltClothSheetComponent"}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -37766,14 +38278,11 @@ o
 	u3 %v{2}
 	p
 	{
-		VarArray %Attributes
-		{
-			Uuid{u4{2388719263453053795,15620148169423060119}}
-		}
+		VarArray %Attributes{}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"IncludeInNavmesh"}
+		s %Name{"PullSurfacesFromGraphicsMesh"}
 		s %Type{"bool"}
 	}
 }
@@ -37882,8 +38391,8 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Reference"}
-		s %Type{"plVec3"}
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt32"}
 	}
 }
 o
@@ -37997,11 +38506,13 @@ o
 o
 {
 	Uuid %id{u4{4650230641941463231,2834511467795941007}}
-	s %t{"plDefaultValueAttribute"}
+	s %t{"plAssetBrowserAttribute"}
 	u3 %v{1}
 	p
 	{
-		f %Value{0xCDCC4C3E}
+		s %DependencyFlags{"plDependencyFlags::Package"}
+		s %Filter{";CompatibleAsset_Surface;"}
+		s %RequiredTag{""}
 	}
 }
 o
@@ -38163,6 +38674,20 @@ o
 }
 o
 {
+	Uuid %id{u4{116640782678306972,3178212205108616435}}
+	s %t{"plFunctionArgumentAttributes"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ArgAttributes
+		{
+			Uuid{u4{5077352054420334143,10551706660635084877}}
+		}
+		u3 %ArgIndex{1}
+	}
+}
+o
+{
 	Uuid %id{u4{9680210618447736123,3227469822885205214}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -38238,6 +38763,16 @@ o
 		VarArray %Properties{}
 		s %TypeName{"plCameraUsageHint"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5441285124006407133,3616224266939731863}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		i3 %Value{0}
 	}
 }
 o
@@ -38351,7 +38886,7 @@ o
 }
 o
 {
-	Uuid %id{u4{12936222984907976537,4368173044058498541}}
+	Uuid %id{u4{2664388873312590423,4310780475255057719}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
 	p
@@ -38360,8 +38895,26 @@ o
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"PullSurfacesFromGraphicsMesh"}
+		s %Name{"CustomCenterOfMass"}
 		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{12936222984907976537,4368173044058498541}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{9199535197924471211,16749536917702777663}}
+		}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"Surface"}
+		s %Type{"plStringView"}
 	}
 }
 o
@@ -38373,17 +38926,7 @@ o
 }
 o
 {
-	Uuid %id{u4{13821804702010674944,4509478986594583778}}
-	s %t{"plDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		Color %Value{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
-	}
-}
-o
-{
-	Uuid %id{u4{13139732135472779872,4548596989510921175}}
+	Uuid %id{u4{10929177122555665936,4493324200696598217}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
@@ -38391,11 +38934,21 @@ o
 		VarArray %Attributes{}
 		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
 		VarArray %Functions{}
-		s %ParentTypeName{"plEventMessageHandlerComponent"}
-		s %PluginName{"plEditorPluginTypeScript"}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
 		VarArray %Properties{}
-		s %TypeName{"plTypeScriptComponent"}
-		u3 %TypeVersion{4}
+		s %TypeName{"plSplineComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13821804702010674944,4509478986594583778}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Color %Value{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 	}
 }
 o
@@ -38432,7 +38985,6 @@ o
 			Uuid{u4{3285145934373030409,11990279796286460714}}
 			Uuid{u4{2926087071387423176,2059970751373908702}}
 			Uuid{u4{12936222984907976537,4368173044058498541}}
-			Uuid{u4{9750487189694506090,10390323195359426523}}
 		}
 		s %TypeName{"plJoltStaticActorComponent"}
 		u3 %TypeVersion{1}
@@ -38445,8 +38997,8 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Flags{""}
-		s %Type{""}
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt32"}
 	}
 }
 o
@@ -38464,6 +39016,17 @@ o
 		VarArray %Properties{}
 		s %TypeName{"plLightComponent"}
 		u3 %TypeVersion{8}
+	}
+}
+o
+{
+	Uuid %id{u4{7426373795327706944,4858242928187629808}}
+	s %t{"plClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Max{0x00401C46}
+		f %Min{0xCDCCCC3D}
 	}
 }
 o
@@ -38514,10 +39077,12 @@ o
 	{
 		VarArray %ArgNames
 		{
-			s{"vForce"}
+			s{"vImpulse"}
+			s{"uiImpulseType"}
 		}
 		VarArray %ArgTypes
 		{
+			u1{0}
 			u1{0}
 		}
 	}
@@ -38702,13 +39267,11 @@ o
 o
 {
 	Uuid %id{u4{7686264350309387071,5577346989055205841}}
-	s %t{"plAssetBrowserAttribute"}
+	s %t{"plSuffixAttribute"}
 	u3 %v{1}
 	p
 	{
-		s %DependencyFlags{"plDependencyFlags::Package"}
-		s %Filter{";CompatibleAsset_Surface;"}
-		s %RequiredTag{""}
+		s %Suffix{" kg"}
 	}
 }
 o
@@ -38774,13 +39337,12 @@ o
 		VarArray %Attributes
 		{
 			Uuid{u4{11143692202472650306,6899554945994643854}}
-			Uuid{u4{3104823074302662928,8750142821082488158}}
 		}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"Mass"}
-		s %Type{"float"}
+		s %Name{"WeightCategory"}
+		s %Type{"plUInt8"}
 	}
 }
 o
@@ -38815,6 +39377,16 @@ o
 		VarArray %Properties{}
 		s %TypeName{"plWindVolumeComponent"}
 		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{12876880522817547884,6032446554338668922}}
+	s %t{"plSuffixAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Suffix{" kg/m^3"}
 	}
 }
 o
@@ -38952,7 +39524,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plScriptComponent"}
-		u3 %TypeVersion{1}
+		u3 %TypeVersion{2}
 	}
 }
 o
@@ -39016,13 +39588,15 @@ o
 		VarArray %Arguments
 		{
 			Uuid{u4{8309053508001281841,5011272984324183554}}
+			Uuid{u4{13755754209630819584,323814067548856777}}
 		}
 		VarArray %Attributes
 		{
 			Uuid{u4{16187058620066783129,4887264029330063826}}
+			Uuid{u4{116640782678306972,3178212205108616435}}
 		}
 		s %Flags{"plPropertyFlags::Phantom"}
-		s %Name{"AddLinearForce"}
+		s %Name{"AddLinearImpulse"}
 		Uuid %ReturnValue{u4{14034457386851950852,5392655256063614070}}
 		s %Type{"plFunctionType::Member"}
 	}
@@ -39044,6 +39618,16 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
 		s %Name{"Damping"}
 		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{13323858550394263093,6621137736357662008}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x00002041}
 	}
 }
 o
@@ -39077,11 +39661,11 @@ o
 o
 {
 	Uuid %id{u4{11143692202472650306,6899554945994643854}}
-	s %t{"plSuffixAttribute"}
+	s %t{"plDynamicEnumAttribute"}
 	u3 %v{1}
 	p
 	{
-		s %Suffix{" kg"}
+		s %DynamicEnum{"PhysicsWeightCategoryWithDensity"}
 	}
 }
 o
@@ -39228,7 +39812,7 @@ o
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"CustomCenterOfMass"}
+		s %Name{"ContinuousCollisionDetection"}
 		s %Type{"bool"}
 	}
 }
@@ -39246,7 +39830,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plGreyBoxComponent"}
-		u3 %TypeVersion{5}
+		u3 %TypeVersion{6}
 	}
 }
 o
@@ -39279,18 +39863,6 @@ o
 }
 o
 {
-	Uuid %id{u4{7514148549803560749,7636547820782426259}}
-	s %t{"plAssetBrowserAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DependencyFlags{"plDependencyFlags::Package"}
-		s %Filter{";CompatibleAsset_Surface;"}
-		s %RequiredTag{""}
-	}
-}
-o
-{
 	Uuid %id{u4{13165487468544219769,7674298733567813416}}
 	s %t{"plClampValueAttribute"}
 	u3 %v{1}
@@ -39303,11 +39875,12 @@ o
 o
 {
 	Uuid %id{u4{2741738680992814734,7707407054316360507}}
-	s %t{"plSuffixAttribute"}
+	s %t{"plClampValueAttribute"}
 	u3 %v{1}
 	p
 	{
-		s %Suffix{" kg/m^3"}
+		f %Max{0x00002041}
+		f %Min{0xCDCCCC3D}
 	}
 }
 o
@@ -39382,7 +39955,7 @@ o
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"AngularDamping"}
+		s %Name{"GravityFactor"}
 		s %Type{"float"}
 	}
 }
@@ -39394,17 +39967,6 @@ o
 	p
 	{
 		s %Category{"Physics/Jolt/Shapes"}
-	}
-}
-o
-{
-	Uuid %id{u4{3104823074302662928,8750142821082488158}}
-	s %t{"plClampValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		Invalid %Max{}
-		f %Min{0}
 	}
 }
 o
@@ -39603,12 +40165,14 @@ o
 		VarArray %Attributes
 		{
 			Uuid{u4{7686264350309387071,5577346989055205841}}
+			Uuid{u4{13323858550394263093,6621137736357662008}}
+			Uuid{u4{7426373795327706944,4858242928187629808}}
 		}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"Surface"}
-		s %Type{"plStringView"}
+		s %Name{"Mass"}
+		s %Type{"float"}
 	}
 }
 o
@@ -39660,6 +40224,17 @@ o
 		VarArray %Properties{}
 		s %TypeName{"plDocumentRoot"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{3458708307429427807,9692561368259920760}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plTime"}
 	}
 }
 o
@@ -39733,6 +40308,23 @@ o
 }
 o
 {
+	Uuid %id{u4{6396997072725442381,9911481781116379737}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plManipulatorAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineManipulatorAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{10351828258771539942,9930948294580473423}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -39787,8 +40379,8 @@ o
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"LinearDamping"}
-		s %Type{"float"}
+		s %Name{"Surface"}
+		s %Type{"plStringView"}
 	}
 }
 o
@@ -39852,35 +40444,20 @@ o
 }
 o
 {
-	Uuid %id{u4{9750487189694506090,10390323195359426523}}
+	Uuid %id{u4{8772170675800591874,10490065977640219433}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
 	p
 	{
 		VarArray %Attributes
 		{
-			Uuid{u4{7514148549803560749,7636547820782426259}}
+			Uuid{u4{11910227158322680972,18051972571465049273}}
 		}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"Surface"}
-		s %Type{"plStringView"}
-	}
-}
-o
-{
-	Uuid %id{u4{8772170675800591874,10490065977640219433}}
-	s %t{"plReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"plPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"plPropertyFlags::Bitflags|plPropertyFlags::Phantom"}
-		s %Name{"OnContact"}
-		s %Type{"plOnJoltContact"}
+		s %Name{"AngularDamping"}
+		s %Type{"float"}
 	}
 }
 o
@@ -39915,8 +40492,18 @@ o
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"Density"}
+		s %Name{"WeightScale"}
 		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{5077352054420334143,10551706660635084877}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		i3 %Value{0}
 	}
 }
 o
@@ -39926,7 +40513,7 @@ o
 	u3 %v{1}
 	p
 	{
-		f %Value{0x0000803F}
+		f %Value{0x0000C842}
 	}
 }
 o
@@ -39985,9 +40572,11 @@ o
 			Uuid{u4{8772170675800591874,10490065977640219433}}
 			Uuid{u4{14167393467079601638,7427106886603862589}}
 			Uuid{u4{427578927392839246,14661352670488633275}}
+			Uuid{u4{2664388873312590423,4310780475255057719}}
+			Uuid{u4{12924623249228286807,16683691453772111091}}
 		}
 		s %TypeName{"plJoltDynamicActorComponent"}
-		u3 %TypeVersion{4}
+		u3 %TypeVersion{7}
 	}
 }
 o
@@ -40050,7 +40639,7 @@ o
 			Uuid{u4{11038765984079848822,18260897911103870974}}
 		}
 		s %Flags{"plPropertyFlags::Phantom"}
-		s %Name{"AddAngularImpulse"}
+		s %Name{"ClearForce"}
 		Uuid %ReturnValue{u4{14123901549545870094,8809133158745196422}}
 		s %Type{"plFunctionType::Member"}
 	}
@@ -40225,7 +40814,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plMeshComponentBase"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -40636,6 +41225,17 @@ o
 }
 o
 {
+	Uuid %id{u4{188967508398141070,14620256245739688255}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Reference"}
+		s %Type{"plVec3"}
+	}
+}
+o
+{
 	Uuid %id{u4{4835584255549368418,14649905360927643441}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -40659,9 +41259,9 @@ o
 		VarArray %Attributes{}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
-		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"CenterOfMass"}
-		s %Type{"plVec3"}
+		s %Flags{"plPropertyFlags::Bitflags|plPropertyFlags::Phantom"}
+		s %Name{"OnContact"}
+		s %Type{"plOnJoltContact"}
 	}
 }
 o
@@ -40741,6 +41341,23 @@ o
 }
 o
 {
+	Uuid %id{u4{2153056743378147414,14932874185922113801}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineTangentMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{75818149554409732,14956819024421792612}}
 	s %t{"plClampValueAttribute"}
 	u3 %v{1}
@@ -40777,11 +41394,12 @@ o
 		VarArray %Attributes
 		{
 			Uuid{u4{12905501165090070975,10716077728285934873}}
+			Uuid{u4{12876880522817547884,6032446554338668922}}
 		}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"GravityFactor"}
+		s %Name{"Density"}
 		s %Type{"float"}
 	}
 }
@@ -40891,16 +41509,6 @@ o
 }
 o
 {
-	Uuid %id{u4{2388719263453053795,15620148169423060119}}
-	s %t{"plDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		i3 %Value{1}
-	}
-}
-o
-{
 	Uuid %id{u4{3982449420531604051,15650161108397013260}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -40912,6 +41520,23 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::ReadOnly"}
 		s %Name{"plJoltClothSheetFlags::FixedCornerBottomRight"}
 		s %Type{"plUInt16"}
+	}
+}
+o
+{
+	Uuid %id{u4{12092291338547476562,15683865706386004010}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineNodeComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -41104,10 +41729,14 @@ o
 	{
 		VarArray %ArgNames
 		{
+			s{"uiForceID"}
+			s{"duration"}
 			s{"vForce"}
 		}
 		VarArray %ArgTypes
 		{
+			u1{0}
+			u1{0}
 			u1{0}
 		}
 	}
@@ -41121,6 +41750,16 @@ o
 	{
 		Angle %Max{f{0xDB0F4940}}
 		Angle %Min{f{0}}
+	}
+}
+o
+{
+	Uuid %id{u4{7806264796185577146,16567597868955604140}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0xCDCC4C3E}
 	}
 }
 o
@@ -41139,6 +41778,33 @@ o
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
 		s %Name{"ConeAngle"}
 		s %Type{"plAngle"}
+	}
+}
+o
+{
+	Uuid %id{u4{12924623249228286807,16683691453772111091}}
+	s %t{"plReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
+		s %Name{"CenterOfMass"}
+		s %Type{"plVec3"}
+	}
+}
+o
+{
+	Uuid %id{u4{9199535197924471211,16749536917702777663}}
+	s %t{"plAssetBrowserAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %DependencyFlags{"plDependencyFlags::Package"}
+		s %Filter{";CompatibleAsset_Surface;"}
+		s %RequiredTag{""}
 	}
 }
 o
@@ -41191,12 +41857,15 @@ o
 	u3 %v{2}
 	p
 	{
-		VarArray %Attributes{}
+		VarArray %Attributes
+		{
+			Uuid{u4{7806264796185577146,16567597868955604140}}
+		}
 		s %Category{"plPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Phantom"}
-		s %Name{"ContinuousCollisionDetection"}
-		s %Type{"bool"}
+		s %Name{"LinearDamping"}
+		s %Type{"float"}
 	}
 }
 o
@@ -41280,7 +41949,7 @@ o
 	u3 %v{1}
 	p
 	{
-		f %Value{0x0000C842}
+		f %Value{0x0000803F}
 	}
 }
 o
@@ -41293,13 +41962,15 @@ o
 		VarArray %Arguments
 		{
 			Uuid{u4{1012613315089574342,2561124817724367755}}
+			Uuid{u4{3458708307429427807,9692561368259920760}}
+			Uuid{u4{188967508398141070,14620256245739688255}}
 		}
 		VarArray %Attributes
 		{
 			Uuid{u4{13137097450926237281,16530120454954599462}}
 		}
 		s %Flags{"plPropertyFlags::Phantom"}
-		s %Name{"AddAngularForce"}
+		s %Name{"AddOrUpdateForce"}
 		Uuid %ReturnValue{u4{16257002769518150159,4770033385605486225}}
 		s %Type{"plFunctionType::Member"}
 	}
@@ -41380,6 +42051,17 @@ o
 }
 o
 {
+	Uuid %id{u4{18210309946279867067,17341112809615885481}}
+	s %t{"plFunctionArgumentDescriptor"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt8"}
+	}
+}
+o
+{
 	Uuid %id{u4{1285691298165403337,17354964711744657806}}
 	s %t{"plReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -41421,6 +42103,23 @@ o
 	p
 	{
 		Angle %Value{f{0xDB0FC93F}}
+	}
+}
+o
+{
+	Uuid %id{u4{2966118138345011883,17395428602964259808}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Bitflags|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plBitflagsBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineComponentFlags"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -41512,6 +42211,33 @@ o
 }
 o
 {
+	Uuid %id{u4{4301418499636294648,17806124850863848294}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plManipulatorAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plSplineTangentManipulatorAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11910227158322680972,18051972571465049273}}
+	s %t{"plDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0xCDCC4C3E}
+	}
+}
+o
+{
 	Uuid %id{u4{11038765984079848822,18260897911103870974}}
 	s %t{"plScriptableFunctionAttribute"}
 	u3 %v{1}
@@ -41519,7 +42245,7 @@ o
 	{
 		VarArray %ArgNames
 		{
-			s{"vImpulse"}
+			s{"uiForceID"}
 		}
 		VarArray %ArgTypes
 		{
@@ -41551,8 +42277,8 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Flags{"plPropertyFlags::StandardType|plPropertyFlags::Const|plPropertyFlags::Reference"}
-		s %Type{"plVec3"}
+		s %Flags{"plPropertyFlags::StandardType"}
+		s %Type{"plUInt32"}
 	}
 }
 o
