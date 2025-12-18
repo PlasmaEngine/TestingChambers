@@ -2,7 +2,17 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{2836996776398598532,5217182121428743175}}
+	Uuid %id{u4{7209173060795908565,6665123430447201591}}
+	s %t{"plExposedParameters"}
+	u3 %v{3}
+	p
+	{
+		VarArray %Parameters{}
+	}
+}
+o
+{
+	Uuid %id{u4{1052756080635922760,10221510051902550279}}
 	s %t{"plAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -10,65 +20,23 @@ o
 	{
 		s %AssetType{"Particle Effect"}
 		VarArray %Dependencies{}
-		Uuid %DocumentID{u4{2836996776398598532,5217182121428743175}}
-		u4 %Hash{8360759818343136649}
+		Uuid %DocumentID{u4{1052756080635922760,10221510051902550279}}
+		u4 %Hash{14640263013403014174}
 		VarArray %MetaInfo
 		{
-			Uuid{u4{14292394193544948370,7912516580587112350}}
+			Uuid{u4{7209173060795908565,6665123430447201591}}
 		}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ 27fb84ca-1675-4b65-9fe8-14b31878397d }"}
-			s{"{ d6b7d49a-e2f6-4287-b24a-a2eb6dae24a2 }"}
+			s{"{ 1438587b-1742-401d-868d-bea6c547fedd }"}
+			s{"{ e00262e8-58f5-42f5-880d-569257047201 }"}
 		}
 		VarArray %References
 		{
-			s{"{ 27fb84ca-1675-4b65-9fe8-14b31878397d }"}
-			s{"{ d6b7d49a-e2f6-4287-b24a-a2eb6dae24a2 }"}
+			s{"{ 1438587b-1742-401d-868d-bea6c547fedd }"}
+			s{"{ e00262e8-58f5-42f5-880d-569257047201 }"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{14292394193544948370,7912516580587112350}}
-	s %t{"plExposedParameters"}
-	u3 %v{3}
-	p
-	{
-		VarArray %Parameters
-		{
-			Uuid{u4{11625156528582984062,14399257754214980161}}
-			Uuid{u4{10980265987336502419,10442354961803643397}}
-		}
-	}
-}
-o
-{
-	Uuid %id{u4{10980265987336502419,10442354961803643397}}
-	s %t{"plExposedParameter"}
-	u3 %v{3}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"plPropertyCategory::Member"}
-		f %DefaultValue{0x0000803F}
-		s %Name{"SizeY"}
-		s %Type{""}
-	}
-}
-o
-{
-	Uuid %id{u4{11625156528582984062,14399257754214980161}}
-	s %t{"plExposedParameter"}
-	u3 %v{3}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"plPropertyCategory::Member"}
-		f %DefaultValue{0x0000803F}
-		s %Name{"SizeX"}
-		s %Type{""}
 	}
 }
 }
@@ -76,315 +44,134 @@ Objects
 {
 o
 {
-	Uuid %id{u4{441132074240971943,4625267658880165835}}
-	s %t{"plParticleInitializerFactory_RandomColor"}
-	u3 %v{1}
+	Uuid %id{u4{10543565047532206491,4782984941638046601}}
+	s %t{"plParticleInitializerFactory_CylinderPosition"}
+	u3 %v{2}
 	p
 	{
-		Color %Color1{f{0x86924A3F,0x0000803F,0x4F9C463F,0x0000803F}}
-		Color %Color2{f{0xE3BB1F3F,0xCFE05A3F,0x73941A3F,0x0000803F}}
-		s %Gradient{""}
+		f %Height{0x0000803F}
+		b %OnSurface{0}
+		Vec3 %PositionOffset{f{0,0,0}}
+		f %Radius{0x0000803E}
+		s %ScaleHeightParam{""}
+		s %ScaleRadiusParam{""}
+		b %SetVelocity{0}
+		plVarianceTypeFloat %Speed
+		{
+			f %Variance{0}
+			f %Value{0}
+		}
 	}
 }
 o
 {
-	Uuid %id{u4{6089244264886634682,4635360984916931922}}
-	s %t{"plParticleInitializerFactory_BoxPosition"}
-	u3 %v{1}
+	Uuid %id{u4{16865449578883938965,5042290926383602101}}
+	s %t{"plParticleTypeQuadFactory"}
+	u3 %v{2}
 	p
 	{
-		Vec3 %PositionOffset{f{0,0,0x9A99193E}}
-		s %ScaleXParam{"SizeX"}
-		s %ScaleYParam{"SizeY"}
-		s %ScaleZParam{""}
-		Vec3 %Size{f{0x0000803F,0x0000803F,0xCDCC4C3E}}
+		s %CustomMaterial{"{ 1438587b-1742-401d-868d-bea6c547fedd }"}
+		Angle %Deviation{f{0}}
+		f %DistortionStrength{0x0000C842}
+		s %DistortionTexture{""}
+		f %LightDirectionality{0x0000003F}
+		s %LightingMode{"plParticleLightingMode::Fullbright"}
+		f %NormalCurvature{0x0000003F}
+		u1 %NumSpritesX{1}
+		u1 %NumSpritesY{1}
+		s %Orientation{"plQuadParticleOrientation::FixedAxis_EmitterDir"}
+		f %ParticleStretch{0x0000803F}
+		s %RenderMode{"plParticleTypeRenderMode::Additive"}
+		s %Texture{"{ e00262e8-58f5-42f5-880d-569257047201 }"}
+		s %TextureAtlas{"plParticleTextureAtlasType::None"}
+		s %TintColorParam{""}
+		b %UseCustomMaterial{1}
 	}
 }
 o
 {
-	Uuid %id{u4{5807148449873773988,4749196118354086699}}
-	s %t{"plParticleBehaviorFactory_Velocity"}
-	u3 %v{1}
-	p
-	{
-		f %Friction{0}
-		f %RiseSpeed{0x295C8F3D}
-		f %WindInfluence{0xCDCCCC3D}
-	}
-}
-o
-{
-	Uuid %id{u4{16827043448730845601,4760745024263820182}}
+	Uuid %id{u4{13514525609884411035,5052245601261807553}}
 	s %t{"plParticleSystemDescriptor"}
 	u3 %v{2}
 	p
 	{
 		VarArray %Behaviors
 		{
-			Uuid{u4{1571882768269249922,5194890765972670357}}
-			Uuid{u4{6377362140341887896,5268530938408462363}}
+			Uuid{u4{1035788618892323997,5656397046683393965}}
+			Uuid{u4{12545293588949474722,5708511756699386554}}
+			Uuid{u4{2219562641757091223,5526931749369728432}}
 		}
 		VarArray %Emitters
 		{
-			Uuid{u4{11588543377937338262,5460302611755630833}}
+			Uuid{u4{13148104978590544818,5160742435494256697}}
 		}
 		VarArray %Initializers
 		{
-			Uuid{u4{6089244264886634682,4635360984916931922}}
-			Uuid{u4{441132074240971943,4625267658880165835}}
-			Uuid{u4{15923397604594088844,5409116764055106569}}
+			Uuid{u4{10543565047532206491,4782984941638046601}}
 		}
 		s %LifeScaleParam{""}
 		plVarianceTypeTime %LifeTime
 		{
-			f %Variance{0xAE47613E}
-			Time %Value{d{0x0000000000001C40}}
+			f %Variance{0}
+			Time %Value{d{0x000000000000F83F}}
 		}
-		s %Name{"Ground Cover"}
+		s %Name{"Fire"}
 		s %OnDeathEvent{""}
 		VarArray %Types
 		{
-			Uuid{u4{1104147069733273004,5662172165013943189}}
+			Uuid{u4{16865449578883938965,5042290926383602101}}
 		}
 		b %Visible{1}
 	}
 }
 o
 {
-	Uuid %id{u4{17474690184649266595,4809927314136924746}}
-	s %t{"plParticleInitializerFactory_RandomRotationSpeed"}
-	u3 %v{2}
+	Uuid %id{u4{13148104978590544818,5160742435494256697}}
+	s %t{"plParticleEmitterFactory_Continuous"}
+	u3 %v{1}
 	p
 	{
-		plVarianceTypeAngle %DegreesPerSecond
-		{
-			f %Variance{0x7B142E3E}
-			Angle %Value{f{0x920A863E}}
-		}
-		b %RandomStartAngle{1}
+		s %CountCurve{""}
+		Time %CurveDuration{d{0x0000000000002440}}
+		u3 %SpawnCountPerSec{30}
+		u3 %SpawnCountPerSecRange{0}
+		s %SpawnCountScaleParam{""}
+		Time %StartDelay{d{0}}
 	}
 }
 o
 {
-	Uuid %id{u4{11702724074744322744,5007757270894383145}}
+	Uuid %id{u4{2219562641757091223,5526931749369728432}}
 	s %t{"plParticleBehaviorFactory_SizeCurve"}
 	u3 %v{1}
 	p
 	{
 		f %BaseSize{0}
-		f %CurveScale{0x00000040}
-		s %SizeCurve{"{ 7725f22e-b01b-4b40-bbde-ce55d9fdddce }"}
+		f %CurveScale{0x0000803F}
+		s %SizeCurve{"{ fa809b34-ccf3-49fb-b648-1ad793cb66f9 }"}
 	}
 }
 o
 {
-	Uuid %id{u4{1571882768269249922,5194890765972670357}}
-	s %t{"plParticleBehaviorFactory_SizeCurve"}
+	Uuid %id{u4{1035788618892323997,5656397046683393965}}
+	s %t{"plParticleBehaviorFactory_FadeOut"}
 	u3 %v{1}
 	p
 	{
-		f %BaseSize{0xCDCC4C3E}
-		f %CurveScale{0x00002040}
-		s %SizeCurve{"{ 7725f22e-b01b-4b40-bbde-ce55d9fdddce }"}
+		f %Exponent{0x0000003F}
+		f %StartAlpha{0x9A99193F}
 	}
 }
 o
 {
-	Uuid %id{u4{18260055147336817307,5206903471558118816}}
-	s %t{"plParticleInitializerFactory_BoxPosition"}
+	Uuid %id{u4{12545293588949474722,5708511756699386554}}
+	s %t{"plParticleBehaviorFactory_Velocity"}
 	u3 %v{1}
 	p
 	{
-		Vec3 %PositionOffset{f{0,0,0}}
-		s %ScaleXParam{"SizeX"}
-		s %ScaleYParam{"SizeY"}
-		s %ScaleZParam{""}
-		Vec3 %Size{f{0x0000803F,0x0000803F,0}}
-	}
-}
-o
-{
-	Uuid %id{u4{6377362140341887896,5268530938408462363}}
-	s %t{"plParticleBehaviorFactory_ColorGradient"}
-	u3 %v{1}
-	p
-	{
-		s %ColorGradientMode{"plParticleColorGradientMode::Age"}
-		s %Gradient{"{ ca7b26fd-7c01-42be-adec-fd843d5bcc93 }"}
-		f %GradientMaxSpeed{0x0000803F}
-		Color %TintColor{f{0x86924A3F,0x0000803F,0x4F9C463F,0x0000803F}}
-	}
-}
-o
-{
-	Uuid %id{u4{10736151507494843566,5316771377569265813}}
-	s %t{"plParticleEmitterFactory_Continuous"}
-	u3 %v{1}
-	p
-	{
-		s %CountCurve{""}
-		Time %CurveDuration{d{0x0000000000002440}}
-		u3 %SpawnCountPerSec{1}
-		u3 %SpawnCountPerSecRange{4}
-		s %SpawnCountScaleParam{""}
-		Time %StartDelay{d{0}}
-	}
-}
-o
-{
-	Uuid %id{u4{15923397604594088844,5409116764055106569}}
-	s %t{"plParticleInitializerFactory_RandomRotationSpeed"}
-	u3 %v{2}
-	p
-	{
-		plVarianceTypeAngle %DegreesPerSecond
-		{
-			f %Variance{0xAE47213F}
-			Angle %Value{f{0xC2B8323E}}
-		}
-		b %RandomStartAngle{1}
-	}
-}
-o
-{
-	Uuid %id{u4{9620979988869606045,5453115895908481018}}
-	s %t{"plParticleEffectDescriptor"}
-	u3 %v{2}
-	p
-	{
-		b %AlwaysShared{0}
-		f %ApplyOwnerVelocity{0}
-		VarDict %ColorParameters{}
-		VarArray %EventReactions{}
-		VarDict %FloatParameters
-		{
-			f %SizeX{0x0000803F}
-			f %SizeY{0x0000803F}
-		}
-		Vec3u %NumWindSamples{u3{8,8,1}}
-		VarArray %ParticleSystems
-		{
-			Uuid{u4{16827043448730845601,4760745024263820182}}
-			Uuid{u4{11361775263546821530,5733721473028337590}}
-		}
-		Time %PreSimulateDuration{d{0x0000000000002840}}
-		b %SimulateInLocalSpace{0}
-		s %WhenInvisible{"plEffectInvisibleUpdateRate::Pause"}
-	}
-}
-o
-{
-	Uuid %id{u4{11588543377937338262,5460302611755630833}}
-	s %t{"plParticleEmitterFactory_Continuous"}
-	u3 %v{1}
-	p
-	{
-		s %CountCurve{""}
-		Time %CurveDuration{d{0x0000000000002440}}
-		u3 %SpawnCountPerSec{2}
-		u3 %SpawnCountPerSecRange{2}
-		s %SpawnCountScaleParam{""}
-		Time %StartDelay{d{0}}
-	}
-}
-o
-{
-	Uuid %id{u4{17450907798133085587,5514329060687383147}}
-	s %t{"plParticleBehaviorFactory_ColorGradient"}
-	u3 %v{1}
-	p
-	{
-		s %ColorGradientMode{"plParticleColorGradientMode::Age"}
-		s %Gradient{"{ ca7b26fd-7c01-42be-adec-fd843d5bcc93 }"}
-		f %GradientMaxSpeed{0x0000803F}
-		Color %TintColor{f{0x1C124B3F,0x0000803F,0x4B9C463F,0x0000803F}}
-	}
-}
-o
-{
-	Uuid %id{u4{4764248259281793428,5647974705661574104}}
-	s %t{"plParticleTypeQuadFactory"}
-	u3 %v{2}
-	p
-	{
-		s %CustomMaterial{""}
-		Angle %Deviation{f{0}}
-		f %DistortionStrength{0x0000C842}
-		s %DistortionTexture{""}
-		f %LightDirectionality{0x0000003F}
-		s %LightingMode{"plParticleLightingMode::VertexLit"}
-		f %NormalCurvature{0x0000003F}
-		u1 %NumSpritesX{2}
-		u1 %NumSpritesY{2}
-		s %Orientation{"plQuadParticleOrientation::Billboard"}
-		f %ParticleStretch{0x0000803F}
-		s %RenderMode{"plParticleTypeRenderMode::BlendedForeground"}
-		s %Texture{"{ d6b7d49a-e2f6-4287-b24a-a2eb6dae24a2 }"}
-		s %TextureAtlas{"plParticleTextureAtlasType::RandomVariations"}
-		s %TintColorParam{""}
-		b %UseCustomMaterial{0}
-	}
-}
-o
-{
-	Uuid %id{u4{1104147069733273004,5662172165013943189}}
-	s %t{"plParticleTypeQuadFactory"}
-	u3 %v{2}
-	p
-	{
-		s %CustomMaterial{""}
-		Angle %Deviation{f{0}}
-		f %DistortionStrength{0x0000C842}
-		s %DistortionTexture{""}
-		f %LightDirectionality{0x0000003F}
-		s %LightingMode{"plParticleLightingMode::VertexLit"}
-		f %NormalCurvature{0x0000003F}
-		u1 %NumSpritesX{2}
-		u1 %NumSpritesY{2}
-		s %Orientation{"plQuadParticleOrientation::Fixed_EmitterDir"}
-		f %ParticleStretch{0x0000803F}
-		s %RenderMode{"plParticleTypeRenderMode::BlendedBackground"}
-		s %Texture{"{ 27fb84ca-1675-4b65-9fe8-14b31878397d }"}
-		s %TextureAtlas{"plParticleTextureAtlasType::RandomVariations"}
-		s %TintColorParam{""}
-		b %UseCustomMaterial{0}
-	}
-}
-o
-{
-	Uuid %id{u4{11361775263546821530,5733721473028337590}}
-	s %t{"plParticleSystemDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Behaviors
-		{
-			Uuid{u4{5807148449873773988,4749196118354086699}}
-			Uuid{u4{11702724074744322744,5007757270894383145}}
-			Uuid{u4{17450907798133085587,5514329060687383147}}
-		}
-		VarArray %Emitters
-		{
-			Uuid{u4{10736151507494843566,5316771377569265813}}
-		}
-		VarArray %Initializers
-		{
-			Uuid{u4{18260055147336817307,5206903471558118816}}
-			Uuid{u4{17474690184649266595,4809927314136924746}}
-		}
-		s %LifeScaleParam{""}
-		plVarianceTypeTime %LifeTime
-		{
-			f %Variance{0x85EB113F}
-			Time %Value{d{0x0000000000002640}}
-		}
-		s %Name{"Fog"}
-		s %OnDeathEvent{""}
-		VarArray %Types
-		{
-			Uuid{u4{4764248259281793428,5647974705661574104}}
-		}
-		b %Visible{1}
+		f %Friction{0}
+		f %RiseSpeed{0x9A99993E}
+		f %WindInfluence{0xCDCC4C3E}
 	}
 }
 o
@@ -397,8 +184,30 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{9620979988869606045,5453115895908481018}}
+			Uuid{u4{5655803665282544678,10336054927768386077}}
 		}
+	}
+}
+o
+{
+	Uuid %id{u4{5655803665282544678,10336054927768386077}}
+	s %t{"plParticleEffectDescriptor"}
+	u3 %v{2}
+	p
+	{
+		b %AlwaysShared{0}
+		f %ApplyOwnerVelocity{0}
+		VarDict %ColorParameters{}
+		VarArray %EventReactions{}
+		VarDict %FloatParameters{}
+		Vec3u %NumWindSamples{u3{1,1,1}}
+		VarArray %ParticleSystems
+		{
+			Uuid{u4{13514525609884411035,5052245601261807553}}
+		}
+		Time %PreSimulateDuration{d{0}}
+		b %SimulateInLocalSpace{0}
+		s %WhenInvisible{"plEffectInvisibleUpdateRate::Max10fps"}
 	}
 }
 }
@@ -418,23 +227,6 @@ o
 		s %PluginName{"plEditorPluginParticle"}
 		VarArray %Properties{}
 		s %TypeName{"plParticleInitializerFactory"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{13640363802704818679,554038481386267385}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plParticleInitializerFactory"}
-		s %PluginName{"plEditorPluginParticle"}
-		VarArray %Properties{}
-		s %TypeName{"plParticleInitializerFactory_RandomColor"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -508,7 +300,7 @@ o
 }
 o
 {
-	Uuid %id{u4{12485413893421258756,3989414361314950576}}
+	Uuid %id{u4{11075903024550462906,3906151646299132774}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
@@ -516,10 +308,10 @@ o
 		VarArray %Attributes{}
 		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
 		VarArray %Functions{}
-		s %ParentTypeName{"plVisualizerAttribute"}
-		s %PluginName{"Static"}
+		s %ParentTypeName{"plParticleBehaviorFactory"}
+		s %PluginName{"plEditorPluginParticle"}
 		VarArray %Properties{}
-		s %TypeName{"plBoxVisualizerAttribute"}
+		s %TypeName{"plParticleBehaviorFactory_FadeOut"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -538,6 +330,40 @@ o
 		VarArray %Properties{}
 		s %TypeName{"plParticleEffectDescriptor"}
 		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{3522289825708264800,4401770332390424784}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plParticleInitializerFactory"}
+		s %PluginName{"plEditorPluginParticle"}
+		VarArray %Properties{}
+		s %TypeName{"plParticleInitializerFactory_CylinderPosition"}
+		u3 %TypeVersion{2}
+	}
+}
+o
+{
+	Uuid %id{u4{11813441318768494441,6326290762033662329}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plVisualizerAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCylinderVisualizerAttribute"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -593,7 +419,7 @@ o
 }
 o
 {
-	Uuid %id{u4{13538136386583927940,7776002953784762934}}
+	Uuid %id{u4{1655394459525808770,8006911557800333752}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
@@ -601,27 +427,10 @@ o
 		VarArray %Attributes{}
 		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
 		VarArray %Functions{}
-		s %ParentTypeName{"plParticleInitializerFactory"}
-		s %PluginName{"plEditorPluginParticle"}
+		s %ParentTypeName{"plVarianceTypeBase"}
+		s %PluginName{"Static"}
 		VarArray %Properties{}
-		s %TypeName{"plParticleInitializerFactory_RandomRotationSpeed"}
-		u3 %TypeVersion{2}
-	}
-}
-o
-{
-	Uuid %id{u4{17677277670815096607,7957470703338172464}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plParticleInitializerFactory"}
-		s %PluginName{"plEditorPluginParticle"}
-		VarArray %Properties{}
-		s %TypeName{"plParticleInitializerFactory_BoxPosition"}
+		s %TypeName{"plVarianceTypeFloat"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -712,23 +521,6 @@ o
 }
 o
 {
-	Uuid %id{u4{6601846329054439423,11283174036112165289}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"plEditorPluginParticle"}
-		VarArray %Properties{}
-		s %TypeName{"plParticleColorGradientMode"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{14209585135339028478,11308263336862562356}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -741,23 +533,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plPropertyAttribute"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{14954731104951160548,11335164520730348757}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plVarianceTypeBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plVarianceTypeAngle"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -865,23 +640,6 @@ o
 }
 o
 {
-	Uuid %id{u4{4023780402732805077,15421165893103780284}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plParticleBehaviorFactory"}
-		s %PluginName{"plEditorPluginParticle"}
-		VarArray %Properties{}
-		s %TypeName{"plParticleBehaviorFactory_ColorGradient"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{7310009860822272848,15726982121575320836}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -945,6 +703,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plVarianceTypeTime"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{698364993276436088,17804542439804637414}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plBasisAxis"}
 		u3 %TypeVersion{1}
 	}
 }

@@ -11,10 +11,10 @@ AssetProfiles
 				uint32 %v{1}
 				p
 				{
-					uint32 %MaxShadowMapSize{1024}
-					uint32 %MinShadowMapSize{64}
-					uint32 %RuntimeDecalAtlasTextureSize{3072}
-					uint32 %ShadowAtlasTextureSize{4096}
+					uint32 %MaxShadowMapSize{256}
+					uint32 %MinShadowMapSize{32}
+					uint32 %RuntimeDecalAtlasTextureSize{2048}
+					uint32 %ShadowAtlasTextureSize{1024}
 				}
 			}
 			o
@@ -48,7 +48,7 @@ AssetProfiles
 				uint32 %v{2}
 				p
 				{
-					bool %EnableXR{false}
+					bool %EnableXR{true}
 					string %XRRenderPipeline{"{ c533e113-2a4c-4f42-a546-653c78f5e8a7 }"}
 				}
 			}

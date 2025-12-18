@@ -11,18 +11,14 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{3872236734607355539,5264883800516172798}}
-		u4 %Hash{12669245804190671245}
+		u4 %Hash{6637913518256190499}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
 			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
 		}
-		VarArray %References
-		{
-			s{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
-		}
+		VarArray %References{}
 	}
 }
 }
@@ -55,23 +51,24 @@ o
 {
 	Uuid %id{u4{4235845408222663298,4878450712620508915}}
 	s %t{"plSkyLightComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
 		s %CubeMap{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
+		f %DiffuseIntensity{0x0000803F}
+		f %DiffuseSaturation{0x0000803F}
 		VarArray %ExcludeTags{}
 		f %FarPlane{0x0000C842}
 		VarArray %IncludeTags
 		{
 			s{"SkyLight"}
 		}
-		f %Intensity{0x8FC2F53E}
 		f %NearPlane{0}
 		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
-		f %Saturation{0x0000803F}
 		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
+		f %SpecularIntensity{0x0000803F}
 	}
 }
 o
@@ -293,10 +290,10 @@ o
 		f %Intensity{0x00002041}
 		f %Length{0}
 		ColorGamma %LightColor{u1{255,255,255,255}}
-		f %MinShadowRange{0x0000C842}
+		f %MinShadowRange{0x00004842}
 		f %NearPlaneOffset{0x0000C842}
-		u3 %NumCascades{4}
-		f %PenumbraSize{0xCDCCCC3D}
+		u3 %NumCascades{2}
+		f %PenumbraSize{0x8FC2753D}
 		f %SlopeBias{0x0000803E}
 		f %SpecularMultiplier{0x0000803F}
 		f %SplitModeWeight{0x3333333F}
@@ -375,7 +372,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plSkyLightComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o

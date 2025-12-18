@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{10397632043479265953,5177341319926404083}}
-		u4 %Hash{9021259702428224888}
+		u4 %Hash{12599923770502043701}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -45,6 +45,36 @@ o
 }
 Objects
 {
+o
+{
+	Uuid %id{u4{15795615127326495351,160947358863610986}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{4591595146444892580,5230829334272133732}}
+		}
+		VarArray %Components
+		{
+			Uuid{u4{1690938736997270180,18067302623453310556}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x00008040,0x000000C1,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+			s{"AutoColMesh"}
+		}
+	}
+}
 o
 {
 	Uuid %id{u4{8290768986250454910,307798036296735333}}
@@ -536,6 +566,32 @@ o
 }
 o
 {
+	Uuid %id{u4{2847276518432150319,1926416271929960812}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{15466635843987333390,2106456733254101480}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xF7BFF4C0,0x000040C2,0x7D051740}}
+		Quat %LocalRotation{f{0xF304353F,0,0,0xF30435BF}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{10263383319460203825,1930973260202606569}}
 	s %t{"plPointLightComponent"}
 	u3 %v{4}
@@ -685,6 +741,33 @@ o
 		u3 %Temperature{6550}
 		b %TransparentShadows{0}
 		b %UseColorTemperature{0}
+		f %VolumetricIntensity{0}
+		f %Width{0}
+	}
+}
+o
+{
+	Uuid %id{u4{15466635843987333390,2106456733254101480}}
+	s %t{"plPointLightComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		b %CastShadows{0}
+		f %ConstantBias{0xCDCCCC3D}
+		ColorGamma %EffectiveColor{u1{255,255,255,255}}
+		f %Falloff{0}
+		f %Intensity{0x00000040}
+		f %Length{0}
+		ColorGamma %LightColor{u1{255,255,255,255}}
+		f %PenumbraSize{0xCDCCCC3D}
+		f %Range{0x00002041}
+		f %ShadowFadeOutRange{0}
+		f %SlopeBias{0x0000803E}
+		f %SpecularMultiplier{0}
+		u3 %Temperature{4640}
+		b %TransparentShadows{0}
+		b %UseColorTemperature{1}
 		f %VolumetricIntensity{0}
 		f %Width{0}
 	}
@@ -1655,26 +1738,6 @@ o
 }
 o
 {
-	Uuid %id{u4{11369392658598474898,4642973723164012852}}
-	s %t{"plParticleComponent"}
-	u3 %v{5}
-	p
-	{
-		b %Active{1}
-		s %Effect{"{ 3ed0dbe5-39e4-42a4-8bb5-7fae7ece43ab }"}
-		b %IgnoreOwnerRotation{0}
-		Time %MinRestartDelay{d{0}}
-		s %OnFinishedAction{"plOnComponentFinishedAction2::None"}
-		VarDict %Parameters{}
-		u4 %RandomSeed{0}
-		Time %RestartDelayRange{d{0}}
-		s %SharedInstanceName{""}
-		b %SpawnAtStart{1}
-		s %SpawnDirection{"plBasisAxis::PositiveZ"}
-	}
-}
-o
-{
 	Uuid %id{u4{7685607605337912737,4649701632421638039}}
 	s %t{"plGameObject"}
 	u3 %v{1}
@@ -1817,32 +1880,6 @@ o
 		{
 			s{"CastShadow"}
 			s{"AutoColMesh"}
-		}
-	}
-}
-o
-{
-	Uuid %id{u4{6984156433537517958,4689946667152769797}}
-	s %t{"plGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{11369392658598474898,4642973723164012852}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x000010C1,0x000044C2,0x00000040}}
-		Quat %LocalRotation{f{0x6BBFDEBC,0x9644B73E,0,0xCEEF6E3F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"plObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
 		}
 	}
 }
@@ -2686,6 +2723,32 @@ o
 }
 o
 {
+	Uuid %id{u4{4591595146444892580,5230829334272133732}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{16716963036917364922,5527059983225329156}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{11705520301776702382,5279219859492184090}}
 	s %t{"plGameObject"}
 	u3 %v{1}
@@ -3049,6 +3112,26 @@ o
 		b %SlopedTop{0}
 		f %Thickness{0x0000003F}
 		b %UseAsOccluder{1}
+	}
+}
+o
+{
+	Uuid %id{u4{16716963036917364922,5527059983225329156}}
+	s %t{"plParticleComponent"}
+	u3 %v{5}
+	p
+	{
+		b %Active{1}
+		s %Effect{"{ 7fbc7107-193c-8dda-48c9-6fdd13249c0e }"}
+		b %IgnoreOwnerRotation{0}
+		Time %MinRestartDelay{d{0}}
+		s %OnFinishedAction{"plOnComponentFinishedAction2::None"}
+		VarDict %Parameters{}
+		u4 %RandomSeed{0}
+		Time %RestartDelayRange{d{0}}
+		s %SharedInstanceName{""}
+		b %SpawnAtStart{1}
+		s %SpawnDirection{"plBasisAxis::PositiveZ"}
 	}
 }
 o
@@ -3658,9 +3741,9 @@ o
 			Uuid{u4{16678788861338023026,12243308197375308825}}
 			Uuid{u4{5138615211332537076,17661153934972791664}}
 			Uuid{u4{15262466157435167666,4681826298225400637}}
-			Uuid{u4{6984156433537517958,4689946667152769797}}
-			Uuid{u4{8235606488144534295,9585146741649503015}}
 			Uuid{u4{917672378115044231,4957782965989784132}}
+			Uuid{u4{2847276518432150319,1926416271929960812}}
+			Uuid{u4{14418993615367954860,14881339118970591949}}
 		}
 		Uuid %Settings{u4{15161553721701243557,5209781642161874369}}
 	}
@@ -4585,6 +4668,7 @@ o
 			Uuid{u4{17863220255707113009,9438530281274598464}}
 			Uuid{u4{15411936974111910363,15023689425732142990}}
 			Uuid{u4{2808284393577031561,2080343661002351847}}
+			Uuid{u4{15795615127326495351,160947358863610986}}
 		}
 		VarArray %Components{}
 		s %GlobalKey{""}
@@ -4787,26 +4871,6 @@ o
 }
 o
 {
-	Uuid %id{u4{12620842713205491235,9538173797660746070}}
-	s %t{"plParticleComponent"}
-	u3 %v{5}
-	p
-	{
-		b %Active{1}
-		s %Effect{"{ 3ed0dbe5-39e4-42a4-8bb5-7fae7ece43ab }"}
-		b %IgnoreOwnerRotation{0}
-		Time %MinRestartDelay{d{0}}
-		s %OnFinishedAction{"plOnComponentFinishedAction2::None"}
-		VarDict %Parameters{}
-		u4 %RandomSeed{0}
-		Time %RestartDelayRange{d{0}}
-		s %SharedInstanceName{""}
-		b %SpawnAtStart{1}
-		s %SpawnDirection{"plBasisAxis::PositiveZ"}
-	}
-}
-o
-{
 	Uuid %id{u4{15510707253215868756,9549251335466395100}}
 	s %t{"plPrefabReferenceComponent"}
 	u3 %v{4}
@@ -4818,32 +4882,6 @@ o
 			s %Label{"Breaking Rock"}
 		}
 		s %Prefab{"{ c49af1cd-233c-4af2-9edc-5c12d1456e32 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{8235606488144534295,9585146741649503015}}
-	s %t{"plGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{12620842713205491235,9538173797660746070}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x000096C1,0x000044C2,0x00000040}}
-		Quat %LocalRotation{f{0x6BBFDEBC,0x9644B73E,0,0xCEEF6E3F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"plObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
 	}
 }
 o
@@ -7139,7 +7177,7 @@ o
 		s %Material{"{ 6bd5e7e6-b7be-9801-e032-14226cba1e96 }"}
 		s %Shape{"plGreyBoxShape::Box"}
 		f %SizeNegX{0}
-		f %SizeNegY{0x00009042}
+		f %SizeNegY{0x0000A042}
 		f %SizeNegZ{0}
 		f %SizePosX{0x00008041}
 		f %SizePosY{0}
@@ -7252,6 +7290,32 @@ o
 }
 o
 {
+	Uuid %id{u4{14418993615367954860,14881339118970591949}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{8591608867213586315,15061379580294732617}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x0000A0BF,0x000040C2,0x00002040}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{17143543744511656195,14923806679577461799}}
 	s %t{"plParticleComponent"}
 	u3 %v{5}
@@ -7315,6 +7379,33 @@ o
 o
 {
 	Uuid %id{u4{7089818326367990745,15055776518198120708}}
+	s %t{"plPointLightComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		b %CastShadows{0}
+		f %ConstantBias{0xCDCCCC3D}
+		ColorGamma %EffectiveColor{u1{255,255,255,255}}
+		f %Falloff{0x0000803F}
+		f %Intensity{0x00004842}
+		f %Length{0}
+		ColorGamma %LightColor{u1{255,255,255,255}}
+		f %PenumbraSize{0xCDCCCC3D}
+		f %Range{0x1F85EB40}
+		f %ShadowFadeOutRange{0}
+		f %SlopeBias{0x0000803E}
+		f %SpecularMultiplier{0x0000803F}
+		u3 %Temperature{8770}
+		b %TransparentShadows{0}
+		b %UseColorTemperature{1}
+		f %VolumetricIntensity{0}
+		f %Width{0}
+	}
+}
+o
+{
+	Uuid %id{u4{8591608867213586315,15061379580294732617}}
 	s %t{"plPointLightComponent"}
 	u3 %v{4}
 	p
@@ -7645,23 +7736,24 @@ o
 {
 	Uuid %id{u4{8224391639547028392,15492627137014508359}}
 	s %t{"plSkyLightComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
 		s %CubeMap{""}
+		f %DiffuseIntensity{0x3333333F}
+		f %DiffuseSaturation{0x0000803F}
 		VarArray %ExcludeTags{}
 		f %FarPlane{0x0000C842}
 		VarArray %IncludeTags
 		{
 			s{"SkyLight"}
 		}
-		f %Intensity{0x3333333F}
 		f %NearPlane{0}
 		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
-		f %Saturation{0x0000803F}
 		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
+		f %SpecularIntensity{0x0000803F}
 	}
 }
 o
@@ -8968,6 +9060,21 @@ o
 }
 o
 {
+	Uuid %id{u4{1690938736997270180,18067302623453310556}}
+	s %t{"plPrefabReferenceComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		VarDict %Parameters
+		{
+			s %Label{"Particle Material Graph"}
+		}
+		s %Prefab{"{ c49af1cd-233c-4af2-9edc-5c12d1456e32 }"}
+	}
+}
+o
+{
 	Uuid %id{u4{17559281781112466767,18069794610570366978}}
 	s %t{"plParticleComponent"}
 	u3 %v{5}
@@ -9198,7 +9305,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plSkyLightComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o

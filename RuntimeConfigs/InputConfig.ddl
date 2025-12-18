@@ -13,6 +13,11 @@ InputAction
 		string %Key{"controller0_leftstick_posy"}
 		float %Scale{1}
 	}
+	Slot
+	{
+		string %Key{"xr_hand_left_primary_analog_stick_posy"}
+		float %Scale{1}
+	}
 }
 InputAction
 {
@@ -27,6 +32,11 @@ InputAction
 	Slot
 	{
 		string %Key{"controller0_leftstick_negy"}
+		float %Scale{1}
+	}
+	Slot
+	{
+		string %Key{"xr_hand_left_primary_analog_stick_negy"}
 		float %Scale{1}
 	}
 }
@@ -45,6 +55,11 @@ InputAction
 		string %Key{"controller0_leftstick_negx"}
 		float %Scale{1}
 	}
+	Slot
+	{
+		string %Key{"xr_hand_left_primary_analog_stick_negx"}
+		float %Scale{1}
+	}
 }
 InputAction
 {
@@ -59,6 +74,11 @@ InputAction
 	Slot
 	{
 		string %Key{"controller0_leftstick_posx"}
+		float %Scale{1}
+	}
+	Slot
+	{
+		string %Key{"xr_hand_left_primary_analog_stick_posx"}
 		float %Scale{1}
 	}
 }
@@ -101,7 +121,7 @@ InputAction
 	bool %TimeScale{true}
 	Slot
 	{
-		string %Key{"keyboard_left"}
+		string %Key{"mouse_move_negx"}
 		float %Scale{1}
 	}
 	Slot
@@ -111,7 +131,7 @@ InputAction
 	}
 	Slot
 	{
-		string %Key{"mouse_move_negx"}
+		string %Key{"xr_hand_right_primary_analog_stick_negx"}
 		float %Scale{1}
 	}
 }
@@ -122,7 +142,7 @@ InputAction
 	bool %TimeScale{true}
 	Slot
 	{
-		string %Key{"keyboard_right"}
+		string %Key{"mouse_move_posx"}
 		float %Scale{1}
 	}
 	Slot
@@ -132,7 +152,7 @@ InputAction
 	}
 	Slot
 	{
-		string %Key{"mouse_move_posx"}
+		string %Key{"xr_hand_right_primary_analog_stick_posx"}
 		float %Scale{1}
 	}
 }
@@ -151,6 +171,11 @@ InputAction
 		string %Key{"controller0_button_b"}
 		float %Scale{1}
 	}
+	Slot
+	{
+		string %Key{"xr_hand_left_select_click"}
+		float %Scale{1}
+	}
 }
 InputAction
 {
@@ -165,6 +190,11 @@ InputAction
 	Slot
 	{
 		string %Key{"controller0_right_trigger"}
+		float %Scale{1}
+	}
+	Slot
+	{
+		string %Key{"xr_hand_right_select_click"}
 		float %Scale{1}
 	}
 }
@@ -354,6 +384,11 @@ InputAction
 	Slot
 	{
 		string %Key{"keyboard_q"}
+		float %Scale{1}
+	}
+	Slot
+	{
+		string %Key{"xr_hand_right_secondary_analog_stick_click"}
 		float %Scale{1}
 	}
 }

@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{5610093527764820148,5219027326469845793}}
-		u4 %Hash{6034878570338722593}
+		u4 %Hash{11620964893725112931}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -102,6 +102,7 @@ o
 		b %Active{1}
 		b %CastShadows{1}
 		f %ConstantBias{0xCDCCCC3D}
+		ColorGamma %EffectiveColor{u1{255,255,255,255}}
 		f %FadeOutStart{0xCDCC4C3F}
 		f %Intensity{0x00002041}
 		f %Length{0}
@@ -114,7 +115,9 @@ o
 		f %SpecularMultiplier{0x0000803F}
 		f %SplitModeWeight{0x3333333F}
 		u3 %Temperature{6550}
+		b %TransparentShadows{0}
 		b %UseColorTemperature{0}
+		f %VolumetricIntensity{0}
 		f %Width{0}
 	}
 }
@@ -122,18 +125,21 @@ o
 {
 	Uuid %id{u4{3739301098285028032,4732982985170039779}}
 	s %t{"plCameraComponent"}
-	u3 %v{10}
+	u3 %v{11}
 	p
 	{
 		b %Active{1}
 		f %Aperture{0x0000803F}
 		s %CameraRenderPipeline{""}
 		f %Dimensions{0x00002041}
+		f %EV100{0}
 		i1 %EditorShortcut{1}
 		VarArray %ExcludeTags{}
 		f %ExposureCompensation{0}
 		f %FOV{0x00007042}
 		f %FarPlane{0x00007A44}
+		f %FinalExposure{0}
+		f %FocusDistance{0xCDCC4C3E}
 		f %ISO{0x0000C842}
 		VarArray %IncludeTags{}
 		s %Mode{"plCameraMode::PerspectiveFixedFovY"}
@@ -338,7 +344,7 @@ o
 {
 	Uuid %id{u4{2036813793290266790,5102178232539104883}}
 	s %t{"plFogComponent"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
 		b %Active{1}
@@ -347,6 +353,7 @@ o
 		f %HeightFalloff{0xA370CB41}
 		b %ModulateWithSkyColor{0}
 		f %SkyDistance{0x00007A44}
+		f %VolumetricDensity{0x0000803F}
 	}
 }
 o
@@ -523,7 +530,7 @@ o
 	u3 %v{1}
 	p
 	{
-		b %Active{0}
+		b %Active{1}
 		VarArray %BoxExtents
 		{
 			Uuid{u4{2569169713517342079,10797408207359207188}}
@@ -624,23 +631,24 @@ o
 {
 	Uuid %id{u4{12693208968741714088,15943363001825005304}}
 	s %t{"plSkyLightComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
 		s %CubeMap{""}
+		f %DiffuseIntensity{0x3333333F}
+		f %DiffuseSaturation{0x0000803F}
 		VarArray %ExcludeTags{}
 		f %FarPlane{0x0000C842}
 		VarArray %IncludeTags
 		{
 			s{"SkyLight"}
 		}
-		f %Intensity{0x3333333F}
 		f %NearPlane{0}
 		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
-		f %Saturation{0x0000803F}
 		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
+		f %SpecularIntensity{0x0000803F}
 	}
 }
 }
@@ -818,7 +826,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plSkyLightComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -830,6 +838,7 @@ o
 	{
 		s %DependencyFlags{"plDependencyFlags::Package|plDependencyFlags::Thumbnail"}
 		s %Filter{";CompatibleAsset_Data_2D;"}
+		s %RequiredTag{""}
 	}
 }
 o
@@ -1014,7 +1023,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plLightComponent"}
-		u3 %TypeVersion{6}
+		u3 %TypeVersion{8}
 	}
 }
 o
@@ -1307,6 +1316,7 @@ o
 	{
 		s %DependencyFlags{"plDependencyFlags::Package|plDependencyFlags::Thumbnail"}
 		s %Filter{";CompatibleAsset_Material;"}
+		s %RequiredTag{""}
 	}
 }
 o
@@ -1524,7 +1534,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plCameraComponent"}
-		u3 %TypeVersion{10}
+		u3 %TypeVersion{11}
 	}
 }
 o
@@ -1575,7 +1585,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plFogComponent"}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

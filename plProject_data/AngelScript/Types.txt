@@ -166,7 +166,6 @@ plMsgPhysicsJointBroke
 plMsgQueryAnimationSkeleton
 plMsgReleaseObjectGrab
 plMsgRetrieveBoneState
-plMsgRmlUiReload
 plMsgRopePoseUpdated
 plMsgSensorDetectedObjectsChanged
 plMsgSetColor
@@ -213,7 +212,6 @@ plReflectionProbeMode
 plRenderComponent
 plRenderTargetActivatorComponent
 plResetTransformComponent
-plRmlUiCanvas2DComponent
 plRootMotionMode
 plRopeRenderComponent
 plRotorComponent

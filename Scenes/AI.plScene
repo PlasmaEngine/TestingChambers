@@ -14,7 +14,7 @@ o
 			s{"{ 93c2e641-1f6a-43c8-bad0-7b7e9762daae }"}
 		}
 		Uuid %DocumentID{u4{14156501856797205539,10398819186738443508}}
-		u4 %Hash{9228740546348391981}
+		u4 %Hash{14665182390044016320}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -23,7 +23,7 @@ o
 			s{"{ 22cf985a-89d1-89c1-0acc-c10a716347d0 }"}
 			s{"{ 2a41a93b-20a8-8d0f-1532-e9b855a29399 }"}
 			s{"{ 4795f5c4-4a78-4c13-937e-cf3e6bdecb7c }"}
-			s{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
+			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
 			s{"{ c1094788-0c12-8db7-12fb-edb20119a5aa }"}
 		}
 		VarArray %References
@@ -31,7 +31,6 @@ o
 			s{"{ 22424715-9424-489b-93c0-a491714b6b77 }"}
 			s{"{ 2a41a93b-20a8-8d0f-1532-e9b855a29399 }"}
 			s{"{ 4795f5c4-4a78-4c13-937e-cf3e6bdecb7c }"}
-			s{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
 			s{"{ c1094788-0c12-8db7-12fb-edb20119a5aa }"}
 		}
 	}
@@ -175,6 +174,44 @@ o
 		b %Active{1}
 		VarDict %Parameters{}
 		s %Prefab{"{ c1094788-0c12-8db7-12fb-edb20119a5aa }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11777127424871814847,4698815212386424687}}
+	s %t{"plGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{6312720779120469433,4713735634666341714}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x0000C8C0,0x000020C0,0x0000003F}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"plObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{6312720779120469433,4713735634666341714}}
+	s %t{"plPlayerStartPointComponent"}
+	u3 %v{2}
+	p
+	{
+		b %Active{1}
+		VarDict %Parameters{}
+		s %PlayerPrefab{"{ 8044a36f-e313-4204-973d-796231798973 }"}
 	}
 }
 o
@@ -386,6 +423,7 @@ o
 			Uuid{u4{3563356808434526111,11752311836984647826}}
 			Uuid{u4{4543549279635774088,5562299538500692807}}
 			Uuid{u4{2335294917111800099,9464019163938590398}}
+			Uuid{u4{11777127424871814847,4698815212386424687}}
 		}
 		Uuid %Settings{u4{10066782770234364729,9927680789464699617}}
 	}
@@ -432,23 +470,24 @@ o
 {
 	Uuid %id{u4{9342630993097287729,9420913993531018738}}
 	s %t{"plSkyLightComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
 		s %CubeMap{"{ 6449d7e0-a8ff-4b43-9f84-df1c870a4748 }"}
+		f %DiffuseIntensity{0x0000803F}
+		f %DiffuseSaturation{0x0000803F}
 		VarArray %ExcludeTags{}
 		f %FarPlane{0x0000C842}
 		VarArray %IncludeTags
 		{
 			s{"SkyLight"}
 		}
-		f %Intensity{0x0000803F}
 		f %NearPlane{0}
 		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
-		f %Saturation{0x0000803F}
 		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
+		f %SpecularIntensity{0x0000803F}
 	}
 }
 o
@@ -463,7 +502,6 @@ o
 		{
 			Uuid{u4{6439845447785152316,9568051610917969492}}
 			Uuid{u4{8475397322585836841,9839862868433064717}}
-			Uuid{u4{16286341941605910571,9539634477028490670}}
 		}
 		VarArray %Components{}
 		s %GlobalKey{""}
@@ -500,32 +538,6 @@ o
 		f %RaySteps{0x00008041}
 		f %RayleighHeight{0x00409C47}
 		Color %RayleighScattering{f{0x4935C63B,0xE6233F3D,0x2283393E,0x0000803F}}
-	}
-}
-o
-{
-	Uuid %id{u4{16286341941605910571,9539634477028490670}}
-	s %t{"plGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{18043105481492451384,9831264469193478862}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x0000A0C0,0,0x00000040}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"plObjectMode::Automatic"}
-		s %Name{"Scene Thumbnail Camera"}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
 	}
 }
 o
@@ -678,37 +690,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{18043105481492451384,9831264469193478862}}
-	s %t{"plCameraComponent"}
-	u3 %v{11}
-	p
-	{
-		b %Active{1}
-		f %Aperture{0x0000803F}
-		s %CameraRenderPipeline{""}
-		f %Dimensions{0x00002041}
-		f %EV100{0}
-		i1 %EditorShortcut{1}
-		VarArray %ExcludeTags{}
-		f %ExposureCompensation{0}
-		f %FOV{0x00007042}
-		f %FarPlane{0x00007A44}
-		f %FinalExposure{0}
-		f %FocusDistance{0xCDCC4C3E}
-		f %ISO{0x0000C842}
-		VarArray %IncludeTags{}
-		s %Mode{"plCameraMode::PerspectiveFixedFovY"}
-		f %NearPlane{0x0000803E}
-		s %RenderTarget{""}
-		Vec2 %RenderTargetOffset{f{0,0}}
-		Vec2 %RenderTargetSize{f{0x0000803F,0x0000803F}}
-		b %ShowStats{0}
-		Time %ShutterTime{d{0x000000000000F03F}}
-		s %UsageHint{"plCameraUsageHint::Thumbnail"}
 	}
 }
 o
@@ -1501,7 +1482,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plSkyLightComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -1552,23 +1533,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plVisualizerAnchor"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{4166896946117797251,3528888323670374316}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plCameraUsageHint"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -1914,40 +1878,6 @@ o
 }
 o
 {
-	Uuid %id{u4{13985915862957499096,13667540031100479129}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plVisualizerAttribute"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plCameraVisualizerAttribute"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{11329410779208269671,15214768068935402424}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plCameraComponent"}
-		u3 %TypeVersion{11}
-	}
-}
-o
-{
 	Uuid %id{u4{3111610496003805490,15740168395890400217}}
 	s %t{"plReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -1994,23 +1924,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plCategoryAttribute"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{15902986225652390530,16461629939562391074}}
-	s %t{"plReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"plEnumBase"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"plCameraMode"}
 		u3 %TypeVersion{1}
 	}
 }

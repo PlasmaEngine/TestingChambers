@@ -13,7 +13,6 @@ Anchor1
 Anchor1Constraint
 Anchor2
 Anchor2Constraint
-AnchorPoint
 Angle
 AngularDamping
 AnimGraph
@@ -35,7 +34,6 @@ AttachAsChild
 AttachTo
 AttachToAnchor1
 AttachToAnchor2
-AutobindBlackboards
 Axis
 AxisDeviation
 Azure
@@ -149,6 +147,8 @@ Detail
 Deviation
 DeviceType
 Diffuse
+DiffuseIntensity
+DiffuseSaturation
 DimGray
 DimGrey
 Dimensions
@@ -390,7 +390,6 @@ OliveDrab
 OnContact
 OnCreation
 OnDeathPrefab
-OnDemandUpdate
 OnFinishedAction
 Orange
 OrangeRed
@@ -411,7 +410,6 @@ PaleTurquoise
 PaleVioletRed
 PapayaWhip
 ParentActor
-PassInput
 PassThroughUnhandledEvents
 PathEnd
 PathSearchConfig
@@ -472,7 +470,6 @@ Resource
 RestartDelayRange
 ReverseAtEnd
 ReverseAtStart
-RmlFile
 Roll
 RootMotionMode
 RosyBrown
@@ -491,7 +488,6 @@ Running
 SaddleBrown
 Salmon
 SandyBrown
-Saturation
 Scale
 ScriptClass
 SeaGreen
@@ -549,6 +545,7 @@ SpawnCountRange
 SpawnDirection
 SpawnPoint
 SpawnPrefabOnStatic
+SpecularIntensity
 SpecularMultiplier
 Speed
 SphereProjection

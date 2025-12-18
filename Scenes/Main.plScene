@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{7297922959506964864,5177324930371449723}}
-		u4 %Hash{15979608543967171744}
+		u4 %Hash{3321483625368950686}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -27,6 +27,7 @@ o
 			s{"{ 3c960df4-4000-4d25-a9e4-e9c1c5c40080 }"}
 			s{"{ 40197e82-5fa5-4045-99d5-f24a2475497a }"}
 			s{"{ 41a909e4-0dbd-48ef-b6f3-a445bed9f62c }"}
+			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
 			s{"{ 4f850b7b-e53d-4f0c-9efd-15b35ffa6962 }"}
 			s{"{ 522c7e02-3e76-4d5d-ba3e-1936544bbdff }"}
 			s{"{ 580aefec-1a70-4442-9c88-d213519f8b8f }"}
@@ -43,7 +44,6 @@ o
 			s{"{ 7891e584-6857-44e8-b982-73801a7df21c }"}
 			s{"{ 7e7175b2-750f-43c2-9958-c53abc18661e }"}
 			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
-			s{"{ 852fa58a-7bea-4486-832b-3a2b2792fea3 }"}
 			s{"{ 935e1236-35a1-4670-a87c-657e77cd7029 }"}
 			s{"{ 9aa28393-3f8b-490b-b7eb-49749997b143 }"}
 			s{"{ 9b098b2a-53cf-4b4e-8bbf-b2bd11092362 }"}
@@ -80,6 +80,7 @@ o
 			s{"{ 3c960df4-4000-4d25-a9e4-e9c1c5c40080 }"}
 			s{"{ 40197e82-5fa5-4045-99d5-f24a2475497a }"}
 			s{"{ 41a909e4-0dbd-48ef-b6f3-a445bed9f62c }"}
+			s{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
 			s{"{ 4f850b7b-e53d-4f0c-9efd-15b35ffa6962 }"}
 			s{"{ 522c7e02-3e76-4d5d-ba3e-1936544bbdff }"}
 			s{"{ 580aefec-1a70-4442-9c88-d213519f8b8f }"}
@@ -4862,7 +4863,7 @@ o
 	u3 %v{2}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		u3 %Detail{6}
 		s %Material{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
@@ -5351,7 +5352,7 @@ o
 	u3 %v{1}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		VarArray %Children{}
 		VarArray %Components
 		{
@@ -7084,23 +7085,24 @@ o
 {
 	Uuid %id{u4{6089889259248170925,5005570835865122395}}
 	s %t{"plSkyLightComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
-		s %CubeMap{""}
+		s %CubeMap{"{ 0b202e08-a64f-465d-b38e-15b81d161822 }"}
+		f %DiffuseIntensity{0x9A99993E}
+		f %DiffuseSaturation{0x0000803F}
 		VarArray %ExcludeTags{}
 		f %FarPlane{0x0000C842}
 		VarArray %IncludeTags
 		{
 			s{"SkyLight"}
 		}
-		f %Intensity{0xCDCC4C3F}
 		f %NearPlane{0}
-		s %ReflectionProbeMode{"plReflectionProbeMode::Dynamic"}
-		f %Saturation{0x0000803F}
+		s %ReflectionProbeMode{"plReflectionProbeMode::Static"}
 		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
+		f %SpecularIntensity{0x0000803F}
 	}
 }
 o
@@ -8403,7 +8405,7 @@ o
 	u3 %v{4}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		u1 %CollisionLayer{0}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		f %Damping{0x0000003F}
@@ -9669,7 +9671,7 @@ o
 	u3 %v{1}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		VarArray %Children{}
 		VarArray %Components
 		{
@@ -10016,6 +10018,29 @@ o
 			s{"CastShadow"}
 			s{"AutoColMesh"}
 		}
+	}
+}
+o
+{
+	Uuid %id{u4{16517792537112609204,5356440677452131598}}
+	s %t{"plAtmosphericScatteringComponent"}
+	u3 %v{2}
+	p
+	{
+		Color %Absorption{f{0x0AD7233C,0x0AD7233C,0x0AD7233C,0x0000803F}}
+		f %AbsorptionFalloff{0x00007A45}
+		f %AbsorptionHeight{0x0060EA46}
+		b %Active{1}
+		Color %AmbientScattering{f{0xA3B5AF3B,0x23B7C63C,0x8419A63D,0x0000803F}}
+		f %AtmosphereRadius{0xC052E74A}
+		f %LightSteps{0x00008040}
+		f %MieHeight{0xE1CA9544}
+		f %MieScatterDirection{0x3333333F}
+		Color %MieScattering{f{0x0AD7233F,0x0AD7233F,0x0AD7233F,0x0000803F}}
+		f %PlanetRadius{0xC0B3C24A}
+		f %RaySteps{0x00008041}
+		f %RayleighHeight{0x0050C347}
+		Color %RayleighScattering{f{0x0AD7233D,0xAE47613E,0x0000403F,0x0000803F}}
 	}
 }
 o
@@ -10859,7 +10884,7 @@ o
 	u3 %v{4}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		u1 %CollisionLayer{0}
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		f %Damping{0x0000003F}
@@ -12960,7 +12985,7 @@ o
 	u3 %v{4}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		s %Anchor1{""}
 		s %Anchor1Constraint{"plJoltRopeAnchorConstraintMode::None"}
 		s %Anchor2{"{ 00a33d7f-2d35-9311-3c75-df14a5d0f9f2 }"}
@@ -13255,25 +13280,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{17801094760676532663,5727202280525223690}}
-	s %t{"plRotorComponent"}
-	u3 %v{3}
-	p
-	{
-		f %Acceleration{0x0000A040}
-		b %Active{1}
-		s %Axis{"plBasisAxis::PositiveY"}
-		Angle %AxisDeviation{f{0}}
-		f %Deceleration{0x0000A040}
-		i3 %DegreesToRotate{30}
-		b %ReverseAtEnd{1}
-		b %ReverseAtStart{1}
-		b %Running{1}
-		f %Speed{0x0000A040}
 	}
 }
 o
@@ -14072,7 +14078,6 @@ o
 			Uuid{u4{16411118085748214943,5726702454942205392}}
 			Uuid{u4{107325438314111143,5372687150550098243}}
 			Uuid{u4{13090319286080116013,10255209023080692417}}
-			Uuid{u4{11656560190806838826,10680266382231790775}}
 			Uuid{u4{16305733472408570794,15385096271839958916}}
 			Uuid{u4{8411870590938617923,10307711135683334630}}
 			Uuid{u4{16922649219395968404,5053464853112484009}}
@@ -18695,7 +18700,7 @@ o
 		u3 %Detail{32}
 		b %GenerateCollision{1}
 		b %IncludeInNavmesh{1}
-		s %Material{""}
+		s %Material{"{ 49324140-a093-4a75-9c6c-efde65a39fc4 }"}
 		s %Shape{"plGreyBoxShape::ArchY"}
 		f %SizeNegX{0x33335340}
 		f %SizeNegY{0}
@@ -18966,37 +18971,6 @@ o
 			s{"CastShadow"}
 			s{"AutoColMesh"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{2766165073420157724,10273546246953836382}}
-	s %t{"plCameraComponent"}
-	u3 %v{11}
-	p
-	{
-		b %Active{1}
-		f %Aperture{0x0000803F}
-		s %CameraRenderPipeline{"RenderTarget"}
-		f %Dimensions{0x00002041}
-		f %EV100{0}
-		i1 %EditorShortcut{-1}
-		VarArray %ExcludeTags{}
-		f %ExposureCompensation{0}
-		f %FOV{0x00007042}
-		f %FarPlane{0x0000C842}
-		f %FinalExposure{0}
-		f %FocusDistance{0xCDCC4C3E}
-		f %ISO{0x0000C842}
-		VarArray %IncludeTags{}
-		s %Mode{"plCameraMode::PerspectiveFixedFovY"}
-		f %NearPlane{0x0000803E}
-		s %RenderTarget{"{ 852fa58a-7bea-4486-832b-3a2b2792fea3 }"}
-		Vec2 %RenderTargetOffset{f{0,0}}
-		Vec2 %RenderTargetSize{f{0x0000803F,0x0000803F}}
-		b %ShowStats{0}
-		Time %ShutterTime{d{0x000000000000F03F}}
-		s %UsageHint{"plCameraUsageHint::RenderTarget"}
 	}
 }
 o
@@ -19305,7 +19279,7 @@ o
 	u3 %v{1}
 	p
 	{
-		b %Active{1}
+		b %Active{0}
 		VarArray %Children{}
 		VarArray %Components
 		{
@@ -21381,34 +21355,6 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"plObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-			s{"AutoColMesh"}
-		}
-	}
-}
-o
-{
-	Uuid %id{u4{11656560190806838826,10680266382231790775}}
-	s %t{"plGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{2766165073420157724,10273546246953836382}}
-			Uuid{u4{17801094760676532663,5727202280525223690}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x00001441,0x00000841,0x00000441}}
-		Quat %LocalRotation{f{0x1629F0BD,0x90F5663E,0xD16CE43E,0x65AC5B3F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"plObjectMode::ForceDynamic"}
 		s %Name{""}
 		VarArray %Tags
 		{
@@ -26774,29 +26720,6 @@ o
 }
 o
 {
-	Uuid %id{u4{9980368621490612178,14838706846633931310}}
-	s %t{"plAtmosphericScatteringComponent"}
-	u3 %v{2}
-	p
-	{
-		Color %Absorption{f{0,0,0,0x0000803F}}
-		f %AbsorptionFalloff{0x00007A45}
-		f %AbsorptionHeight{0x0060EA46}
-		b %Active{1}
-		Color %AmbientScattering{f{0xB17E603C,0xAB54CE3C,0xC69AFB3C,0x0000803F}}
-		f %AtmosphereRadius{0xC052E74A}
-		f %LightSteps{0x00000041}
-		f %MieHeight{0x0080A245}
-		f %MieScatterDirection{0xEC51B83E}
-		Color %MieScattering{f{0x438B283F,0x18FCB33E,0x4935C63B,0x0000803F}}
-		f %PlanetRadius{0xC0B3C24A}
-		f %RaySteps{0x00008041}
-		f %RayleighHeight{0x00409C47}
-		Color %RayleighScattering{f{0x4935C63B,0xE6233F3D,0x2283393E,0x0000803F}}
-	}
-}
-o
-{
 	Uuid %id{u4{4440890945285963979,14867971219197738833}}
 	s %t{"plGameObject"}
 	u3 %v{1}
@@ -26807,7 +26730,7 @@ o
 		VarArray %Components
 		{
 			Uuid{u4{4451195676854929626,15718903192898639776}}
-			Uuid{u4{9980368621490612178,14838706846633931310}}
+			Uuid{u4{16517792537112609204,5356440677452131598}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0xB071423F,0x00000040}}
@@ -26819,7 +26742,6 @@ o
 		VarArray %Tags
 		{
 			s{"CastShadow"}
-			s{"SkyLight"}
 		}
 	}
 }
@@ -29535,17 +29457,17 @@ o
 		b %CastShadows{1}
 		f %ConstantBias{0xCDCC4C3E}
 		ColorGamma %EffectiveColor{u1{255,255,255,255}}
-		f %FadeOutStart{0xCDCC4C3F}
+		f %FadeOutStart{0x48E13A3F}
 		f %Intensity{0x0000A040}
 		f %Length{0}
 		ColorGamma %LightColor{u1{255,255,255,255}}
-		f %MinShadowRange{0x0000F041}
+		f %MinShadowRange{0x00007041}
 		f %NearPlaneOffset{0x0000C842}
 		u3 %NumCascades{4}
-		f %PenumbraSize{0xCDCCCC3D}
+		f %PenumbraSize{0xCDCC4C3D}
 		f %SlopeBias{0x0000803E}
 		f %SpecularMultiplier{0x0000803F}
-		f %SplitModeWeight{0x3333333F}
+		f %SplitModeWeight{0x0000803E}
 		u3 %Temperature{6550}
 		b %TransparentShadows{0}
 		b %UseColorTemperature{0}
@@ -33623,7 +33545,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"plSkyLightComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o

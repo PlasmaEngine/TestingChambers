@@ -169,9 +169,6 @@ bool plResetTransformComponent::get_ResetPositionY() const
 bool plResetTransformComponent::get_ResetPositionZ() const
 bool plResetTransformComponent::get_ResetRotation() const
 bool plResetTransformComponent::get_ResetScaling() const
-bool plRmlUiCanvas2DComponent::get_AutobindBlackboards() const
-bool plRmlUiCanvas2DComponent::get_OnDemandUpdate() const
-bool plRmlUiCanvas2DComponent::get_PassInput() const
 bool plRopeRenderComponent::get_Subdivide() const
 bool plSceneTransitionComponent::get_RelativeSpawnPosition() const
 bool plScriptComponent::GetScriptVariable_asBool(plHashedString Name) const
@@ -576,10 +573,11 @@ float plSimpleAnimationComponent::get_Speed() const
 float plSkeletonPoseComponent::get_EditBones() const
 float plSkyBoxComponent::get_ExposureBias() const
 float plSkyBoxComponent::get_VirtualDistance() const
+float plSkyLightComponent::get_DiffuseIntensity() const
+float plSkyLightComponent::get_DiffuseSaturation() const
 float plSkyLightComponent::get_FarPlane() const
-float plSkyLightComponent::get_Intensity() const
 float plSkyLightComponent::get_NearPlane() const
-float plSkyLightComponent::get_Saturation() const
+float plSkyLightComponent::get_SpecularIntensity() const
 float plSliderComponent::get_Acceleration() const
 float plSliderComponent::get_Deceleration() const
 float plSliderComponent::get_Distance() const
@@ -1139,7 +1137,6 @@ plComponent@ plReflectionProbeComponentBase::opImplCast()
 plComponent@ plRenderComponent::opImplCast()
 plComponent@ plRenderTargetActivatorComponent::opImplCast()
 plComponent@ plResetTransformComponent::opImplCast()
-plComponent@ plRmlUiCanvas2DComponent::opImplCast()
 plComponent@ plRopeRenderComponent::opImplCast()
 plComponent@ plRotorComponent::opImplCast()
 plComponent@ plSceneTransitionComponent::opImplCast()
@@ -1510,7 +1507,6 @@ plMessage@ plMsgPhysicsJointBroke::opImplCast()
 plMessage@ plMsgQueryAnimationSkeleton::opImplCast()
 plMessage@ plMsgReleaseObjectGrab::opImplCast()
 plMessage@ plMsgRetrieveBoneState::opImplCast()
-plMessage@ plMsgRmlUiReload::opImplCast()
 plMessage@ plMsgRopePoseUpdated::opImplCast()
 plMessage@ plMsgSensorDetectedObjectsChanged::opImplCast()
 plMessage@ plMsgSetColor::opImplCast()
@@ -1565,7 +1561,6 @@ plMsgPhysicsJointBroke@ plMessage::opCast()
 plMsgQueryAnimationSkeleton@ plMessage::opCast()
 plMsgReleaseObjectGrab@ plMessage::opCast()
 plMsgRetrieveBoneState@ plMessage::opCast()
-plMsgRmlUiReload@ plMessage::opCast()
 plMsgRopePoseUpdated@ plMessage::opCast()
 plMsgSensorDetectedObjectsChanged@ plEventMessage::opCast()
 plMsgSensorDetectedObjectsChanged@ plMessage::opCast()
@@ -1723,7 +1718,6 @@ plRenderComponent@ plParticleFinisherComponent::opImplCast()
 plRenderComponent@ plPointLightComponent::opImplCast()
 plRenderComponent@ plProcVertexColorComponent::opImplCast()
 plRenderComponent@ plRenderTargetActivatorComponent::opImplCast()
-plRenderComponent@ plRmlUiCanvas2DComponent::opImplCast()
 plRenderComponent@ plRopeRenderComponent::opImplCast()
 plRenderComponent@ plSkeletonComponent::opImplCast()
 plRenderComponent@ plSkyBoxComponent::opImplCast()
@@ -1732,8 +1726,6 @@ plRenderComponent@ plSpriteComponent::opImplCast()
 plRenderTargetActivatorComponent@ plComponent::opCast()
 plRenderTargetActivatorComponent@ plRenderComponent::opCast()
 plResetTransformComponent@ plComponent::opCast()
-plRmlUiCanvas2DComponent@ plComponent::opCast()
-plRmlUiCanvas2DComponent@ plRenderComponent::opCast()
 plRootMotionMode plAnimationControllerComponent::get_RootMotionMode() const
 plRootMotionMode plSimpleAnimationComponent::get_RootMotionMode() const
 plRootMotionMode::ApplyToOwner
@@ -1895,7 +1887,6 @@ plString plSensorComponent::get_SpatialCategory() const
 plString plSimpleAnimationComponent::get_AnimationClip() const
 plString plSkeletonComponent::get_BonesToHighlight() const
 plString plSkyBoxComponent::get_CubeMap() const
-plString plSkyLightComponent::get_CubeMap() const
 plString plSpawnBoxComponent::get_Prefab() const
 plString plSpawnComponent::get_Prefab() const
 plString plSpriteComponent::get_Texture() const
@@ -1926,11 +1917,11 @@ plStringView plJoltVisColMeshComponent::get_CollisionMesh() const
 plStringView plMsgSetMeshMaterial::get_Material() const
 plStringView plParticleComponent::get_Effect() const
 plStringView plRenderTargetActivatorComponent::get_RenderTarget() const
-plStringView plRmlUiCanvas2DComponent::get_RmlFile() const
 plStringView plRopeRenderComponent::get_Material() const
 plStringView plScriptComponent::get_ScriptClass() const
 plStringView plSkeletonComponent::get_Skeleton() const
 plStringView plSkeletonPoseComponent::get_Skeleton() const
+plStringView plSkyLightComponent::get_CubeMap() const
 plStringView plSnowComponent::get_Diffuse() const
 plStringView plSnowComponent::get_Displacement() const
 plStringView plSnowComponent::get_Noise() const
@@ -2060,7 +2051,6 @@ plVec2 plJoltBreakableSlabComponent::get_UVScale() const
 plVec2 plJoltClothSheetComponent::get_Size() const
 plVec2 plJoltClothSheetComponent::get_TextureScale() const
 plVec2 plMath::Lerp(plVec2 from, plVec2 to, float factor)
-plVec2 plRmlUiCanvas2DComponent::get_AnchorPoint() const
 plVec2 plScriptComponent::GetScriptVariable_asVec2(plHashedString Name) const
 plVec2 plVec2::Abs() const
 plVec2 plVec2::CompClamp(const plVec2&in rhs) const
@@ -3041,11 +3031,6 @@ void plResetTransformComponent::set_ResetPositionY(bool)
 void plResetTransformComponent::set_ResetPositionZ(bool)
 void plResetTransformComponent::set_ResetRotation(bool)
 void plResetTransformComponent::set_ResetScaling(bool)
-void plRmlUiCanvas2DComponent::set_AnchorPoint(plVec2)
-void plRmlUiCanvas2DComponent::set_AutobindBlackboards(bool)
-void plRmlUiCanvas2DComponent::set_OnDemandUpdate(bool)
-void plRmlUiCanvas2DComponent::set_PassInput(bool)
-void plRmlUiCanvas2DComponent::set_RmlFile(plStringView)
 void plRopeRenderComponent::set_Color(plColor)
 void plRopeRenderComponent::set_Detail(uint)
 void plRopeRenderComponent::set_Material(plStringView)
@@ -3102,13 +3087,15 @@ void plSkyBoxComponent::set_ExposureBias(float)
 void plSkyBoxComponent::set_InverseTonemap(bool)
 void plSkyBoxComponent::set_UseFog(bool)
 void plSkyBoxComponent::set_VirtualDistance(float)
+void plSkyLightComponent::set_CubeMap(plStringView)
+void plSkyLightComponent::set_DiffuseIntensity(float)
+void plSkyLightComponent::set_DiffuseSaturation(float)
 void plSkyLightComponent::set_FarPlane(float)
-void plSkyLightComponent::set_Intensity(float)
 void plSkyLightComponent::set_NearPlane(float)
 void plSkyLightComponent::set_ReflectionProbeMode(plReflectionProbeMode)
-void plSkyLightComponent::set_Saturation(float)
 void plSkyLightComponent::set_ShowDebugInfo(bool)
 void plSkyLightComponent::set_ShowMipMaps(bool)
+void plSkyLightComponent::set_SpecularIntensity(float)
 void plSliderComponent::set_Acceleration(float)
 void plSliderComponent::set_Axis(plBasisAxis)
 void plSliderComponent::set_Deceleration(float)
