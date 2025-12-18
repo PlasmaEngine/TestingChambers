@@ -6,19 +6,13 @@ PluginState
 }
 PluginState
 {
-	string %ID{"DirectedCameraFramework"}
+	string %ID{"AngelScript"}
 	bool %Selected{true}
 	bool %LoadCopy{false}
 }
 PluginState
 {
 	string %ID{"Fmod"}
-	bool %Selected{true}
-	bool %LoadCopy{false}
-}
-PluginState
-{
-	string %ID{"GFCore"}
 	bool %Selected{true}
 	bool %LoadCopy{false}
 }
@@ -42,7 +36,7 @@ PluginState
 }
 PluginState
 {
-	string %ID{"NetworkPlugin"}
+	string %ID{"OpenXR"}
 	bool %Selected{true}
 	bool %LoadCopy{false}
 }
@@ -61,12 +55,6 @@ PluginState
 PluginState
 {
 	string %ID{"RmlUi"}
-	bool %Selected{true}
-	bool %LoadCopy{false}
-}
-PluginState
-{
-	string %ID{"TypeScript"}
 	bool %Selected{true}
 	bool %LoadCopy{false}
 }

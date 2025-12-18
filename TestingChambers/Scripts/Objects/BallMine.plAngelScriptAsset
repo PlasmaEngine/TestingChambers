@@ -1,0 +1,321 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{7396078666905164703,4638978396848499465}}
+	s %t{"plAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"AngelScript"}
+		VarArray %Dependencies
+		{
+			s{"Scripts/Objects/BallMine.as"}
+		}
+		Uuid %DocumentID{u4{7396078666905164703,4638978396848499465}}
+		u4 %Hash{12626763382504344982}
+		VarArray %MetaInfo
+		{
+			Uuid{u4{5681861712154355532,5150897629519963583}}
+		}
+		VarArray %Outputs{}
+		VarArray %PackageDeps{}
+		VarArray %References
+		{
+			s{"Scripts/Objects/BallMine.as"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{5681861712154355532,5150897629519963583}}
+	s %t{"plExposedParameters"}
+	u3 %v{3}
+	p
+	{
+		VarArray %Parameters
+		{
+			Uuid{u4{9010681646928344680,10752343733275620004}}
+			Uuid{u4{10054503980621403962,7720245101914432493}}
+			Uuid{u4{17744733755901770724,5968006670006852607}}
+			Uuid{u4{9719016009235024890,8275232848248250999}}
+			Uuid{u4{7425944900189559881,15200271912947470067}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{17744733755901770724,5968006670006852607}}
+	s %t{"plExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		f %DefaultValue{0x0000C03F}
+		s %Name{"AttackDistance"}
+		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{10054503980621403962,7720245101914432493}}
+	s %t{"plExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		f %DefaultValue{0x00002041}
+		s %Name{"ApproachDistance"}
+		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{9719016009235024890,8275232848248250999}}
+	s %t{"plExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		f %DefaultValue{0x00004843}
+		s %Name{"RollForce"}
+		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{9010681646928344680,10752343733275620004}}
+	s %t{"plExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		f %DefaultValue{0x00007041}
+		s %Name{"AlertDistance"}
+		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{7425944900189559881,15200271912947470067}}
+	s %t{"plExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		f %DefaultValue{0x0000A041}
+		s %Name{"Health"}
+		s %Type{""}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{17414603346992079794,4686753121657533846}}
+	s %t{"plAngelScriptParameter"}
+	u3 %v{1}
+	p
+	{
+		s %Declaration{"float RollForce = 200"}
+		f %DefaultValue{0x00004843}
+		b %Expose{1}
+		s %Name{"RollForce"}
+	}
+}
+o
+{
+	Uuid %id{u4{10233250419241634469,4934983729996840917}}
+	s %t{"plAngelScriptParameter"}
+	u3 %v{1}
+	p
+	{
+		s %Declaration{"float ApproachDistance = 10"}
+		f %DefaultValue{0x00002041}
+		b %Expose{1}
+		s %Name{"ApproachDistance"}
+	}
+}
+o
+{
+	Uuid %id{u4{4174110240959260350,5124236860215385327}}
+	s %t{"plAngelScriptAssetProperties"}
+	u3 %v{1}
+	p
+	{
+		s %ClassName{"ScriptObject"}
+		s %Code{"class ScriptObject : plAngelScriptClass\n{\n\t// int PublicIntVar = 0;\n\n\tvoid OnSimulationStarted()\n\t{\n\t\t// plLog::Info(\"Simulation Started\");\n\t}\n\n\t// void Update() { }\n\n\t// void OnMsgTriggerTriggered(plMsgTriggerTriggered@ msg) { }\n}"}
+		VarArray %Dependencies{}
+		VarArray %Parameters
+		{
+			Uuid{u4{2766180272681810877,5428459636619573688}}
+			Uuid{u4{10233250419241634469,4934983729996840917}}
+			Uuid{u4{5911168881926961575,5133305388387444162}}
+			Uuid{u4{17414603346992079794,4686753121657533846}}
+			Uuid{u4{1519945324994981285,5320106837934816237}}
+		}
+		s %Source{"plAngelScriptCodeMode::FromFile"}
+		s %SourceFile{"Scripts/Objects/BallMine.as"}
+	}
+}
+o
+{
+	Uuid %id{u4{5911168881926961575,5133305388387444162}}
+	s %t{"plAngelScriptParameter"}
+	u3 %v{1}
+	p
+	{
+		s %Declaration{"float AttackDistance = 1.5"}
+		f %DefaultValue{0x0000C03F}
+		b %Expose{1}
+		s %Name{"AttackDistance"}
+	}
+}
+o
+{
+	Uuid %id{u4{1519945324994981285,5320106837934816237}}
+	s %t{"plAngelScriptParameter"}
+	u3 %v{1}
+	p
+	{
+		s %Declaration{"float Health = 20"}
+		f %DefaultValue{0x0000A041}
+		b %Expose{1}
+		s %Name{"Health"}
+	}
+}
+o
+{
+	Uuid %id{u4{2766180272681810877,5428459636619573688}}
+	s %t{"plAngelScriptParameter"}
+	u3 %v{1}
+	p
+	{
+		s %Declaration{"float AlertDistance = 15"}
+		f %DefaultValue{0x00007041}
+		b %Expose{1}
+		s %Name{"AlertDistance"}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"plDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{4174110240959260350,5124236860215385327}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{17296955365090514657,175989706882942261}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginAngelScript"}
+		VarArray %Properties{}
+		s %TypeName{"plAngelScriptParameter"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7009381072334277535,9659459603664967231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{16819636187740221814,11089501717885464587}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{760375714984502126,14357891903497540822}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginAngelScript"}
+		VarArray %Properties{}
+		s %TypeName{"plAngelScriptAssetProperties"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13033624727069548121,17368468367984449402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{4575469196715251310,17710094185434946599}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginAngelScript"}
+		VarArray %Properties{}
+		s %TypeName{"plAngelScriptCodeMode"}
+		u3 %TypeVersion{1}
+	}
+}
+}

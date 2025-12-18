@@ -1,0 +1,251 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{881152873164759708,4751307048333850333}}
+	s %t{"plAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Animation Clip"}
+		VarArray %Dependencies
+		{
+			s{"Animations/Pete/Pete.glb"}
+		}
+		Uuid %DocumentID{u4{881152873164759708,4751307048333850333}}
+		u4 %Hash{5293867890350614082}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %PackageDeps{}
+		VarArray %References
+		{
+			s{"Animations/Pete/Pete.glb"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{13090532700981972406,4706395435184958426}}
+	s %t{"plAnimationClipAssetProperties"}
+	u3 %v{3}
+	p
+	{
+		b %Additive{0}
+		s %AdditiveReference{"plAdditiveAnimationReference::FirstKeyFrame"}
+		Vec3 %ConstantRootMotion{f{0x7EB87F3F,0xCC7523B9,0x4A4A3F3D}}
+		Uuid %EventTrack{u4{8744735382072517470,13046501597179603728}}
+		s %File{"Animations/Pete/Pete.glb"}
+		u3 %FirstFrame{0}
+		u3 %NumFrames{0}
+		s %PreviewMesh{"{ 6240a925-6584-48c5-8559-6981f5d9bedd }"}
+		s %RootMotion{"plRootMotionSource::Constant"}
+		f %RootMotionDistance{0x64141440}
+		s %UseAnimationClip{"Run"}
+	}
+}
+o
+{
+	Uuid %id{u4{5481964947596160436,4800718557671144299}}
+	s %t{"plEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"run.foot.r"}
+		i4 %Tick{4720}
+	}
+}
+o
+{
+	Uuid %id{u4{560158006981879695,4974375136766394144}}
+	s %t{"plEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"FootDown.R"}
+		i4 %Tick{-9223372036854775808}
+	}
+}
+o
+{
+	Uuid %id{u4{3409467984110667432,5486483342812904297}}
+	s %t{"plEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"run.foot.l"}
+		i4 %Tick{2400}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"plDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{13090532700981972406,4706395435184958426}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{8744735382072517470,13046501597179603728}}
+	s %t{"plEventTrackData"}
+	u3 %v{3}
+	p
+	{
+		VarArray %ControlPoints
+		{
+			Uuid{u4{560158006981879695,4974375136766394144}}
+			Uuid{u4{5481964947596160436,4800718557671144299}}
+			Uuid{u4{3409467984110667432,5486483342812904297}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{14396925473888178982,2545635369424926843}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"plAnimationClipAssetProperties"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{15677918693486282428,3984032038245140361}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEventTrackControlPointData"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2095866777568550375,5648570438228651554}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"plAdditiveAnimationReference"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7009381072334277535,9659459603664967231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{16819636187740221814,11089501717885464587}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{300909205463874214,11999882847947189273}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"plRootMotionSource"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2669185325745625968,14650865003168191251}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEventTrackData"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{13033624727069548121,17368468367984449402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+}

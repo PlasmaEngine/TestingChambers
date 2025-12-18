@@ -1,0 +1,13 @@
+Aim
+MoodColor
+MoodStrength
+MoveBackwards
+MoveForwards
+RotateLeft
+RotateRight
+Shoot
+StrafeLeft
+StrafeRight
+TouchingGround
+Use
+Wave

@@ -1,0 +1,550 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{11212234289642059194,4637845551590943091}}
+	s %t{"plAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"ProcGen Graph"}
+		VarArray %Dependencies{}
+		Uuid %DocumentID{u4{11212234289642059194,4637845551590943091}}
+		u4 %Hash{12254594106991140269}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %PackageDeps
+		{
+			s{"{ 0bbf1189-f0d3-4ea0-bc01-450d02d3f4bc }"}
+			s{"{ 176b6229-ba87-48ec-bbc6-3fe14f54411b }"}
+			s{"{ 2987eede-0d7c-4750-9043-0215249e52c0 }"}
+			s{"{ 3837dd47-58a1-4659-a678-a88416d16fc0 }"}
+			s{"{ 84987847-ecba-4794-b779-0a683d48bcc0 }"}
+			s{"{ a1f3f932-460e-405a-8512-a0f3ce341d1b }"}
+			s{"{ bdc24e7e-33a2-459a-a611-7a466dc63024 }"}
+			s{"{ e8c45e75-2e03-4758-852c-a51ff3947c78 }"}
+		}
+		VarArray %References
+		{
+			s{"{ 0bbf1189-f0d3-4ea0-bc01-450d02d3f4bc }"}
+			s{"{ 176b6229-ba87-48ec-bbc6-3fe14f54411b }"}
+			s{"{ 3837dd47-58a1-4659-a678-a88416d16fc0 }"}
+			s{"{ 84987847-ecba-4794-b779-0a683d48bcc0 }"}
+			s{"{ a1f3f932-460e-405a-8512-a0f3ce341d1b }"}
+			s{"{ bdc24e7e-33a2-459a-a611-7a466dc63024 }"}
+			s{"{ e8c45e75-2e03-4758-852c-a51ff3947c78 }"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{3185465590721845903,675580110127191340}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{6465513291391804678,885770289980241172}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{16445303618759427592,987265279439665097}}
+	s %t{"plRenderPipelineNodeOutputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{8601754667010464145,4858791763714360891}}
+	s %t{"plProcGen_PlacementOutput"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		f %AlignToNormal{0x9A99993E}
+		u3 %CollisionLayer{0}
+		s %ColorGradient{""}
+		Uuid %ColorIndex{u4{14524172235168077613,16706364264459226522}}
+		f %CullDistance{0x0000C842}
+		Uuid %Density{u4{4370601800130103009,6843905831647487452}}
+		f %Footprint{0x0000E040}
+		Vec3 %MaxOffset{f{0x0000A040,0x0000A040,0}}
+		Vec3 %MaxScale{f{0x0000C03F,0x0000C03F,0x0000C03F}}
+		Vec3 %MinOffset{f{0x0000803F,0x0000803F,0x9A9919BF}}
+		Vec3 %MinScale{f{0x3333333F,0x3333333F,0x3333333F}}
+		s %Name{"Trees"}
+		Vec2 %Node::Pos{f{0x8C15B544,0xFEE63344}}
+		Uuid %ObjectIndex{u4{10962629707989849769,17680149162351132219}}
+		VarArray %Objects
+		{
+			s{"{ 3837dd47-58a1-4659-a678-a88416d16fc0 }"}
+			s{"{ e8c45e75-2e03-4758-852c-a51ff3947c78 }"}
+			s{"{ 176b6229-ba87-48ec-bbc6-3fe14f54411b }"}
+		}
+		s %PlacementMode{"plProcPlacementMode::Raycast"}
+		s %PlacementPattern{"plProcPlacementPattern::Natural"}
+		Uuid %Scale{u4{9791305905673822488,12638390741642247297}}
+		s %Surface{"{ 2987eede-0d7c-4750-9043-0215249e52c0 }"}
+		Angle %YawRotationSnap{f{0}}
+	}
+}
+o
+{
+	Uuid %id{u4{1507394232540889005,5266196713061815143}}
+	s %t{"plProcGen_Slope"}
+	u3 %v{1}
+	p
+	{
+		f %LowerFade{0}
+		Angle %MaxSlope{f{0x920A063F}}
+		Angle %MinSlope{f{0}}
+		Vec2 %Node::Pos{f{0xE3438144,0x27A53144}}
+		f %UpperFade{0xCDCC4C3E}
+		Uuid %Value{u4{6390096811003672162,17833461069784764133}}
+	}
+}
+o
+{
+	Uuid %id{u4{1056571095733350553,5556531711555647381}}
+	s %t{"plDocumentObject_ConnectionBase"}
+	u3 %v{1}
+	p
+	{
+		Uuid %Source{u4{1507394232540889005,5266196713061815143}}
+		s %SourcePin{"Value"}
+		Uuid %Target{u4{8601754667010464145,4858791763714360891}}
+		s %TargetPin{"Density"}
+	}
+}
+o
+{
+	Uuid %id{u4{15436765931253356963,5579255616147606907}}
+	s %t{"plDocumentObject_ConnectionBase"}
+	u3 %v{1}
+	p
+	{
+		Uuid %Source{u4{16600160950372042245,14966675785173787356}}
+		s %SourcePin{"Value"}
+		Uuid %Target{u4{11095407931685293014,15063649965740399571}}
+		s %TargetPin{"Density"}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"plDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{8601754667010464145,4858791763714360891}}
+			Uuid{u4{1507394232540889005,5266196713061815143}}
+			Uuid{u4{11095407931685293014,15063649965740399571}}
+			Uuid{u4{16600160950372042245,14966675785173787356}}
+			Uuid{u4{1056571095733350553,5556531711555647381}}
+			Uuid{u4{15436765931253356963,5579255616147606907}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{4370601800130103009,6843905831647487452}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{5956391832851329029,8065022560000220215}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{14728537670825647077,10593309350569466950}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{9791305905673822488,12638390741642247297}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{16600160950372042245,14966675785173787356}}
+	s %t{"plProcGen_Slope"}
+	u3 %v{1}
+	p
+	{
+		f %LowerFade{0}
+		Angle %MaxSlope{f{0xF3665F3F}}
+		Angle %MinSlope{f{0}}
+		Vec2 %Node::Pos{f{0xA6E96E44,0xC3D69D44}}
+		f %UpperFade{0xCDCC4C3E}
+		Uuid %Value{u4{16445303618759427592,987265279439665097}}
+	}
+}
+o
+{
+	Uuid %id{u4{11095407931685293014,15063649965740399571}}
+	s %t{"plProcGen_PlacementOutput"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		f %AlignToNormal{0x0000003F}
+		u3 %CollisionLayer{0}
+		s %ColorGradient{"{ a1f3f932-460e-405a-8512-a0f3ce341d1b }"}
+		Uuid %ColorIndex{u4{3185465590721845903,675580110127191340}}
+		f %CullDistance{0x00004842}
+		Uuid %Density{u4{14728537670825647077,10593309350569466950}}
+		f %Footprint{0x00002041}
+		Vec3 %MaxOffset{f{0x00000040,0x00000040,0}}
+		Vec3 %MaxScale{f{0x0000803F,0x0000803F,0x0000803F}}
+		Vec3 %MinOffset{f{0x0000003F,0x0000003F,0}}
+		Vec3 %MinScale{f{0x9A99993E,0x9A99993E,0x9A99993E}}
+		s %Name{"Rocks"}
+		Vec2 %Node::Pos{f{0xD6A8B344,0x97ED9644}}
+		Uuid %ObjectIndex{u4{6465513291391804678,885770289980241172}}
+		VarArray %Objects
+		{
+			s{"{ bdc24e7e-33a2-459a-a611-7a466dc63024 }"}
+			s{"{ 0bbf1189-f0d3-4ea0-bc01-450d02d3f4bc }"}
+			s{"{ 84987847-ecba-4794-b779-0a683d48bcc0 }"}
+		}
+		s %PlacementMode{"plProcPlacementMode::Raycast"}
+		s %PlacementPattern{"plProcPlacementPattern::Natural"}
+		Uuid %Scale{u4{5956391832851329029,8065022560000220215}}
+		s %Surface{"{ 2987eede-0d7c-4750-9043-0215249e52c0 }"}
+		Angle %YawRotationSnap{f{0}}
+	}
+}
+o
+{
+	Uuid %id{u4{14524172235168077613,16706364264459226522}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{10962629707989849769,17680149162351132219}}
+	s %t{"plRenderPipelineNodeInputPin"}
+	u3 %v{1}
+	p{}
+}
+o
+{
+	Uuid %id{u4{6390096811003672162,17833461069784764133}}
+	s %t{"plRenderPipelineNodeOutputPin"}
+	u3 %v{1}
+	p{}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{11328927983653446892,144568098297487475}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plPropertyAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plTitleAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14749633442492691202,593399381445037268}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plRenderPipelineNodePin"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{11612211185791447854,2254412918116227654}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plProcGenNodeBase"}
+		s %PluginName{"plEditorPluginProcGen"}
+		VarArray %Properties{}
+		s %TypeName{"plProcGen_Slope"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{8132462614681439308,3287167598379242619}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginProcGen"}
+		VarArray %Properties{}
+		s %TypeName{"plProcPlacementPattern"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13918685928260246388,5237779543201517912}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::IsEnum|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plEnumBase"}
+		s %PluginName{"plEditorPluginProcGen"}
+		VarArray %Properties{}
+		s %TypeName{"plProcPlacementMode"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7482538664399067888,9388264890741538832}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plRenderPipelineNodePin"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plRenderPipelineNodeInputPin"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7009381072334277535,9659459603664967231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13515337742566713904,10311337543369615618}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plProcGenNodeBase"}
+		s %PluginName{"plEditorPluginProcGen"}
+		VarArray %Properties{}
+		s %TypeName{"plProcGenOutput"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{10811972054187346924,10750210530913110245}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Abstract|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginProcGen"}
+		VarArray %Properties{}
+		s %TypeName{"plProcGenNodeBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{16819636187740221814,11089501717885464587}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14209585135339028478,11308263336862562356}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plPropertyAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{10117293284305109392,11544913933193635751}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plPropertyAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plHiddenAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13757272417693924605,15313730912403440498}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plRenderPipelineNodePin"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plRenderPipelineNodeOutputPin"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2476700059554447605,15334435499439497874}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentObject_ConnectionBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6853598190348858983,16453551367257532047}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plPropertyAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plCategoryAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13033624727069548121,17368468367984449402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13617470121792888377,17700201527204340298}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plProcGenOutput"}
+		s %PluginName{"plEditorPluginProcGen"}
+		VarArray %Properties{}
+		s %TypeName{"plProcGen_PlacementOutput"}
+		u3 %TypeVersion{1}
+	}
+}
+}
